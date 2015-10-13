@@ -1,0 +1,4 @@
+platform:ios, "8.0"
+pod "AFNetworking", "~> 2.3.0"
+pod "SVProgressHUD"
+pod 'SDWebImage', '~> 3.6'
