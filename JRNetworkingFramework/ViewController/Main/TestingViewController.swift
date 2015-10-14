@@ -1,5 +1,5 @@
 //
-//  SettingViewController.swift
+//  TestingViewController.swift
 //  JRNetworkingFramework
 //
 //  Created by SilversRayleigh on 13/10/2015.
@@ -8,16 +8,18 @@
 
 import UIKit
 
-class SettingViewController: UIViewController {
+class TestingViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    var testingArray: [String] = [
+    "MutableLinkage"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let rightBarButtonItem: UIBarButtonItem = UIBarButtonItem(title: "Linkage", style: UIBarButtonItemStyle.Done, target: self, action: "didRightBarButtonItemClicked:")
-        self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,58 +34,45 @@ class SettingViewController: UIViewController {
         super.init(coder: aDecoder)!
     }
     convenience init() {
-        let nibNameOrNil = String?("SettingViewController")
+        let nibNameOrNil = String?("TestingViewController")
         self.init(nibName: nibNameOrNil, bundle: nil)
     }
     
-    func didRightBarButtonItemClicked(sender: AnyObject) {
-        let instance = JRDualLinkageViewController()
-        instance.hidesBottomBarWhenPushed = true
-        self.navigationController!.pushViewController(instance, animated: true)
+    func gotoController(flag: Int) {
+        var instance: UIViewController?
+        switch flag {
+        case 0:
+            instance = JRDualLinkageViewController()
+        default:
+            break
+        }
+        if instance != nil {
+            self.navigationController!.pushViewController(instance!, animated: true)
+        }
     }
 
 }
 //MARK: - Classes - Extension
 //MARK: - Extensions - DataSource
-extension SettingViewController: UITableViewDataSource {
+extension TestingViewController: UITableViewDataSource {
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.testingArray.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
-    
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return nil
-    }
-    func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return nil
-    }
 }
 //MARK: - Extensions - Delegate
-extension  SettingViewController: UITableViewDelegate {
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0
-    }
-    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0
-    }
+extension  TestingViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 0
+        return 44
     }
-    
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return nil
-    }
-    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return nil
-    }
-    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        self.gotoController(indexPath.row)
     }
 }
 //MARK: - Classes - Custom

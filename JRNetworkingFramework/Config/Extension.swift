@@ -88,6 +88,15 @@ extension UIColor {
     static func colorWithHex(hex h: Int) -> UIColor {
         return UIColor.colorWithHexAndAlpha(hex: h, alpha: 1)
     }
+    class func silverColor() -> UIColor {
+        return UIColor.colorWithHex(hex: 0xC0C0C0)
+    }
+    class func skyBlueColor() -> UIColor {
+        return UIColor.colorWithHex(hex: 0x87CEFA)
+    }
+    class func LuoTianYi() -> UIColor {
+        return UIColor.colorWithHex(hex: 0x66CCFF)
+    }
 }
 extension UITextField {
     func isEmpty() -> Bool {

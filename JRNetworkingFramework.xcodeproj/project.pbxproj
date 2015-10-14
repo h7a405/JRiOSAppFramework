@@ -21,8 +21,13 @@
 		BB1BA5EA1BCB4E3100FF6C1F /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5E81BCB4E3100FF6C1F /* TabBarViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		BB36F5541BCC9E63008FB9A0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F5521BCC9E62008FB9A0 /* SettingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BB36F5551BCC9E63008FB9A0 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB36F5531BCC9E62008FB9A0 /* SettingViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		BB36F55E1BCCD7B6008FB9A0 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F55C1BCCD7B6008FB9A0 /* TestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BB36F55F1BCCD7B6008FB9A0 /* TestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB36F55D1BCCD7B6008FB9A0 /* TestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		BB36F5671BCCDCDF008FB9A0 /* JRDualLinkageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F5661BCCDCDF008FB9A0 /* JRDualLinkageView.swift */; settings = {ASSET_TAGS = (); }; };
+		BB36F5691BCCF12E008FB9A0 /* JRDualLinkageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F5681BCCF12E008FB9A0 /* JRDualLinkageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BB693D5E1BC75D0200C2AC8F /* JRNetworkingIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB693D5D1BC75D0200C2AC8F /* JRNetworkingIOManager.swift */; };
 		BB693D601BC75D5900C2AC8F /* JRNetworkingApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB693D5F1BC75D5900C2AC8F /* JRNetworkingApiManager.swift */; };
+		BB8FDF0B1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */; settings = {ASSET_TAGS = (); }; };
 		BB9AB73B1BC6006700531514 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AB72E1BC6006700531514 /* Define.swift */; };
 		BB9AB73C1BC6006700531514 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AB72F1BC6006700531514 /* Extension.swift */; };
 		BB9AB73D1BC6006700531514 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AB7351BC6006700531514 /* Log.swift */; };
@@ -68,8 +73,13 @@
 		BB1BA5E81BCB4E3100FF6C1F /* TabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
 		BB36F5521BCC9E62008FB9A0 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BB36F5531BCC9E62008FB9A0 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		BB36F55C1BCCD7B6008FB9A0 /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		BB36F55D1BCCD7B6008FB9A0 /* TestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestingViewController.xib; sourceTree = "<group>"; };
+		BB36F5661BCCDCDF008FB9A0 /* JRDualLinkageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageView.swift; sourceTree = "<group>"; };
+		BB36F5681BCCF12E008FB9A0 /* JRDualLinkageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageViewController.swift; sourceTree = "<group>"; };
 		BB693D5D1BC75D0200C2AC8F /* JRNetworkingIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRNetworkingIOManager.swift; sourceTree = "<group>"; };
 		BB693D5F1BC75D5900C2AC8F /* JRNetworkingApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRNetworkingApiManager.swift; sourceTree = "<group>"; };
+		BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
 		BB9AB72E1BC6006700531514 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		BB9AB72F1BC6006700531514 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		BB9AB7301BC6006700531514 /* JRNetworkingFramework-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JRNetworkingFramework-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -141,6 +151,7 @@
 		BB1BA5CE1BCB460000FF6C1F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BB36F55B1BCCD79B008FB9A0 /* Testing */,
 				BB36F5511BCC9DFE008FB9A0 /* Setting */,
 				BB1BA5E61BCB4E1900FF6C1F /* Tab */,
 			);
@@ -210,6 +221,33 @@
 			name = Setting;
 			sourceTree = "<group>";
 		};
+		BB36F55B1BCCD79B008FB9A0 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				BB36F5651BCCDCBF008FB9A0 /* JRDualLinkageView */,
+				BB36F55C1BCCD7B6008FB9A0 /* TestingViewController.swift */,
+				BB36F55D1BCCD7B6008FB9A0 /* TestingViewController.xib */,
+				BB36F5681BCCF12E008FB9A0 /* JRDualLinkageViewController.swift */,
+			);
+			name = Testing;
+			sourceTree = "<group>";
+		};
+		BB36F5651BCCDCBF008FB9A0 /* JRDualLinkageView */ = {
+			isa = PBXGroup;
+			children = (
+				BB36F5661BCCDCDF008FB9A0 /* JRDualLinkageView.swift */,
+			);
+			name = JRDualLinkageView;
+			sourceTree = "<group>";
+		};
+		BB8FDF091BCE2ABC00AC6D0B /* JRCollapsibleSection */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */,
+			);
+			path = JRCollapsibleSection;
+			sourceTree = "<group>";
+		};
 		BB9AB72D1BC6006700531514 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +261,7 @@
 		BB9AB7321BC6006700531514 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				BB8FDF091BCE2ABC00AC6D0B /* JRCollapsibleSection */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -414,7 +453,7 @@
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "qi-cloud.com";
+				ORGANIZATIONNAME = hSevenA405;
 				TargetAttributes = {
 					BBAF655C1BC0C12100CA709A = {
 						CreatedOnToolsVersion = 6.4;
@@ -456,6 +495,7 @@
 				BB9AB7601BC642D100531514 /* HttpViewController.xib in Resources */,
 				BB1BA5E51BCB4D4900FF6C1F /* GuideViewController.xib in Resources */,
 				BBAF656D1BC0C12100CA709A /* LaunchScreen.xib in Resources */,
+				BB36F55F1BCCD7B6008FB9A0 /* TestingViewController.xib in Resources */,
 				BB36F5551BCC9E63008FB9A0 /* SettingViewController.xib in Resources */,
 				BB1BA5D61BCB4A0500FF6C1F /* SignInViewController.xib in Resources */,
 				BB1BA5E11BCB4A8900FF6C1F /* SignUpViewController.xib in Resources */,
@@ -516,12 +556,15 @@
 				BB9AB73B1BC6006700531514 /* Define.swift in Sources */,
 				BB1BA5E91BCB4E3100FF6C1F /* TabBarViewController.swift in Sources */,
 				BB693D601BC75D5900C2AC8F /* JRNetworkingApiManager.swift in Sources */,
+				BB36F5691BCCF12E008FB9A0 /* JRDualLinkageViewController.swift in Sources */,
 				BB1BA5D11BCB461700FF6C1F /* RootViewController.swift in Sources */,
 				BB9AB73D1BC6006700531514 /* Log.swift in Sources */,
 				BB9AB7421BC601E500531514 /* JRNetworkingProtocol.swift in Sources */,
 				BB9AB73F1BC6006700531514 /* Tool.swift in Sources */,
+				BB8FDF0B1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift in Sources */,
 				BB693D5E1BC75D0200C2AC8F /* JRNetworkingIOManager.swift in Sources */,
 				BB1BA5E41BCB4D4900FF6C1F /* GuideViewController.swift in Sources */,
+				BB36F5671BCCDCDF008FB9A0 /* JRDualLinkageView.swift in Sources */,
 				BB1BA5E01BCB4A8900FF6C1F /* SignUpViewController.swift in Sources */,
 				BBAF65631BC0C12100CA709A /* AppDelegate.swift in Sources */,
 				BB9AB7461BC606E800531514 /* JRNetworkingConstant.swift in Sources */,
@@ -529,6 +572,7 @@
 				BB36F5541BCC9E63008FB9A0 /* SettingViewController.swift in Sources */,
 				BB9AB73C1BC6006700531514 /* Extension.swift in Sources */,
 				BB9AB73E1BC6006700531514 /* Math.swift in Sources */,
+				BB36F55E1BCCD7B6008FB9A0 /* TestingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
