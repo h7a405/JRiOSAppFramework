@@ -34,7 +34,7 @@ class CollapsibleSectionTestingViewController: UIViewController {
         super.viewDidLoad()
         
         self.numberOfSections = 5
-        for i in 0..<self.numberOfSections {
+        for _ in 0..<self.numberOfSections {
             self.numberOfRows.append(2)
         }
         self.sectionHeaderViewArray = Array()
@@ -84,13 +84,40 @@ extension CollapsibleSectionTestingViewController: UITableViewDataSource {
         }
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cellIdentifier = "cell"
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)
+        
+        var sectionView: JRCollapsibleTableViewHeader?
+        if self.sectionHeaderViewArray != nil {
+            if indexPath.section + 1 <= self.sectionHeaderViewArray!.count {
+                    sectionView = self.sectionHeaderViewArray![indexPath.section]
+                }
+        }
+        if cell == nil {
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
+            if sectionView != nil {
+                let array_xib = NSBundle.mainBundle().loadNibNamed("JRCollapsibleTableViewCell", owner: nil, options: nil)
+                if sectionView!.selectionStyle == JRCollapsibleTableViewHeaderSelectionStyle.Mutilple {
+                    cell = array_xib[0] as? JRCollapsibleTableViewCell
+                    (cell as? JRCollapsibleTableViewCell)!.setupView()
+                }
+            }
+        }
+        if sectionView != nil {
+            if sectionView!.selectionStyle == JRCollapsibleTableViewHeaderSelectionStyle.Mutilple {
+                sectionView!.selectingButton!.alpha = 1
+                (cell as? JRCollapsibleTableViewCell)!.setBeenSelected(sectionView!.isSelected)
+            } else {
+                sectionView!.selectingButton!.alpha = 0
+            }
+        }
+        return cell!
     }
 }
 //MARK: Extensions - Delegate
 extension  CollapsibleSectionTestingViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return 35
     }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 44
@@ -103,8 +130,10 @@ extension  CollapsibleSectionTestingViewController: UITableViewDelegate {
             if section + 1 <= self.sectionHeaderViewArray!.count {
                 return self.sectionHeaderViewArray![section]
             } else {
-                let tempHeaderView: JRCollapsibleTableViewHeader = JRCollapsibleTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.size.width, height: self.tableView(tableView, heightForHeaderInSection: section)), style: JRCollapsibleTableViewHeaderStyle.Value1)
-                
+                let tempHeaderView: JRCollapsibleTableViewHeader = JRCollapsibleTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.size.width, height: self.tableView(tableView, heightForHeaderInSection: section)), style: JRCollapsibleTableViewHeaderStyle.Value1, selectionStyle: JRCollapsibleTableViewHeaderSelectionStyle.Mutilple)
+                tempHeaderView.delegate = self
+                tempHeaderView.textLabel!.text = "左边"
+                tempHeaderView.detailTextLabel!.text = "右边"
                 self.sectionHeaderViewArray!.append(tempHeaderView)
                 return tempHeaderView
             }
@@ -127,6 +156,23 @@ extension CollapsibleSectionTestingViewController: JRCollapsibleTableViewHeaderD
         }
         self.tableView.reloadSections(NSIndexSet(index: theIndex), withRowAnimation: UITableViewRowAnimation.Automatic)
         //        }
+    }
+    func collapsibleSectionView(collapsibleSectionView: JRCollapsibleTableViewHeader, isToSelected: Bool) {
+//        self.collapsibleSectionView(collapsibleSectionView, isToExpand: collapsibleSectionView.isCollapsing)
+        if collapsibleSectionView.isCollapsing {
+            return
+        }
+        var theIndex: Int = 0
+        for (index, header) in self.sectionHeaderViewArray!.enumerate() {
+            if header === collapsibleSectionView {
+                theIndex = index
+                break
+            }
+        }
+        for row in 0..<self.tableView(self.tableView, numberOfRowsInSection: theIndex) {
+            let cell: JRCollapsibleTableViewCell = self.tableView.cellForRowAtIndexPath(NSIndexPath(forItem: row, inSection: theIndex)) as! JRCollapsibleTableViewCell
+            cell.setBeenSelected(isToSelected)
+        }
     }
 }
 //MARK: - Class

@@ -30,6 +30,8 @@
 		BB5A9F1D1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F1B1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		BB5A9F221BCF7D9600EE1EC7 /* JRCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F1F1BCF7D9600EE1EC7 /* JRCarouselView.swift */; settings = {ASSET_TAGS = (); }; };
 		BB5A9F231BCF7D9600EE1EC7 /* JRDualLinkageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F211BCF7D9600EE1EC7 /* JRDualLinkageView.swift */; settings = {ASSET_TAGS = (); }; };
+		BB5A9F261BCF967100EE1EC7 /* JRCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F241BCF967000EE1EC7 /* JRCollapsibleTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		BB5A9F271BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F251BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		BB693D5E1BC75D0200C2AC8F /* JRNetworkingIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB693D5D1BC75D0200C2AC8F /* JRNetworkingIOManager.swift */; };
 		BB693D601BC75D5900C2AC8F /* JRNetworkingApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB693D5F1BC75D5900C2AC8F /* JRNetworkingApiManager.swift */; };
 		BB8FDF0B1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */; settings = {ASSET_TAGS = (); }; };
@@ -87,6 +89,8 @@
 		BB5A9F1B1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselTestingViewController.xib; sourceTree = "<group>"; };
 		BB5A9F1F1BCF7D9600EE1EC7 /* JRCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCarouselView.swift; sourceTree = "<group>"; };
 		BB5A9F211BCF7D9600EE1EC7 /* JRDualLinkageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageView.swift; sourceTree = "<group>"; };
+		BB5A9F241BCF967000EE1EC7 /* JRCollapsibleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		BB5A9F251BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRCollapsibleTableViewCell.xib; sourceTree = "<group>"; };
 		BB693D5D1BC75D0200C2AC8F /* JRNetworkingIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRNetworkingIOManager.swift; sourceTree = "<group>"; };
 		BB693D5F1BC75D5900C2AC8F /* JRNetworkingApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRNetworkingApiManager.swift; sourceTree = "<group>"; };
 		BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
@@ -289,6 +293,8 @@
 			isa = PBXGroup;
 			children = (
 				BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */,
+				BB5A9F241BCF967000EE1EC7 /* JRCollapsibleTableViewCell.swift */,
+				BB5A9F251BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib */,
 			);
 			path = JRCollapsibleSection;
 			sourceTree = "<group>";
@@ -547,6 +553,7 @@
 				BB1BA5D61BCB4A0500FF6C1F /* SignInViewController.xib in Resources */,
 				BB5A9F181BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib in Resources */,
 				BB1BA5E11BCB4A8900FF6C1F /* SignUpViewController.xib in Resources */,
+				BB5A9F271BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib in Resources */,
 				BB5A9F1D1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib in Resources */,
 				BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */,
 			);
@@ -607,6 +614,7 @@
 				BB693D601BC75D5900C2AC8F /* JRNetworkingApiManager.swift in Sources */,
 				BB36F5691BCCF12E008FB9A0 /* JRDualLinkageViewController.swift in Sources */,
 				BB1BA5D11BCB461700FF6C1F /* RootViewController.swift in Sources */,
+				BB5A9F261BCF967100EE1EC7 /* JRCollapsibleTableViewCell.swift in Sources */,
 				BB9AB73D1BC6006700531514 /* Log.swift in Sources */,
 				BB9AB7421BC601E500531514 /* JRNetworkingProtocol.swift in Sources */,
 				BB9AB73F1BC6006700531514 /* Tool.swift in Sources */,

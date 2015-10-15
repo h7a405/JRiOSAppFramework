@@ -26,7 +26,7 @@ enum JRCollapsibleTableViewHeaderSelectionStyle {
 //MARK: Header - Protocols
 @objc protocol JRCollapsibleTableViewHeaderDelegate: NSObjectProtocol {
     optional func collapsibleSectionView(collapsibleSectionView: JRCollapsibleTableViewHeader, isToExpand: Bool)
-    optional func collapsibleSectionView(collapsibleSectionVIew: JRCollapsibleTableViewHeader, isToSelected: Bool)
+    optional func collapsibleSectionView(collapsibleSectionView: JRCollapsibleTableViewHeader, isToSelected: Bool)
 }
 
 //MARK: - Class
@@ -34,8 +34,8 @@ enum JRCollapsibleTableViewHeaderSelectionStyle {
 class JRCollapsibleTableViewHeader: UIView {
     //MARK: - Parameter
     //MARK: - Parameters - Constant
-    let multipleSelectedColor: UIColor = UIColor.whiteColor()
-    let multipleUnSelectedColor: UIColor = UIColor.LuoTianYi()
+    let multipleSelectedColor: UIColor = UIColor.orangeColor()
+    let multipleUnSelectedColor: UIColor = UIColor.whiteColor()
     
     let indicatorCollapsingString: String = String("+")
     let indicatorExpandingString: String = String("-")
@@ -75,9 +75,12 @@ class JRCollapsibleTableViewHeader: UIView {
         super.init(coder: aDecoder)
     }
     //MARK: - Methods - Initation
-    convenience init(frame: CGRect, style: JRCollapsibleTableViewHeaderStyle) {
+    convenience init(frame: CGRect, style: JRCollapsibleTableViewHeaderStyle, selectionStyle: JRCollapsibleTableViewHeaderSelectionStyle = JRCollapsibleTableViewHeaderSelectionStyle.Single) {
         self.init(frame: frame)
         self.style = style
+        if selectionStyle != JRCollapsibleTableViewHeaderSelectionStyle.Single {
+            self.selectionStyle = selectionStyle
+        }
         self.setupView()
     }
     //MARK: - Methods - Class(Static)
@@ -159,10 +162,10 @@ class JRCollapsibleTableViewHeader: UIView {
             }
         } else {
             self.indicatorButton!.backgroundColor = UIColor.whiteColor()
-            self.indicatorButton!.layer.masksToBounds = true
-            self.indicatorButton!.layer.cornerRadius = self.indicatorButton!.widthOfFrame / 2
-            self.indicatorButton!.layer.borderWidth = 1
-            self.indicatorButton!.layer.borderColor = UIColor.silverColor().CGColor
+//            self.indicatorButton!.layer.masksToBounds = true
+//            self.indicatorButton!.layer.cornerRadius = self.indicatorButton!.widthOfFrame / 2
+//            self.indicatorButton!.layer.borderWidth = 1
+//            self.indicatorButton!.layer.borderColor = UIColor.lightGrayColor().CGColor
             if self.isCollapsing {
                 UIView.animateWithDuration(0.2, animations: {()
                     self.indicatorButton!.setTitle(self.indicatorCollapsingString, forState: UIControlState.Normal)
@@ -172,6 +175,7 @@ class JRCollapsibleTableViewHeader: UIView {
                     self.indicatorButton!.setTitle(self.indicatorExpandingString, forState: UIControlState.Normal)
                 })
             }
+            self.indicatorButton!.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal)
         }
         
         if self.textLabel == nil {
@@ -197,7 +201,7 @@ class JRCollapsibleTableViewHeader: UIView {
                 self.selectingButton!.layer.masksToBounds = true
                 self.selectingButton!.layer.cornerRadius = self.selectingButton!.widthOfFrame / 2
                 self.selectingButton!.layer.borderWidth = 1
-                self.selectingButton!.layer.borderColor = UIColor.silverColor().CGColor
+                self.selectingButton!.layer.borderColor = UIColor.lightGrayColor().CGColor
             }
         } else {
             
@@ -215,18 +219,18 @@ class JRCollapsibleTableViewHeader: UIView {
         
         self.indicatorButton!.frame.origin.x = self.widthOfFrame - self.indicatorButton!.widthOfFrame - 5
         
-        var centerWidth: CGFloat = self.widthOfFrame - self.indicatorButton!.xCoordinate
+        var centerWidth: CGFloat = self.indicatorButton!.xCoordinate
         if self.selectionStyle == JRCollapsibleTableViewHeaderSelectionStyle.Mutilple {
             centerWidth -= CGRectGetMaxX(self.selectingButton!.frame)
-            self.textLabel!.frame.origin.x = CGRectGetMaxX(self.selectingButton!.frame)
+            self.textLabel!.frame.origin.x = CGRectGetMaxX(self.selectingButton!.frame) + 5
         } else {
-            self.textLabel!.frame.origin.x = 5
+            self.textLabel!.frame.origin.x = 10
         }
         
         if self.style == JRCollapsibleTableViewHeaderStyle.Value1 {
             self.textLabel!.frame.size.width = centerWidth / 2
             self.detailTextLabel!.frame.size.width = centerWidth / 2
-            self.detailTextLabel!.frame.origin.x = CGRectGetMaxX(self.textLabel!.frame)
+            self.detailTextLabel!.frame.origin.x = CGRectGetMaxX(self.textLabel!.frame) - 10
         } else {
             self.textLabel!.frame.size.width = centerWidth
         }
