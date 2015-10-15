@@ -22,13 +22,13 @@ class TabBarViewController: UITabBarController {
     }
     
     func setupViewControllers() {
-        let firstNavigationController: UINavigationController = UINavigationController(rootViewController: UIViewController())
-        firstNavigationController.tabBarItem.title = "第一页"
+        let testNavigationController: UINavigationController = UINavigationController(rootViewController: TestingViewController())
+        testNavigationController.tabBarItem.title = "控件Demo"
         let secondNavigationController: UINavigationController = UINavigationController(rootViewController: UIViewController())
         secondNavigationController.tabBarItem.title = "第二页"
         let settingNavigationController: UINavigationController = UINavigationController(rootViewController: SettingViewController())
         settingNavigationController.tabBarItem.title = "设置"
-        self.setupTabBarController(firstNavigationController, secondNavigationController, settingNavigationController)
+        self.setupTabBarController(testNavigationController, secondNavigationController, settingNavigationController)
     }
     
     func setupTabBarController(navigationControllers: UIViewController...) {

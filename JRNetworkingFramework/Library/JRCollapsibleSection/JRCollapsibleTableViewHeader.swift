@@ -148,7 +148,7 @@ class JRCollapsibleTableViewHeader: UIView {
         
         if self.indicatorButton == nil {
             self.indicatorButton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-            self.indicatorButton!.frame.origin.y = self.centerVertical(self.selectingButton!).origin.y
+            self.indicatorButton!.frame.origin.y = self.centerVertical(self.indicatorButton!).origin.y
             self.indicatorButton!.userInteractionEnabled = false
         }
         if self.collapsingImage != nil && self.expandingImage != nil {

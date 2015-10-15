@@ -23,8 +23,13 @@
 		BB36F5551BCC9E63008FB9A0 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB36F5531BCC9E62008FB9A0 /* SettingViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		BB36F55E1BCCD7B6008FB9A0 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F55C1BCCD7B6008FB9A0 /* TestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BB36F55F1BCCD7B6008FB9A0 /* TestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB36F55D1BCCD7B6008FB9A0 /* TestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB36F5671BCCDCDF008FB9A0 /* JRDualLinkageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F5661BCCDCDF008FB9A0 /* JRDualLinkageView.swift */; settings = {ASSET_TAGS = (); }; };
 		BB36F5691BCCF12E008FB9A0 /* JRDualLinkageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F5681BCCF12E008FB9A0 /* JRDualLinkageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BB5A9F171BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F151BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BB5A9F181BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F161BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		BB5A9F1C1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F1A1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BB5A9F1D1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F1B1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		BB5A9F221BCF7D9600EE1EC7 /* JRCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F1F1BCF7D9600EE1EC7 /* JRCarouselView.swift */; settings = {ASSET_TAGS = (); }; };
+		BB5A9F231BCF7D9600EE1EC7 /* JRDualLinkageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F211BCF7D9600EE1EC7 /* JRDualLinkageView.swift */; settings = {ASSET_TAGS = (); }; };
 		BB693D5E1BC75D0200C2AC8F /* JRNetworkingIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB693D5D1BC75D0200C2AC8F /* JRNetworkingIOManager.swift */; };
 		BB693D601BC75D5900C2AC8F /* JRNetworkingApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB693D5F1BC75D5900C2AC8F /* JRNetworkingApiManager.swift */; };
 		BB8FDF0B1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */; settings = {ASSET_TAGS = (); }; };
@@ -75,8 +80,13 @@
 		BB36F5531BCC9E62008FB9A0 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		BB36F55C1BCCD7B6008FB9A0 /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
 		BB36F55D1BCCD7B6008FB9A0 /* TestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestingViewController.xib; sourceTree = "<group>"; };
-		BB36F5661BCCDCDF008FB9A0 /* JRDualLinkageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageView.swift; sourceTree = "<group>"; };
 		BB36F5681BCCF12E008FB9A0 /* JRDualLinkageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageViewController.swift; sourceTree = "<group>"; };
+		BB5A9F151BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleSectionTestingViewController.swift; sourceTree = "<group>"; };
+		BB5A9F161BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollapsibleSectionTestingViewController.xib; sourceTree = "<group>"; };
+		BB5A9F1A1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselTestingViewController.swift; sourceTree = "<group>"; };
+		BB5A9F1B1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselTestingViewController.xib; sourceTree = "<group>"; };
+		BB5A9F1F1BCF7D9600EE1EC7 /* JRCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCarouselView.swift; sourceTree = "<group>"; };
+		BB5A9F211BCF7D9600EE1EC7 /* JRDualLinkageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageView.swift; sourceTree = "<group>"; };
 		BB693D5D1BC75D0200C2AC8F /* JRNetworkingIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRNetworkingIOManager.swift; sourceTree = "<group>"; };
 		BB693D5F1BC75D5900C2AC8F /* JRNetworkingApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRNetworkingApiManager.swift; sourceTree = "<group>"; };
 		BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
@@ -224,20 +234,55 @@
 		BB36F55B1BCCD79B008FB9A0 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				BB36F5651BCCDCBF008FB9A0 /* JRDualLinkageView */,
+				BB5A9F191BCF7CCE00EE1EC7 /* CarouselTest */,
+				BB5A9F141BCF7C9500EE1EC7 /* CollapsibleSectionTest */,
+				BB36F5651BCCDCBF008FB9A0 /* DualLinkageTest */,
 				BB36F55C1BCCD7B6008FB9A0 /* TestingViewController.swift */,
 				BB36F55D1BCCD7B6008FB9A0 /* TestingViewController.xib */,
-				BB36F5681BCCF12E008FB9A0 /* JRDualLinkageViewController.swift */,
 			);
 			name = Testing;
 			sourceTree = "<group>";
 		};
-		BB36F5651BCCDCBF008FB9A0 /* JRDualLinkageView */ = {
+		BB36F5651BCCDCBF008FB9A0 /* DualLinkageTest */ = {
 			isa = PBXGroup;
 			children = (
-				BB36F5661BCCDCDF008FB9A0 /* JRDualLinkageView.swift */,
+				BB36F5681BCCF12E008FB9A0 /* JRDualLinkageViewController.swift */,
 			);
-			name = JRDualLinkageView;
+			name = DualLinkageTest;
+			sourceTree = "<group>";
+		};
+		BB5A9F141BCF7C9500EE1EC7 /* CollapsibleSectionTest */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A9F151BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift */,
+				BB5A9F161BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib */,
+			);
+			name = CollapsibleSectionTest;
+			sourceTree = "<group>";
+		};
+		BB5A9F191BCF7CCE00EE1EC7 /* CarouselTest */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A9F1A1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift */,
+				BB5A9F1B1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib */,
+			);
+			name = CarouselTest;
+			sourceTree = "<group>";
+		};
+		BB5A9F1E1BCF7D9600EE1EC7 /* JRCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A9F1F1BCF7D9600EE1EC7 /* JRCarouselView.swift */,
+			);
+			path = JRCarousel;
+			sourceTree = "<group>";
+		};
+		BB5A9F201BCF7D9600EE1EC7 /* JRDualLinkage */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A9F211BCF7D9600EE1EC7 /* JRDualLinkageView.swift */,
+			);
+			path = JRDualLinkage;
 			sourceTree = "<group>";
 		};
 		BB8FDF091BCE2ABC00AC6D0B /* JRCollapsibleSection */ = {
@@ -261,6 +306,8 @@
 		BB9AB7321BC6006700531514 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				BB5A9F1E1BCF7D9600EE1EC7 /* JRCarousel */,
+				BB5A9F201BCF7D9600EE1EC7 /* JRDualLinkage */,
 				BB8FDF091BCE2ABC00AC6D0B /* JRCollapsibleSection */,
 			);
 			path = Library;
@@ -498,7 +545,9 @@
 				BB36F55F1BCCD7B6008FB9A0 /* TestingViewController.xib in Resources */,
 				BB36F5551BCC9E63008FB9A0 /* SettingViewController.xib in Resources */,
 				BB1BA5D61BCB4A0500FF6C1F /* SignInViewController.xib in Resources */,
+				BB5A9F181BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib in Resources */,
 				BB1BA5E11BCB4A8900FF6C1F /* SignUpViewController.xib in Resources */,
+				BB5A9F1D1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib in Resources */,
 				BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,17 +610,20 @@
 				BB9AB73D1BC6006700531514 /* Log.swift in Sources */,
 				BB9AB7421BC601E500531514 /* JRNetworkingProtocol.swift in Sources */,
 				BB9AB73F1BC6006700531514 /* Tool.swift in Sources */,
+				BB5A9F1C1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift in Sources */,
 				BB8FDF0B1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift in Sources */,
 				BB693D5E1BC75D0200C2AC8F /* JRNetworkingIOManager.swift in Sources */,
 				BB1BA5E41BCB4D4900FF6C1F /* GuideViewController.swift in Sources */,
-				BB36F5671BCCDCDF008FB9A0 /* JRDualLinkageView.swift in Sources */,
 				BB1BA5E01BCB4A8900FF6C1F /* SignUpViewController.swift in Sources */,
 				BBAF65631BC0C12100CA709A /* AppDelegate.swift in Sources */,
+				BB5A9F231BCF7D9600EE1EC7 /* JRDualLinkageView.swift in Sources */,
 				BB9AB7461BC606E800531514 /* JRNetworkingConstant.swift in Sources */,
 				BB1BA5DC1BCB4A7200FF6C1F /* ResetPasswordViewController.swift in Sources */,
 				BB36F5541BCC9E63008FB9A0 /* SettingViewController.swift in Sources */,
 				BB9AB73C1BC6006700531514 /* Extension.swift in Sources */,
+				BB5A9F171BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift in Sources */,
 				BB9AB73E1BC6006700531514 /* Math.swift in Sources */,
+				BB5A9F221BCF7D9600EE1EC7 /* JRCarouselView.swift in Sources */,
 				BB36F55E1BCCD7B6008FB9A0 /* TestingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
