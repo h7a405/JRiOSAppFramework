@@ -312,35 +312,6 @@ extension JRCarouselView {
 }
 //MARK: Extensions - Implements
 extension JRCarouselView: UIScrollViewDelegate {
-//    func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
-////        let offset: CGPoint = scrollView.contentOffset
-////        var currentIndex = self.selectedIndex
-//////        if offset.x > scrollView.frame.size.width {
-//////            currentIndex = (currentIndex + 1) % self.contents!.count
-//////        } else if offset.x < scrollView.frame.size.width {
-//////            currentIndex = (currentIndex - 1) % self.contents!.count
-//////        }
-////        for index in 0..<self.contents!.count {
-////            if offset.x > CGFloat(index) * self.scrollView!.frame.size.width && offset.x < CGFloat(index + 1) * self.scrollView!.frame.size.width {
-////                currentIndex = index
-////                break
-////            }
-////        }
-////        self.setSelectTo(currentIndex)
-//        
-//    }
-//    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-//        let offset: CGPoint = scrollView.contentOffset
-//        let currentIndex = self.selectedIndex
-//        if offset.x > CGFloat(currentIndex) * self.scrollView!.frame.size.width {
-//            self.setSelectTo(currentIndex + 1)
-//        } else {
-//            self.setSelectTo(currentIndex - 1)
-//        }
-//    }
-    func scrollViewDidScroll(scrollView: UIScrollView) {
-        
-    }
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let offset: CGPoint = scrollView.contentOffset
         let currentIndex: Int = self.selectedIndex
