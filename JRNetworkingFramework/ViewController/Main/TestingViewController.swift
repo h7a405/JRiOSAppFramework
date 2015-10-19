@@ -22,18 +22,23 @@ class TestingViewController: UIViewController {
     let titleForSections: [String] = [
         "折叠/多选的表格视图",
         "视图的轮播",
-        "多级联动"
+        "多级联动",
+        "下拉菜单",
+        "伪浏览器"
     ]
     let titleForRows: [[String]] = [
         ["折叠表格视图"],
         ["图片视图轮播"],
-        ["多级视图联动（仿美团外卖）"]
+        ["多级视图联动（仿美团外卖）"],
+        ["单个列表下拉菜单"],
+        ["伪浏览器！"]
     ]
-    let viewControllersForRows: [[UIViewController]] = [
-        [CollapsibleSectionTestingViewController()],
-        [CarouselTestingViewController()],
-        [JRDualLinkageViewController()]
-    ]
+//    let viewControllersForRows: [[UIViewController]] = [
+//        [CollapsibleSectionTestingViewController()],
+//        [CarouselTestingViewController()],
+//        [JRDualLinkageViewController()],
+//        [DropdownMenuTestViewController()]
+//    ]
     //MARK: Parameters - Basic
     //MARK: Parameters - Foundation
     //MARK: Parameters - UIKit
@@ -45,8 +50,6 @@ class TestingViewController: UIViewController {
     //MARK: Methods - Override
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -82,6 +85,10 @@ extension TestingViewController {
             instance = CarouselTestingViewController()
         case 2:
             instance = JRDualLinkageViewController()
+        case 3:
+            instance = DropdownMenuTestViewController()
+        case 4:
+            instance = WebViewTestViewController()
         default:
             break
         }

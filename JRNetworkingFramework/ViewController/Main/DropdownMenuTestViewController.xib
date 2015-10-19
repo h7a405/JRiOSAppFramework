@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropdownMenuTestViewController" customModule="JRNetworkingFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spw-2P-OZe">
+                    <rect key="frame" x="255" y="285" width="90" height="30"/>
+                    <animations/>
+                    <state key="normal" title="显示下拉菜单"/>
+                    <connections>
+                        <action selector="didButtonClicked:" destination="-1" eventType="touchUpInside" id="8Y2-fO-mih"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAq-tg-J9Z">
+                    <rect key="frame" x="251" y="346" width="99" height="30"/>
+                    <animations/>
+                    <state key="normal" title="显示下拉菜单2"/>
+                    <connections>
+                        <action selector="didButton2Clicked:" destination="-1" eventType="touchUpInside" id="yvB-2D-bZx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Spw-2P-OZe" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="12s-Ad-3tv"/>
+                <constraint firstItem="FAq-tg-J9Z" firstAttribute="top" secondItem="Spw-2P-OZe" secondAttribute="bottom" constant="31" id="FId-Ug-ZbY"/>
+                <constraint firstItem="FAq-tg-J9Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JHk-Ea-Igg"/>
+                <constraint firstItem="Spw-2P-OZe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="egH-QN-RQV"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
