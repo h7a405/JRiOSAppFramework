@@ -34,11 +34,11 @@ class JRRadioButtonGroup: NSObject {
     //MARK: Methods - Required
     //MARK: Methods - Convenience
     convenience init(radioButtons: JRRadioButton...) {
+        self.init(radioButtons: radioButtons)
+    }
+    convenience init(radioButtons: [JRRadioButton]?) {
         self.init()
-        self.radioButtonArray = Array()
-        for radioButton in radioButtons {
-            self.radioButtonArray!.append(radioButton)
-        }
+        self.radioButtonArray = radioButtons
     }
     //MARK: Methods - Other
 }

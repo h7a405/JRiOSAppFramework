@@ -15,9 +15,6 @@ class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        let rightBarButtonItem: UIBarButtonItem = UIBarButtonItem(title: "Linkage", style: UIBarButtonItemStyle.Done, target: self, action: "didRightBarButtonItemClicked:")
-        self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,13 +32,6 @@ class SettingViewController: UIViewController {
         let nibNameOrNil = String?("SettingViewController")
         self.init(nibName: nibNameOrNil, bundle: nil)
     }
-    
-    func didRightBarButtonItemClicked(sender: AnyObject) {
-        let instance = JRDualLinkageViewController()
-        instance.hidesBottomBarWhenPushed = true
-        self.navigationController!.pushViewController(instance, animated: true)
-    }
-
 }
 //MARK: - Classes - Extension
 //MARK: - Extensions - DataSource

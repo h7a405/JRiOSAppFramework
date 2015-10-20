@@ -39,8 +39,6 @@
 		BB50B2E21BD4D4A300C499D2 /* JRGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2CA1BD4D4A300C499D2 /* JRGridView.swift */; settings = {ASSET_TAGS = (); }; };
 		BB50B2E31BD4D4A300C499D2 /* JRGridViewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2CB1BD4D4A300C499D2 /* JRGridViewTile.swift */; settings = {ASSET_TAGS = (); }; };
 		BB50B2E41BD4D4A300C499D2 /* JRPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2CD1BD4D4A300C499D2 /* JRPhotoBrowser.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2E51BD4D4A300C499D2 /* PopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2D01BD4D4A300C499D2 /* PopWindow.m */; settings = {ASSET_TAGS = (); }; };
-		BB50B2E61BD4D4A300C499D2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2D11BD4D4A300C499D2 /* README.md */; settings = {ASSET_TAGS = (); }; };
 		BB50B2E81BD4D4A300C499D2 /* JRPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2D51BD4D4A300C499D2 /* JRPickerView.swift */; settings = {ASSET_TAGS = (); }; };
 		BB50B2E91BD4D4A300C499D2 /* JRWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2D71BD4D4A300C499D2 /* JRWebViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BB50B2EA1BD4D4A300C499D2 /* JRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50B2D81BD4D4A300C499D2 /* JRWebViewController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -76,6 +74,8 @@
 		BBC8A6381BD5E97C0061814A /* CalendarViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A6361BD5E97C0061814A /* CalendarViewTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		BBC8A6401BD60EE90061814A /* PhotoBrowserTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A63E1BD60EE90061814A /* PhotoBrowserTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		BBC8A6411BD60EE90061814A /* PhotoBrowserTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A63F1BD60EE90061814A /* PhotoBrowserTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		BBC8A6451BD62D960061814A /* GridViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A6431BD62D960061814A /* GridViewTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BBC8A6461BD62D960061814A /* GridViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A6441BD62D960061814A /* GridViewTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		BBD50DAE1BCFAC9600C75736 /* JRRadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD50DAD1BCFAC9600C75736 /* JRRadioButtonGroup.swift */; settings = {ASSET_TAGS = (); }; };
 		BBD50DB01BCFACAC00C75736 /* JRRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD50DAF1BCFACAC00C75736 /* JRRadioButton.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -125,9 +125,6 @@
 		BB50B2CA1BD4D4A300C499D2 /* JRGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRGridView.swift; sourceTree = "<group>"; };
 		BB50B2CB1BD4D4A300C499D2 /* JRGridViewTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRGridViewTile.swift; sourceTree = "<group>"; };
 		BB50B2CD1BD4D4A300C499D2 /* JRPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRPhotoBrowser.swift; sourceTree = "<group>"; };
-		BB50B2CF1BD4D4A300C499D2 /* PopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopWindow.h; sourceTree = "<group>"; };
-		BB50B2D01BD4D4A300C499D2 /* PopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopWindow.m; sourceTree = "<group>"; };
-		BB50B2D11BD4D4A300C499D2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BB50B2D51BD4D4A300C499D2 /* JRPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRPickerView.swift; sourceTree = "<group>"; };
 		BB50B2D71BD4D4A300C499D2 /* JRWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRWebViewController.swift; sourceTree = "<group>"; };
 		BB50B2D81BD4D4A300C499D2 /* JRWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRWebViewController.xib; sourceTree = "<group>"; };
@@ -168,6 +165,8 @@
 		BBC8A6361BD5E97C0061814A /* CalendarViewTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewTestingViewController.xib; sourceTree = "<group>"; };
 		BBC8A63E1BD60EE90061814A /* PhotoBrowserTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserTestingViewController.swift; sourceTree = "<group>"; };
 		BBC8A63F1BD60EE90061814A /* PhotoBrowserTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBrowserTestingViewController.xib; sourceTree = "<group>"; };
+		BBC8A6431BD62D960061814A /* GridViewTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewTestingViewController.swift; sourceTree = "<group>"; };
+		BBC8A6441BD62D960061814A /* GridViewTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewTestingViewController.xib; sourceTree = "<group>"; };
 		BBD50DAD1BCFAC9600C75736 /* JRRadioButtonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRRadioButtonGroup.swift; sourceTree = "<group>"; };
 		BBD50DAF1BCFACAC00C75736 /* JRRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRRadioButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -293,6 +292,7 @@
 		BB36F55B1BCCD79B008FB9A0 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				BBC8A6421BD62D860061814A /* GridViewTest */,
 				BBC8A63D1BD60ED60061814A /* PhotoBrowserTest */,
 				BBC8A6341BD5E9620061814A /* CalendarViewTest */,
 				BB50B2EB1BD4D74D00C499D2 /* WebViewTest */,
@@ -362,16 +362,6 @@
 				BB50B2CD1BD4D4A300C499D2 /* JRPhotoBrowser.swift */,
 			);
 			path = JRPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		BB50B2CE1BD4D4A300C499D2 /* JRPopWindow */ = {
-			isa = PBXGroup;
-			children = (
-				BB50B2CF1BD4D4A300C499D2 /* PopWindow.h */,
-				BB50B2D01BD4D4A300C499D2 /* PopWindow.m */,
-				BB50B2D11BD4D4A300C499D2 /* README.md */,
-			);
-			path = JRPopWindow;
 			sourceTree = "<group>";
 		};
 		BB50B2D41BD4D4A300C499D2 /* JRSinglePickerView */ = {
@@ -460,7 +450,6 @@
 				BB50B2BF1BD4D4A300C499D2 /* JRCalendar */,
 				BB50B2C91BD4D4A300C499D2 /* JRGridView */,
 				BB50B2CC1BD4D4A300C499D2 /* JRPhotoBrowser */,
-				BB50B2CE1BD4D4A300C499D2 /* JRPopWindow */,
 				BB50B2D41BD4D4A300C499D2 /* JRSinglePickerView */,
 				BB50B2D61BD4D4A300C499D2 /* JRWebView */,
 				BB50B2B51BD494CE00C499D2 /* JRSingleDropdownMenu */,
@@ -627,6 +616,15 @@
 			name = PhotoBrowserTest;
 			sourceTree = "<group>";
 		};
+		BBC8A6421BD62D860061814A /* GridViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				BBC8A6431BD62D960061814A /* GridViewTestingViewController.swift */,
+				BBC8A6441BD62D960061814A /* GridViewTestingViewController.xib */,
+			);
+			name = GridViewTest;
+			sourceTree = "<group>";
+		};
 		BBD50DAC1BCFAC7C00C75736 /* JRRadioButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +728,7 @@
 				BB1BA5E51BCB4D4900FF6C1F /* GuideViewController.xib in Resources */,
 				BBC8A6381BD5E97C0061814A /* CalendarViewTestingViewController.xib in Resources */,
 				BB36F55F1BCCD7B6008FB9A0 /* TestingViewController.xib in Resources */,
+				BBC8A6461BD62D960061814A /* GridViewTestingViewController.xib in Resources */,
 				BB50B2DE1BD4D4A300C499D2 /* JRCalendarPickerView.xib in Resources */,
 				BB36F5551BCC9E63008FB9A0 /* SettingViewController.xib in Resources */,
 				BB1BA5D61BCB4A0500FF6C1F /* SignInViewController.xib in Resources */,
@@ -798,7 +797,6 @@
 				BB50B2E01BD4D4A300C499D2 /* JRMonthPicker.swift in Sources */,
 				BB9AB73B1BC6006700531514 /* Define.swift in Sources */,
 				BB50B2E81BD4D4A300C499D2 /* JRPickerView.swift in Sources */,
-				BB50B2E51BD4D4A300C499D2 /* PopWindow.m in Sources */,
 				BB1BA5E91BCB4E3100FF6C1F /* TabBarViewController.swift in Sources */,
 				BB693D601BC75D5900C2AC8F /* JRNetworkingApiManager.swift in Sources */,
 				BB50B2E21BD4D4A300C499D2 /* JRGridView.swift in Sources */,
@@ -837,7 +835,7 @@
 				BB50B2E91BD4D4A300C499D2 /* JRWebViewController.swift in Sources */,
 				BB50B2E31BD4D4A300C499D2 /* JRGridViewTile.swift in Sources */,
 				BB36F55E1BCCD7B6008FB9A0 /* TestingViewController.swift in Sources */,
-				BB50B2E61BD4D4A300C499D2 /* README.md in Sources */,
+				BBC8A6451BD62D960061814A /* GridViewTestingViewController.swift in Sources */,
 				BB50B2BD1BD4CEB200C499D2 /* DropdownMenuTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

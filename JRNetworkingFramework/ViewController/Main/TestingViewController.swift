@@ -26,16 +26,18 @@ class TestingViewController: UIViewController {
         "下拉菜单",
         "伪浏览器",
         "简单日历",
-        "图片浏览"
+        "图片浏览",
+        "表格视图"
     ]
     let titleForRows: [[String]] = [
         ["折叠表格视图（有多选）"],
         ["图片视图轮播（未完成）"],
         ["多级视图联动（仿美团外卖、未完成）"],
         ["单个列表下拉菜单（未完成）"],
-        ["伪浏览器！（放微信风格）"],
+        ["伪浏览器"],
         ["简单日历"],
-        ["浏览图片"]
+        ["浏览图片"],
+        ["表格视图"]
     ]
 //    let viewControllersForRows: [[UIViewController]] = [
 //        [CollapsibleSectionTestingViewController()],
@@ -54,6 +56,7 @@ class TestingViewController: UIViewController {
     //MARK: Methods - Override
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -97,6 +100,8 @@ extension TestingViewController {
             instance = CalendarViewTestingViewController()
         case 6:
             instance = PhotoBrowserTestingViewController()
+        case 7:
+            instance = GridViewTestingViewController()
         default:
             break
         }
