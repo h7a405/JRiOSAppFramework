@@ -109,7 +109,7 @@ class JRCalendarView: UIView, JRCalendarPickerViewDelegate {
     }
     
     func setupHeader() {
-        self.headerView.frame = CGRect(x: 0, y: CGRectGetHeight(self.titleView.frame), width: self.frame.size.width, height: 20)
+        self.headerView.frame = CGRect(x: 0, y: CGRectGetHeight(self.titleView.frame), width: self.frame.size.width, height: 25)
         
         let array_strings = ["日", "一", "二", "三", "四", "五", "六"]
         

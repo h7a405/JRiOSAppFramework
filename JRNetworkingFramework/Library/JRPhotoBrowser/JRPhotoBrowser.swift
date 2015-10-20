@@ -132,8 +132,12 @@ class JRPhotoBrowser: UIView {
         } else {
             message = "保存错误"
         }
-        let alert = UIAlertView(title: "提醒：", message: message, delegate: nil, cancelButtonTitle: "好的")
-        alert.show()
+//        let alert = UIAlertView(title: "提醒：", message: message, delegate: nil, cancelButtonTitle: "好的")
+//        let alert: UIAlertController = UIAlertController(title: "提醒：", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+//        let alertCancelAction: UIAlertAction = UIAlertAction(title: "好的", style: UIAlertActionStyle.Cancel, handler: nil)
+//        alert.addAction(alertCancelAction)
+//        
+        SVProgressHUD.showErrorWithStatus(message)
     }
     
     //MARK: - Methods - Operation

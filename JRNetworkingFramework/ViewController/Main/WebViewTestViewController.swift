@@ -14,11 +14,12 @@ class WebViewTestViewController: UIViewController {
     //MARK: Parameters - Basic
     //MARK: Parameters - Foundation
     //MARK: Parameters - UIKit
+    @IBOutlet weak var urlTextField: UITextField!
     //MARK: Parameters - Other
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        Tool.setNavigationBarUncovered(self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,9 +45,27 @@ class WebViewTestViewController: UIViewController {
 //MARK: Extensions - Operation & Action
 extension WebViewTestViewController {
     @IBAction func didButtonClicked(sender: AnyObject) {
-        let webView: JRWebViewController = JRWebViewController()
-        webView.theURL = "http://www.baidu.com"
-        self.navigationController!.pushViewController(webView, animated: true)
+        self.openWebView("http://www.baidu.com")
+    }
+    @IBAction func didGoButtonClicked(sender: AnyObject) {
+        if !self.urlTextField.isEmpty() {
+            var theURL = self.urlTextField.text!
+            if theURL.hasPrefix("http://") || theURL.hasPrefix("https://") {
+                
+            } else {
+                let tempURL = "http://" + theURL
+                theURL = tempURL
+            }
+            self.openWebView(theURL)
+        } else {
+            self.urlTextField.placeholder = "请先输入网址。"
+        }
+    }
+    
+    func openWebView(theURL: String) {
+        let instance: JRWebViewController = JRWebViewController()
+        instance.theURL = theURL
+        self.navigationController!.pushViewController(instance, animated: true)
     }
 }
 //MARK: Extensions - Getter / Setter

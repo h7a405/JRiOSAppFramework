@@ -24,14 +24,18 @@ class TestingViewController: UIViewController {
         "视图的轮播",
         "多级联动",
         "下拉菜单",
-        "伪浏览器"
+        "伪浏览器",
+        "简单日历",
+        "图片浏览"
     ]
     let titleForRows: [[String]] = [
-        ["折叠表格视图"],
-        ["图片视图轮播"],
-        ["多级视图联动（仿美团外卖）"],
-        ["单个列表下拉菜单"],
-        ["伪浏览器！"]
+        ["折叠表格视图（有多选）"],
+        ["图片视图轮播（未完成）"],
+        ["多级视图联动（仿美团外卖、未完成）"],
+        ["单个列表下拉菜单（未完成）"],
+        ["伪浏览器！（放微信风格）"],
+        ["简单日历"],
+        ["浏览图片"]
     ]
 //    let viewControllersForRows: [[UIViewController]] = [
 //        [CollapsibleSectionTestingViewController()],
@@ -89,6 +93,10 @@ extension TestingViewController {
             instance = DropdownMenuTestViewController()
         case 4:
             instance = WebViewTestViewController()
+        case 5:
+            instance = CalendarViewTestingViewController()
+        case 6:
+            instance = PhotoBrowserTestingViewController()
         default:
             break
         }

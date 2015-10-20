@@ -13,6 +13,8 @@ class JRDualLinkageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        Tool.setNavigationBarUncovered(self)
+        
         let linkageView: JRDualLinkageView = JRDualLinkageView(frame: self.view.frame, style: JRDualLinkageViewSelectingStyle.Single)
         linkageView.delegate = self
         linkageView.dataSource = self

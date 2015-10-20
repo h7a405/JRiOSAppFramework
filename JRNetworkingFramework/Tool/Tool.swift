@@ -55,6 +55,14 @@ class Tool {
         }
         userDefault.synchronize()
     }
+    //MARK: 设置避免navigationBar遮挡
+    class func setNavigationBarUncovered(viewController: UIViewController) {
+        if Tool.getIOSVersion() > 7 {
+            viewController.edgesForExtendedLayout = UIRectEdge.None
+            viewController.extendedLayoutIncludesOpaqueBars = false
+            viewController.modalPresentationCapturesStatusBarAppearance = false
+        }
+    }
     //MARK: - 获取字符串尺寸
     class func getContentSize(content: String, andFont font: UIFont) -> CGSize {
         let sizeOfContent: CGSize = NSString(string: content).sizeWithAttributes([NSFontAttributeName: font])

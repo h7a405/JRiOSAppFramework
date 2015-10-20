@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewTestViewController" customModule="JRNetworkingFramework" customModuleProvider="target">
             <connections>
+                <outlet property="urlTextField" destination="t6q-l3-CG5" id="9Xl-7e-Ur7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,20 +15,72 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTY-Tb-rGG">
-                    <rect key="frame" x="270" y="285" width="60" height="30"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9I-Xq-Vkc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t6q-l3-CG5">
+                            <rect key="frame" x="60" y="8" width="479" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="DAF-x7-ag2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjZ-eA-7uL">
+                            <rect key="frame" x="532" y="8" width="60" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ODB-8l-3Tx"/>
+                                <constraint firstAttribute="width" constant="60" id="vYh-RJ-hGH"/>
+                            </constraints>
+                            <state key="normal" title="Go!"/>
+                            <connections>
+                                <action selector="didGoButtonClicked:" destination="-1" eventType="touchUpInside" id="OOv-d5-zp4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTY-Tb-rGG">
+                            <rect key="frame" x="270" y="285" width="60" height="30"/>
+                            <animations/>
+                            <state key="normal" title="百度一下"/>
+                            <connections>
+                                <action selector="didButtonClicked:" destination="-1" eventType="touchUpInside" id="NyL-6U-yZJ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwv-w4-Lvd">
+                            <rect key="frame" x="8" y="8" width="55" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="fZe-a0-mP6"/>
+                                <constraint firstAttribute="width" constant="55" id="gfJ-pw-9UU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <animations/>
-                    <state key="normal" title="百度一下"/>
-                    <connections>
-                        <action selector="didButtonClicked:" destination="-1" eventType="touchUpInside" id="NyL-6U-yZJ"/>
-                    </connections>
-                </button>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pwv-w4-Lvd" firstAttribute="top" secondItem="t6q-l3-CG5" secondAttribute="top" id="1TP-M1-RMy"/>
+                        <constraint firstItem="TTY-Tb-rGG" firstAttribute="centerX" secondItem="D9I-Xq-Vkc" secondAttribute="centerX" id="IId-vw-UcF"/>
+                        <constraint firstItem="pwv-w4-Lvd" firstAttribute="leading" secondItem="D9I-Xq-Vkc" secondAttribute="leading" constant="8" id="Ja7-wn-wM7"/>
+                        <constraint firstAttribute="trailing" secondItem="AjZ-eA-7uL" secondAttribute="trailing" constant="8" id="K1t-f1-eJf"/>
+                        <constraint firstItem="t6q-l3-CG5" firstAttribute="top" secondItem="D9I-Xq-Vkc" secondAttribute="top" constant="8" id="WdC-l7-0k1"/>
+                        <constraint firstItem="AjZ-eA-7uL" firstAttribute="leading" secondItem="t6q-l3-CG5" secondAttribute="trailing" constant="-7" id="awz-j4-qTh"/>
+                        <constraint firstItem="AjZ-eA-7uL" firstAttribute="top" secondItem="t6q-l3-CG5" secondAttribute="top" id="rnS-ba-oX5"/>
+                        <constraint firstItem="TTY-Tb-rGG" firstAttribute="centerY" secondItem="D9I-Xq-Vkc" secondAttribute="centerY" id="swY-qK-A1n"/>
+                        <constraint firstItem="t6q-l3-CG5" firstAttribute="leading" secondItem="pwv-w4-Lvd" secondAttribute="trailing" constant="-3" id="uwC-mS-vQZ"/>
+                    </constraints>
+                </view>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="TTY-Tb-rGG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="YXl-zg-5RS"/>
-                <constraint firstItem="TTY-Tb-rGG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dd0-QB-e4V"/>
+                <constraint firstAttribute="bottom" secondItem="D9I-Xq-Vkc" secondAttribute="bottom" id="2ar-TL-Z26"/>
+                <constraint firstItem="D9I-Xq-Vkc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PJd-hp-Ftw"/>
+                <constraint firstItem="D9I-Xq-Vkc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VGA-YX-7Rq"/>
+                <constraint firstAttribute="trailing" secondItem="D9I-Xq-Vkc" secondAttribute="trailing" id="ceN-5h-z0f"/>
             </constraints>
         </view>
     </objects>

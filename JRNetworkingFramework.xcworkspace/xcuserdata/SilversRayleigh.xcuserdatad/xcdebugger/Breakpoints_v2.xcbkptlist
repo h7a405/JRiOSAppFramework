@@ -310,48 +310,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JRNetworkingFramework/Library/JRWebView/JRWebViewController.swift"
-            timestampString = "466939362.964911"
+            filePath = "JRNetworkingFramework/ViewController/Main/PhotoBrowserTestingViewController.swift"
+            timestampString = "467015663.485546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "webView(_:shouldStartLoadWithRequest:navigationType:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JRNetworkingFramework/Library/JRWebView/JRWebViewController.swift"
-            timestampString = "466939379.139973"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "webView(_:shouldStartLoadWithRequest:navigationType:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JRNetworkingFramework/Library/JRWebView/JRWebViewController.swift"
-            timestampString = "466939403.059254"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "webView(_:shouldStartLoadWithRequest:navigationType:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "didImageViewTouched(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

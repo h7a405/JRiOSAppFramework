@@ -14,9 +14,10 @@ class JRWebViewController: UIViewController {
     //MARK: Parameters - Basic
     var theURL: String = ""
     
-    var currentPageIndex: Int = Int(-1)
-    
     var isLoading: Bool = false
+    var isTabBarHidding: Bool = false
+    
+    var theLastScrollToLocation: CGPoint = CGPoint(x: 0, y: 0)
     //MARK: Parameters - Foundation
     //MARK: Parameters - UIKit
     @IBOutlet weak var headerView: UIView!
@@ -34,9 +35,20 @@ class JRWebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if Double(UIDevice.currentDevice().systemVersion) > 7.0 {
+            self.edgesForExtendedLayout = UIRectEdge.None
+            self.extendedLayoutIncludesOpaqueBars = false
+            self.modalPresentationCapturesStatusBarAppearance = false
+        }
+        
+        for view in self.webView.subviews {
+            if view.isKindOfClass(UIScrollView.self) {
+                (view as! UIScrollView).delegate = self
+            }
+        }
+        
         self.loadWebWithiURL(self.theURL)
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -62,9 +74,6 @@ extension JRWebViewController {
     @IBAction func didBackButtonClicked(sender: AnyObject) {
         self.webView.goBack()
     }
-    @IBAction func didForwardButtonClicked(sender: AnyObject) {
-        self.webView.goForward()
-    }
     @IBAction func didRefreshButtonClicked(sender: AnyObject) {
         if self.isLoading {
             self.webView.stopLoading()
@@ -73,6 +82,14 @@ extension JRWebViewController {
         }
     }
     @IBAction func didMoreButtonClicked(sender: AnyObject) {
+        let actionSheet = UIAlertController(title: "请选择您要进行的操作：", message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let actionSheetCancelAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil)
+        actionSheet.addAction(actionSheetCancelAction)
+        let safariOpenAction: UIAlertAction = UIAlertAction(title: "在Safari打开", style: UIAlertActionStyle.Default, handler: {(alertAction: UIAlertAction) in
+            UIApplication.sharedApplication().openURL(self.webView.request!.URL!)
+        })
+        actionSheet.addAction(safariOpenAction)
+        self.presentViewController(actionSheet, animated: true, completion: nil)
     }
     
     func loadWebWithiURL(url: String) {
@@ -81,6 +98,24 @@ extension JRWebViewController {
             let request: NSURLRequest = NSURLRequest(URL: URL!)
             self.webView.loadRequest(request)
         }
+    }
+    
+    func setTabBarHide(isToHide: Bool) {
+        if self.isTabBarHidding == isToHide {
+            return
+        }
+        var yToTransform: Float = 0
+        if isToHide {
+            yToTransform = 45
+        } else {
+            yToTransform = -45
+        }
+        UIView.animateWithDuration(0.2, animations: {()
+//            self.footerView.frame.origin.y += CGFloat(yToTransform)
+//            self.webView.frame.size.height += CGFloat(yToTransform)
+            self.footerView.transform = CGAffineTransformTranslate(self.footerView.transform, 0, CGFloat(yToTransform))
+        }, completion: nil)
+        self.isTabBarHidding = isToHide
     }
 }
 //MARK: Extensions - Getter / Setter
@@ -99,7 +134,7 @@ extension JRWebViewController: UIWebViewDelegate {
     func webViewDidStartLoad(webView: UIWebView) {
         self.isLoading = true
         
-        self.refreshButton.setTitle("X", forState: UIControlState.Normal)
+        self.refreshButton.setTitle("×", forState: UIControlState.Normal)
         
         self.progressBar.alpha = 1
         self.progressBar.backgroundColor = UIColor.orangeColor()
@@ -120,24 +155,42 @@ extension JRWebViewController: UIWebViewDelegate {
                 self.progressBar.alpha = 0
             })
         })
+        
+        if webView.canGoBack {
+            self.backButton.enabled = true
+        } else {
+            self.backButton.enabled = false
+        }
+        
+        if !self.isTabBarHidding {
+            self.setTabBarHide(true)
+        }
     }
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         switch navigationType {
         case .BackForward:
-            self.currentPageIndex--
-            self.forwardButton.enabled = true
+            break
         case .FormSubmitted, .FormResubmitted, .LinkClicked, .Other:
-            self.currentPageIndex++
-            self.forwardButton.enabled = false
+            break
         default:
             break
         }
-        if self.currentPageIndex == 0 {
-            self.backButton.enabled = false
-        } else {
-            self.backButton.enabled = true
-        }
         return true
+    }
+}
+extension JRWebViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        let currentScrollToLocation: CGPoint = scrollView.contentOffset
+        if currentScrollToLocation.y - self.theLastScrollToLocation.y > 20 {
+            if !self.isTabBarHidding {
+                self.setTabBarHide(true)
+            }
+        } else if self.theLastScrollToLocation.y - currentScrollToLocation.y > 20 {
+            if self.isTabBarHidding {
+                self.setTabBarHide(false)
+            }
+        }
+        self.theLastScrollToLocation = currentScrollToLocation
     }
 }
 //MARK: - Class

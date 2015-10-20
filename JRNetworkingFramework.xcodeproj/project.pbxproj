@@ -71,8 +71,11 @@
 		BBAF65631BC0C12100CA709A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF65621BC0C12100CA709A /* AppDelegate.swift */; };
 		BBAF65681BC0C12100CA709A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65661BC0C12100CA709A /* Main.storyboard */; };
 		BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65691BC0C12100CA709A /* Images.xcassets */; };
-		BBAF656D1BC0C12100CA709A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBAF656B1BC0C12100CA709A /* LaunchScreen.xib */; };
 		BBAF65791BC0C12100CA709A /* JRNetworkingFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF65781BC0C12100CA709A /* JRNetworkingFrameworkTests.swift */; };
+		BBC8A6371BD5E97C0061814A /* CalendarViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A6351BD5E97C0061814A /* CalendarViewTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BBC8A6381BD5E97C0061814A /* CalendarViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A6361BD5E97C0061814A /* CalendarViewTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		BBC8A6401BD60EE90061814A /* PhotoBrowserTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A63E1BD60EE90061814A /* PhotoBrowserTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BBC8A6411BD60EE90061814A /* PhotoBrowserTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A63F1BD60EE90061814A /* PhotoBrowserTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		BBD50DAE1BCFAC9600C75736 /* JRRadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD50DAD1BCFAC9600C75736 /* JRRadioButtonGroup.swift */; settings = {ASSET_TAGS = (); }; };
 		BBD50DB01BCFACAC00C75736 /* JRRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD50DAF1BCFACAC00C75736 /* JRRadioButton.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -158,10 +161,13 @@
 		BBAF65621BC0C12100CA709A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBAF65671BC0C12100CA709A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBAF65691BC0C12100CA709A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BBAF656C1BC0C12100CA709A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BBAF65721BC0C12100CA709A /* JRNetworkingFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRNetworkingFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAF65771BC0C12100CA709A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBAF65781BC0C12100CA709A /* JRNetworkingFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRNetworkingFrameworkTests.swift; sourceTree = "<group>"; };
+		BBC8A6351BD5E97C0061814A /* CalendarViewTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewTestingViewController.swift; sourceTree = "<group>"; };
+		BBC8A6361BD5E97C0061814A /* CalendarViewTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewTestingViewController.xib; sourceTree = "<group>"; };
+		BBC8A63E1BD60EE90061814A /* PhotoBrowserTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserTestingViewController.swift; sourceTree = "<group>"; };
+		BBC8A63F1BD60EE90061814A /* PhotoBrowserTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBrowserTestingViewController.xib; sourceTree = "<group>"; };
 		BBD50DAD1BCFAC9600C75736 /* JRRadioButtonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRRadioButtonGroup.swift; sourceTree = "<group>"; };
 		BBD50DAF1BCFACAC00C75736 /* JRRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRRadioButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -287,6 +293,8 @@
 		BB36F55B1BCCD79B008FB9A0 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				BBC8A63D1BD60ED60061814A /* PhotoBrowserTest */,
+				BBC8A6341BD5E9620061814A /* CalendarViewTest */,
 				BB50B2EB1BD4D74D00C499D2 /* WebViewTest */,
 				BB50B2BA1BD4CE9B00C499D2 /* DropdownMenuTest */,
 				BB5A9F191BCF7CCE00EE1EC7 /* CarouselTest */,
@@ -564,7 +572,6 @@
 				BBAF65621BC0C12100CA709A /* AppDelegate.swift */,
 				BBAF65661BC0C12100CA709A /* Main.storyboard */,
 				BBAF65691BC0C12100CA709A /* Images.xcassets */,
-				BBAF656B1BC0C12100CA709A /* LaunchScreen.xib */,
 				BBAF65601BC0C12100CA709A /* Supporting Files */,
 			);
 			path = JRNetworkingFramework;
@@ -600,6 +607,24 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BBC8A6341BD5E9620061814A /* CalendarViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				BBC8A6351BD5E97C0061814A /* CalendarViewTestingViewController.swift */,
+				BBC8A6361BD5E97C0061814A /* CalendarViewTestingViewController.xib */,
+			);
+			name = CalendarViewTest;
+			sourceTree = "<group>";
+		};
+		BBC8A63D1BD60ED60061814A /* PhotoBrowserTest */ = {
+			isa = PBXGroup;
+			children = (
+				BBC8A63E1BD60EE90061814A /* PhotoBrowserTestingViewController.swift */,
+				BBC8A63F1BD60EE90061814A /* PhotoBrowserTestingViewController.xib */,
+			);
+			name = PhotoBrowserTest;
 			sourceTree = "<group>";
 		};
 		BBD50DAC1BCFAC7C00C75736 /* JRRadioButton */ = {
@@ -703,11 +728,12 @@
 				BB50B2BE1BD4CEB200C499D2 /* DropdownMenuTestViewController.xib in Resources */,
 				BB9AB7601BC642D100531514 /* HttpViewController.xib in Resources */,
 				BB1BA5E51BCB4D4900FF6C1F /* GuideViewController.xib in Resources */,
-				BBAF656D1BC0C12100CA709A /* LaunchScreen.xib in Resources */,
+				BBC8A6381BD5E97C0061814A /* CalendarViewTestingViewController.xib in Resources */,
 				BB36F55F1BCCD7B6008FB9A0 /* TestingViewController.xib in Resources */,
 				BB50B2DE1BD4D4A300C499D2 /* JRCalendarPickerView.xib in Resources */,
 				BB36F5551BCC9E63008FB9A0 /* SettingViewController.xib in Resources */,
 				BB1BA5D61BCB4A0500FF6C1F /* SignInViewController.xib in Resources */,
+				BBC8A6411BD60EE90061814A /* PhotoBrowserTestingViewController.xib in Resources */,
 				BB5A9F181BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib in Resources */,
 				BB1BA5E11BCB4A8900FF6C1F /* SignUpViewController.xib in Resources */,
 				BB5A9F271BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib in Resources */,
@@ -768,6 +794,7 @@
 				BB50B2DF1BD4D4A300C499D2 /* JRCalendarView.swift in Sources */,
 				BB9AB75F1BC642D100531514 /* HttpViewController.swift in Sources */,
 				BB9AB76F1BC65C7A00531514 /* HttpTableViewCell.swift in Sources */,
+				BBC8A6401BD60EE90061814A /* PhotoBrowserTestingViewController.swift in Sources */,
 				BB50B2E01BD4D4A300C499D2 /* JRMonthPicker.swift in Sources */,
 				BB9AB73B1BC6006700531514 /* Define.swift in Sources */,
 				BB50B2E81BD4D4A300C499D2 /* JRPickerView.swift in Sources */,
@@ -800,6 +827,7 @@
 				BB36F5541BCC9E63008FB9A0 /* SettingViewController.swift in Sources */,
 				BB50B2B71BD495B500C499D2 /* JRSingleDropdownMenu.swift in Sources */,
 				BB9AB73C1BC6006700531514 /* Extension.swift in Sources */,
+				BBC8A6371BD5E97C0061814A /* CalendarViewTestingViewController.swift in Sources */,
 				BB50B2DA1BD4D4A300C499D2 /* JRCalendarDayModel.swift in Sources */,
 				BBD50DAE1BCFAC9600C75736 /* JRRadioButtonGroup.swift in Sources */,
 				BB5A9F171BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift in Sources */,
@@ -839,14 +867,6 @@
 				BBAF65671BC0C12100CA709A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BBAF656B1BC0C12100CA709A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBAF656C1BC0C12100CA709A /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -939,6 +959,7 @@
 			baseConfigurationReference = 53CD30C8E7354E6741C1495D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JRNetworkingFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
@@ -953,6 +974,7 @@
 			baseConfigurationReference = 043844D5E8C2F221A2212F79 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JRNetworkingFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "";
