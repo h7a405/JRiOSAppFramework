@@ -53,6 +53,16 @@ extension NSString {
     }
 }
 
+extension CALayer {
+    func borderUIColor() -> UIColor? {
+        return borderColor != nil ? UIColor(CGColor: borderColor!) : nil
+    }
+    
+    func setBorderUIColor(color: UIColor) {
+        borderColor = color.CGColor
+    }
+}
+
 //UIKit
 extension UIApplication {
     func mainWindow() -> UIWindow {

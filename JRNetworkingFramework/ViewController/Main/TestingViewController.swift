@@ -27,7 +27,8 @@ class TestingViewController: UIViewController {
         "伪浏览器",
         "简单日历",
         "图片浏览",
-        "表格视图"
+        "表格视图",
+        "阅读视图"
     ]
     let titleForRows: [[String]] = [
         ["折叠表格视图（有多选）"],
@@ -37,7 +38,8 @@ class TestingViewController: UIViewController {
         ["伪浏览器"],
         ["简单日历"],
         ["浏览图片"],
-        ["表格视图"]
+        ["表格视图"],
+        ["阅读视图"]
     ]
 //    let viewControllersForRows: [[UIViewController]] = [
 //        [CollapsibleSectionTestingViewController()],
@@ -56,7 +58,6 @@ class TestingViewController: UIViewController {
     //MARK: Methods - Override
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -102,6 +103,8 @@ extension TestingViewController {
             instance = PhotoBrowserTestingViewController()
         case 7:
             instance = GridViewTestingViewController()
+        case 8:
+            instance = ReadingViewTestingViewController()
         default:
             break
         }
@@ -126,6 +129,7 @@ extension TestingViewController: UITableViewDataSource {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
         }
         cell!.textLabel!.text = self.titleForRows[indexPath.section][indexPath.row]
+        
         return cell!
     }
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

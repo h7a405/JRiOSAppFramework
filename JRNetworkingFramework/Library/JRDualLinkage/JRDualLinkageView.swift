@@ -23,10 +23,10 @@ enum JRDualLinkageViewSelectingStyle {
 @objc protocol JRDualLinkageViewDataSource: NSObjectProtocol {
     func numberOfRowsInFirstLevel(linkageView: JRDualLinkageView) -> Int
     
-    func numberOfSectionsInSecondLevel(linkageView: JRDualLinkageView) -> Int
-    func linkageView(linkageView: JRDualLinkageView, numberOfRowsInSectionInSecondLevel section: Int) -> Int
+    func numberOfSectionsInSecondLevel(linkageView: JRDualLinkageView, index: Int) -> Int
+    func linkageView(linkageView: JRDualLinkageView, index: Int, numberOfRowsInSectionInSecondLevel section: Int) -> Int
     
-    optional func linkageView(linkageView: JRDualLinkageView, titleForHeaderInSectionInSecondLevel section: Int) -> String?
+    optional func linkageView(linkageView: JRDualLinkageView, index: Int, titleForHeaderInSectionInSecondLevel section: Int) -> String?
 }
 @objc protocol JRDualLinkageViewDelegate: NSObjectProtocol {
     
@@ -36,13 +36,13 @@ enum JRDualLinkageViewSelectingStyle {
     
     optional func linkageView(linkageView: JRDualLinkageView, didSelectRowAtIndexInFirstLevel index: Int)
     
-    optional func linkageView(linkageView: JRDualLinkageView, heightForHeaderInSectionInSecondLevel section: Int) -> Float
-    optional func linkageView(linkageView: JRDualLinkageView, heightForRowsAtIndexPathInSecondLevel indexPath: NSIndexPath) -> Float
-    optional func linkageView(linkageView: JRDualLinkageView, tableView: UITableView, cellForRowAtIndexPathInSecondLevel indexPath: NSIndexPath) -> UITableViewCell
+    optional func linkageView(linkageView: JRDualLinkageView, index: Int, heightForHeaderInSectionInSecondLevel section: Int) -> Float
+    optional func linkageView(linkageView: JRDualLinkageView, index: Int, heightForRowsAtIndexPathInSecondLevel indexPath: NSIndexPath) -> Float
+    optional func linkageView(linkageView: JRDualLinkageView, tableView: UITableView, index: Int, cellForRowAtIndexPathInSecondLevel indexPath: NSIndexPath) -> UITableViewCell
     
-    optional func linkageView(linkageView: JRDualLinkageView, viewForHeaderInSectionInSecondLevel section: Int) -> UIView?
+    optional func linkageView(linkageView: JRDualLinkageView, index: Int, viewForHeaderInSectionInSecondLevel section: Int) -> UIView?
     
-    optional func linkageView(linkageView: JRDualLinkageView, didSelectRowAtIndexPathInSecondLevel indexPath: NSIndexPath)
+    optional func linkageView(linkageView: JRDualLinkageView, index: Int, didSelectRowAtIndexPathInSecondLevel indexPath: NSIndexPath)
 }
 
 //MARK: - Class
@@ -55,6 +55,7 @@ class JRDualLinkageView: UIView {
     let heightOfRowsDefault: Float = 30
     //MARK: - Parameters - Basic
     var isTrebleLinkage: Bool = false
+    var currentSelectedIndex: Int = 0
     //MARK: - Parameters - Foundation
     //MARK: - Parameters - UIKit
     let firstLevelTableView: UITableView = UITableView(frame: CGRectZero, style: UITableViewStyle.Plain)
@@ -84,20 +85,18 @@ class JRDualLinkageView: UIView {
     //MARK: - Methods - Initation
     convenience init(frame: CGRect, style: JRDualLinkageViewSelectingStyle) {
         self.init()
+        
+        self.backgroundColor = UIColor.whiteColor()
+        
         self.frame = frame
         self.style = style
     }
-    //MARK: - Methods - Class(Static)
     
-    //MARK: - Methods - Selector
-    //MARK: Selectors - Gesture Recognizer
-    //MARK: Selectors - Action
-    //MARK: - Methods - Operation
-    //MARK: Operations - Go Operation
-    //MARK: Operations - Do Operation
-    //MARK: Operations - Show or Dismiss Operation
-    //MARK: Operations - Setup Operation
-    //MARK: Operations - Customed Operation
+    //MARK: - Methods - Getter
+    //MARK: - Methods - Setter
+}
+//MARK: - Classes - Extension
+extension JRDualLinkageView {
     func reloadData() {
         self.firstLevelTableView.removeFromSuperview()
         var widthOfFirstLevel: Float = self.widthOfEachLevelOnLeft
@@ -124,18 +123,18 @@ class JRDualLinkageView: UIView {
         self.addSubview(self.firstLevelTableView)
         self.addSubview(self.secondLevelTableView)
     }
-    //MARK: - Methods - Getter
-    //MARK: - Methods - Setter
+    
+    func reloadSecondLevel() {
+        self.secondLevelTableView.reloadData()
+    }
 }
-
-//MARK: - Classes - Extension
 //MARK: - Extensions - DataSource
 extension JRDualLinkageView: UITableViewDataSource {
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         if tableView === self.firstLevelTableView {
             return 1
         } else if tableView === self.secondLevelTableView {
-            return self.dataSource!.numberOfSectionsInSecondLevel(self)
+            return self.dataSource!.numberOfSectionsInSecondLevel(self, index: self.currentSelectedIndex)
         } else {
             return 0
         }
@@ -144,7 +143,7 @@ extension JRDualLinkageView: UITableViewDataSource {
         if tableView === self.firstLevelTableView {
             return self.dataSource!.numberOfRowsInFirstLevel(self)
         } else if tableView === self.secondLevelTableView {
-            return self.dataSource!.linkageView(self, numberOfRowsInSectionInSecondLevel: section)
+            return self.dataSource!.linkageView(self, index: self.currentSelectedIndex, numberOfRowsInSectionInSecondLevel: section)
         } else {
             return 0
         }
@@ -166,8 +165,8 @@ extension JRDualLinkageView: UITableViewDataSource {
                 return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
             }
         } else if tableView === self.secondLevelTableView {
-            if self.delegate!.respondsToSelector("linkageView:tableView:cellForRowAtIndexPathInSecondLevel:") {
-                let cellToReturn = self.delegate!.linkageView!(self, tableView: tableView, cellForRowAtIndexPathInSecondLevel: indexPath)
+            if self.delegate!.respondsToSelector("linkageView:tableView:index:cellForRowAtIndexPathInSecondLevel:") {
+                let cellToReturn = self.delegate!.linkageView!(self, tableView: tableView, index: self.currentSelectedIndex, cellForRowAtIndexPathInSecondLevel: indexPath)
                 cellToReturn.textLabel!.font = UIFont.systemFontOfSize(13)
                 return cellToReturn
             } else {
@@ -180,8 +179,8 @@ extension JRDualLinkageView: UITableViewDataSource {
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if tableView === self.secondLevelTableView {
-            if self.dataSource!.respondsToSelector("linkageView:titleForHeaderInSectionInSecondLevel:") {
-                return self.dataSource!.linkageView!(self, titleForHeaderInSectionInSecondLevel: section)
+            if self.dataSource!.respondsToSelector("linkageView:index:titleForHeaderInSectionInSecondLevel:") {
+                return self.dataSource!.linkageView!(self, index:self.currentSelectedIndex, titleForHeaderInSectionInSecondLevel: section)
             } else {
                 return nil
             }
@@ -197,8 +196,8 @@ extension  JRDualLinkageView: UITableViewDelegate {
             return 0
         }
         if tableView === self.secondLevelTableView {
-            if self.delegate!.respondsToSelector("linkageView:heightForHeaderInSectionInSecondLevel:") {
-                return CGFloat(self.delegate!.linkageView!(self, heightForHeaderInSectionInSecondLevel: section))
+            if self.delegate!.respondsToSelector("linkageView:index:heightForHeaderInSectionInSecondLevel:") {
+                return CGFloat(self.delegate!.linkageView!(self, index: self.currentSelectedIndex, heightForHeaderInSectionInSecondLevel: section))
             } else {
                 return 0
             }
@@ -218,8 +217,8 @@ extension  JRDualLinkageView: UITableViewDelegate {
                 return CGFloat(self.heightOfRowsDefault)
             }
         } else if tableView === self.secondLevelTableView {
-            if self.delegate!.respondsToSelector("linkageView:heightForRowsAtIndexPathInSecondLevel:") {
-                return CGFloat(self.delegate!.linkageView!(self, heightForRowsAtIndexPathInSecondLevel: indexPath))
+            if self.delegate!.respondsToSelector("linkageView:index:heightForRowsAtIndexPathInSecondLevel:") {
+                return CGFloat(self.delegate!.linkageView!(self, index: self.currentSelectedIndex, heightForRowsAtIndexPathInSecondLevel: indexPath))
             } else {
                 return CGFloat(self.heightOfRowsDefault)
             }
@@ -233,8 +232,8 @@ extension  JRDualLinkageView: UITableViewDelegate {
             return nil
         }
         if tableView === self.secondLevelTableView {
-            if self.delegate!.respondsToSelector("linkageView:viewForHeaderInSectionInSecondLevel:") {
-                return self.delegate!.linkageView!(self, viewForHeaderInSectionInSecondLevel: section)
+            if self.delegate!.respondsToSelector("linkageView:index:viewForHeaderInSectionInSecondLevel:") {
+                return self.delegate!.linkageView!(self, index: self.currentSelectedIndex, viewForHeaderInSectionInSecondLevel: section)
             } else {
                 return nil
             }
@@ -246,6 +245,8 @@ extension  JRDualLinkageView: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if tableView === self.firstLevelTableView {
             tableView.cellForRowAtIndexPath(indexPath)!.tintColor = UIColor.whiteColor()
+            self.currentSelectedIndex = indexPath.row
+            self.reloadSecondLevel()
         } else if tableView === self.secondLevelTableView {
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
         } else {

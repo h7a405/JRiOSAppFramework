@@ -31,11 +31,11 @@ extension JRDualLinkageViewController: JRDualLinkageViewDataSource {
         return 3
     }
     
-    func numberOfSectionsInSecondLevel(linkageView: JRDualLinkageView) -> Int {
-        return 1
+    func numberOfSectionsInSecondLevel(linkageView: JRDualLinkageView, index: Int) -> Int {
+        return index + 1
     }
-    func linkageView(linkageView: JRDualLinkageView, numberOfRowsInSectionInSecondLevel section: Int) -> Int {
-        return 3
+    func linkageView(linkageView: JRDualLinkageView, index: Int, numberOfRowsInSectionInSecondLevel section: Int) -> Int {
+        return index + 2
     }
 }
 
@@ -55,13 +55,13 @@ extension JRDualLinkageViewController: JRDualLinkageViewDelegate {
         cell!.textLabel!.text = "First"
         return cell!
     }
-    func linkageView(linkageView: JRDualLinkageView, tableView: UITableView, cellForRowAtIndexPathInSecondLevel indexPath: NSIndexPath) -> UITableViewCell {
+    func linkageView(linkageView: JRDualLinkageView, tableView: UITableView, index: Int, cellForRowAtIndexPathInSecondLevel indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier: String = String("cell")
         var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
         }
-        cell!.textLabel!.text = "Second"
+        cell!.textLabel!.text = "\(index)-Second"
         return cell!
     }
     
