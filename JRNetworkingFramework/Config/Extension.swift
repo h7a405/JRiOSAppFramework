@@ -161,12 +161,12 @@ extension UIView {
         }
     }
     func centerHorizontal(subView: UIView) -> CGRect {
-        var rectToReturn: CGRect = CGRectZero
-        let rectOfSubView: CGRect = subView.frame
-        rectToReturn.origin.y = rectOfSubView.origin.y
-        rectToReturn.size.width = rectOfSubView.size.width
-        rectToReturn.size.height = rectOfSubView.size.height
-        rectToReturn.origin.x = (self.widthOfFrame - rectOfSubView.size.width) / 2
+        return self.centerHorizontal(yCoordinate: subView.yCoordinate, widthOfSubView: widthOfFrame, heightOfSubView: heightOfFrame)
+    }
+    func centerHorizontal(yCoordinate y: CGFloat, widthOfSubView width: CGFloat, heightOfSubView height: CGFloat) -> CGRect {
+        var rectToReturn: CGRect = CGRect(x: 0, y: y, width: width, height: height)
+        rectToReturn.origin.x = (self.widthOfFrame - width) / 2
+        
         return rectToReturn
     }
     func centerVertical(subView: UIView) -> CGRect {
