@@ -249,6 +249,11 @@ extension  JRDualLinkageView: UITableViewDelegate {
             self.reloadSecondLevel()
         } else if tableView === self.secondLevelTableView {
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            if self.delegate != nil {
+                if self.delegate!.respondsToSelector("linkageView:index:didSelectRowAtIndexPathInSecondLevel:") {
+                    self.delegate!.linkageView!(self, index: self.currentSelectedIndex, didSelectRowAtIndexPathInSecondLevel: indexPath)
+                }
+            }
         } else {
             
         }

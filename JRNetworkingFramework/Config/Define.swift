@@ -22,9 +22,9 @@ import UIKit
 
 //MARK: - 项目相关
 //是否需要登录
-let IS_SIGNIN_NECESSARY: Bool = true
+let IS_SIGNIN_NECESSARY: Bool = false
 //是否显示引导页
-let IS_GUIDE_NECESSARY: Bool = true
+let IS_GUIDE_NECESSARY: Bool = false
 //是否主视图为选项卡
 let IS_MAIN_TABBAR_STYLE: Bool = true
 //应用版本号
@@ -37,6 +37,25 @@ let APP_COLOR_NAVIGATION_BAR: UIColor = UIColor.blackColor()
 let APP_FONT_NAVIGATION_TITLE: UIFont = UIFont.systemFontOfSize(17)
 //导航栏标题字体大小
 let APP_FONTSIZE_NAVIGATION_TITLE: Float = Float(15.0)
+//数字常量
+let CONSTANT_NUMBERS: String = "0123456789"
+//小写字母常量
+let CONSTANT_ALPHABET_LOWCASE: String = "abcdefghijklmnopqrstuvwxyz"
+//大写字母常量
+let CONSTANT_ALPHABET_UPCASE: String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//英文标点常量
+let CONSTANT_PUNCTUATION_ENG: String = "!@#$%^&*()_+-=[]{}|\\:;\"',.<>?/`~"
+//中文标点常量
+let CONSTANT_PUNCTUATION_CHN: String = "“「」【】、——……￥。，？：；·《》（）"
+//转义符常量
+let CONSTANT_ESCAPES: String = "\n\0\t\r"
+//只有数字
+let CONSTRAINT_NUMBERS: String = CONSTANT_NUMBERS + "\n"
+let CONSTRAINT_NUMBERS_PERIOS: String = CONSTANT_NUMBERS + ".\n"
+//只有字母
+let CONSTANT_LETTERS: String = CONSTANT_ALPHABET_LOWCASE + CONSTANT_ALPHABET_UPCASE + "\n"
+//数字与字母
+let CONSTRAINT_NUMBERS_LETTERS: String = CONSTANT_NUMBERS + CONSTANT_ALPHABET_LOWCASE + CONSTANT_ALPHABET_UPCASE + "\n"
 
 //MARK: - 枚举
 //MARK: 操作系统版本号

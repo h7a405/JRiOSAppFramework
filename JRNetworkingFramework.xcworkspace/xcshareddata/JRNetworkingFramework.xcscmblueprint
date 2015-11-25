@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C8BA808FE171A2AB71F56958F83B3A41BE3A2F80",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C8BA808FE171A2AB71F56958F83B3A41BE3A2F80" : 0,
+    "BC8D3481116427CC3A76C059A37FE1E8E6AC8FC1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D04BA91E-12B5-47D0-A229-81F266C455E6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C8BA808FE171A2AB71F56958F83B3A41BE3A2F80" : "JRiOSAppFramework\/",
+    "BC8D3481116427CC3A76C059A37FE1E8E6AC8FC1" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JRNetworkingFramework",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JRNetworkingFramework.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JasonRayleigh\/JRLibrary.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC8D3481116427CC3A76C059A37FE1E8E6AC8FC1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/h7a405\/JRiOSAppFramework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C8BA808FE171A2AB71F56958F83B3A41BE3A2F80"
+    }
+  ]
+}

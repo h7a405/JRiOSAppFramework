@@ -8,58 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		0252DC94143E68BFCD6CCF60 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC75A6798038262DE2EC16D8 /* libPods.a */; };
-		BB1BA5D11BCB461700FF6C1F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5D01BCB461700FF6C1F /* RootViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5D51BCB4A0500FF6C1F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5D31BCB4A0500FF6C1F /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5D61BCB4A0500FF6C1F /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5D41BCB4A0500FF6C1F /* SignInViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5DC1BCB4A7200FF6C1F /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5DA1BCB4A7200FF6C1F /* ResetPasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5DD1BCB4A7200FF6C1F /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5DB1BCB4A7200FF6C1F /* ResetPasswordViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5E01BCB4A8900FF6C1F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5DE1BCB4A8900FF6C1F /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5E11BCB4A8900FF6C1F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5DF1BCB4A8900FF6C1F /* SignUpViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5E41BCB4D4900FF6C1F /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5E21BCB4D4900FF6C1F /* GuideViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5E51BCB4D4900FF6C1F /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5E31BCB4D4900FF6C1F /* GuideViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5E91BCB4E3100FF6C1F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5E71BCB4E3100FF6C1F /* TabBarViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB1BA5EA1BCB4E3100FF6C1F /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5E81BCB4E3100FF6C1F /* TabBarViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB36F5541BCC9E63008FB9A0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F5521BCC9E62008FB9A0 /* SettingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB36F5551BCC9E63008FB9A0 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB36F5531BCC9E62008FB9A0 /* SettingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB36F55E1BCCD7B6008FB9A0 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F55C1BCCD7B6008FB9A0 /* TestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB36F55F1BCCD7B6008FB9A0 /* TestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB36F55D1BCCD7B6008FB9A0 /* TestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB36F5691BCCF12E008FB9A0 /* JRDualLinkageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F5681BCCF12E008FB9A0 /* JRDualLinkageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2B71BD495B500C499D2 /* JRSingleDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2B61BD495B500C499D2 /* JRSingleDropdownMenu.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2BD1BD4CEB200C499D2 /* DropdownMenuTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2BB1BD4CEB200C499D2 /* DropdownMenuTestViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2BE1BD4CEB200C499D2 /* DropdownMenuTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50B2BC1BD4CEB200C499D2 /* DropdownMenuTestViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB50B2D91BD4D4A300C499D2 /* JRCalendarCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C01BD4D4A300C499D2 /* JRCalendarCommon.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2DA1BD4D4A300C499D2 /* JRCalendarDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C11BD4D4A300C499D2 /* JRCalendarDayModel.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2DB1BD4D4A300C499D2 /* JRCalendarGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C21BD4D4A300C499D2 /* JRCalendarGridView.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2DC1BD4D4A300C499D2 /* JRCalendarGridViewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C31BD4D4A300C499D2 /* JRCalendarGridViewTile.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2DD1BD4D4A300C499D2 /* JRCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C41BD4D4A300C499D2 /* JRCalendarModel.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2DE1BD4D4A300C499D2 /* JRCalendarPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50B2C51BD4D4A300C499D2 /* JRCalendarPickerView.xib */; settings = {ASSET_TAGS = (); }; };
-		BB50B2DF1BD4D4A300C499D2 /* JRCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C61BD4D4A300C499D2 /* JRCalendarView.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2E01BD4D4A300C499D2 /* JRMonthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C71BD4D4A300C499D2 /* JRMonthPicker.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2E11BD4D4A300C499D2 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C81BD4D4A300C499D2 /* NSDateExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2E21BD4D4A300C499D2 /* JRGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2CA1BD4D4A300C499D2 /* JRGridView.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2E31BD4D4A300C499D2 /* JRGridViewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2CB1BD4D4A300C499D2 /* JRGridViewTile.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2E41BD4D4A300C499D2 /* JRPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2CD1BD4D4A300C499D2 /* JRPhotoBrowser.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2E81BD4D4A300C499D2 /* JRPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2D51BD4D4A300C499D2 /* JRPickerView.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2E91BD4D4A300C499D2 /* JRWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2D71BD4D4A300C499D2 /* JRWebViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2EA1BD4D4A300C499D2 /* JRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50B2D81BD4D4A300C499D2 /* JRWebViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB50B2EE1BD4D75C00C499D2 /* WebViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2EC1BD4D75C00C499D2 /* WebViewTestViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB50B2EF1BD4D75C00C499D2 /* WebViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50B2ED1BD4D75C00C499D2 /* WebViewTestViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB5A9F171BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F151BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB5A9F181BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F161BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB5A9F1C1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F1A1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB5A9F1D1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F1B1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB5A9F221BCF7D9600EE1EC7 /* JRCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F1F1BCF7D9600EE1EC7 /* JRCarouselView.swift */; settings = {ASSET_TAGS = (); }; };
-		BB5A9F231BCF7D9600EE1EC7 /* JRDualLinkageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F211BCF7D9600EE1EC7 /* JRDualLinkageView.swift */; settings = {ASSET_TAGS = (); }; };
-		BB5A9F261BCF967100EE1EC7 /* JRCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F241BCF967000EE1EC7 /* JRCollapsibleTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		BB5A9F271BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F251BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		A1B89AE21C040BB700F5891E /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AE01C040BB700F5891E /* RatingViewController.swift */; };
+		A1B89AE31C040BB700F5891E /* RatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B89AE11C040BB700F5891E /* RatingViewController.xib */; };
+		A1B89AEC1C0430C000F5891E /* JRRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AEB1C0430C000F5891E /* JRRatingView.swift */; };
+		A1B89AF31C0433D400F5891E /* CardSwitchingTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AF11C0433D400F5891E /* CardSwitchingTestingViewController.swift */; };
+		A1B89AF41C0433D400F5891E /* CardSwitchingTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B89AF21C0433D400F5891E /* CardSwitchingTestingViewController.xib */; };
+		A1B89AF81C0434B800F5891E /* JRCardSwitchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AF71C0434B800F5891E /* JRCardSwitchingView.swift */; };
+		A1B89AFB1C044A3200F5891E /* JRCoverFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AFA1C044A3200F5891E /* JRCoverFlowView.swift */; };
+		BB1BA5D11BCB461700FF6C1F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5D01BCB461700FF6C1F /* RootViewController.swift */; };
+		BB1BA5D51BCB4A0500FF6C1F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5D31BCB4A0500FF6C1F /* SignInViewController.swift */; };
+		BB1BA5D61BCB4A0500FF6C1F /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5D41BCB4A0500FF6C1F /* SignInViewController.xib */; };
+		BB1BA5DC1BCB4A7200FF6C1F /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5DA1BCB4A7200FF6C1F /* ResetPasswordViewController.swift */; };
+		BB1BA5DD1BCB4A7200FF6C1F /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5DB1BCB4A7200FF6C1F /* ResetPasswordViewController.xib */; };
+		BB1BA5E01BCB4A8900FF6C1F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5DE1BCB4A8900FF6C1F /* SignUpViewController.swift */; };
+		BB1BA5E11BCB4A8900FF6C1F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5DF1BCB4A8900FF6C1F /* SignUpViewController.xib */; };
+		BB1BA5E41BCB4D4900FF6C1F /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5E21BCB4D4900FF6C1F /* GuideViewController.swift */; };
+		BB1BA5E51BCB4D4900FF6C1F /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5E31BCB4D4900FF6C1F /* GuideViewController.xib */; };
+		BB1BA5E91BCB4E3100FF6C1F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5E71BCB4E3100FF6C1F /* TabBarViewController.swift */; };
+		BB1BA5EA1BCB4E3100FF6C1F /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5E81BCB4E3100FF6C1F /* TabBarViewController.xib */; };
+		BB36F5541BCC9E63008FB9A0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F5521BCC9E62008FB9A0 /* SettingViewController.swift */; };
+		BB36F5551BCC9E63008FB9A0 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB36F5531BCC9E62008FB9A0 /* SettingViewController.xib */; };
+		BB36F55E1BCCD7B6008FB9A0 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F55C1BCCD7B6008FB9A0 /* TestingViewController.swift */; };
+		BB36F55F1BCCD7B6008FB9A0 /* TestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB36F55D1BCCD7B6008FB9A0 /* TestingViewController.xib */; };
+		BB36F5691BCCF12E008FB9A0 /* JRDualLinkageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB36F5681BCCF12E008FB9A0 /* JRDualLinkageViewController.swift */; };
+		BB50B2B71BD495B500C499D2 /* JRSingleDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2B61BD495B500C499D2 /* JRSingleDropdownMenu.swift */; };
+		BB50B2BD1BD4CEB200C499D2 /* DropdownMenuTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2BB1BD4CEB200C499D2 /* DropdownMenuTestViewController.swift */; };
+		BB50B2BE1BD4CEB200C499D2 /* DropdownMenuTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50B2BC1BD4CEB200C499D2 /* DropdownMenuTestViewController.xib */; };
+		BB50B2D91BD4D4A300C499D2 /* JRCalendarCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C01BD4D4A300C499D2 /* JRCalendarCommon.swift */; };
+		BB50B2DA1BD4D4A300C499D2 /* JRCalendarDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C11BD4D4A300C499D2 /* JRCalendarDayModel.swift */; };
+		BB50B2DB1BD4D4A300C499D2 /* JRCalendarGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C21BD4D4A300C499D2 /* JRCalendarGridView.swift */; };
+		BB50B2DC1BD4D4A300C499D2 /* JRCalendarGridViewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C31BD4D4A300C499D2 /* JRCalendarGridViewTile.swift */; };
+		BB50B2DD1BD4D4A300C499D2 /* JRCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C41BD4D4A300C499D2 /* JRCalendarModel.swift */; };
+		BB50B2DE1BD4D4A300C499D2 /* JRCalendarPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50B2C51BD4D4A300C499D2 /* JRCalendarPickerView.xib */; };
+		BB50B2DF1BD4D4A300C499D2 /* JRCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C61BD4D4A300C499D2 /* JRCalendarView.swift */; };
+		BB50B2E01BD4D4A300C499D2 /* JRMonthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C71BD4D4A300C499D2 /* JRMonthPicker.swift */; };
+		BB50B2E11BD4D4A300C499D2 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2C81BD4D4A300C499D2 /* NSDateExtension.swift */; };
+		BB50B2E21BD4D4A300C499D2 /* JRGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2CA1BD4D4A300C499D2 /* JRGridView.swift */; };
+		BB50B2E31BD4D4A300C499D2 /* JRGridViewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2CB1BD4D4A300C499D2 /* JRGridViewTile.swift */; };
+		BB50B2E41BD4D4A300C499D2 /* JRPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2CD1BD4D4A300C499D2 /* JRPhotoBrowser.swift */; };
+		BB50B2E81BD4D4A300C499D2 /* JRPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2D51BD4D4A300C499D2 /* JRPickerView.swift */; };
+		BB50B2E91BD4D4A300C499D2 /* JRWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2D71BD4D4A300C499D2 /* JRWebViewController.swift */; };
+		BB50B2EA1BD4D4A300C499D2 /* JRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50B2D81BD4D4A300C499D2 /* JRWebViewController.xib */; };
+		BB50B2EE1BD4D75C00C499D2 /* WebViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2EC1BD4D75C00C499D2 /* WebViewTestViewController.swift */; };
+		BB50B2EF1BD4D75C00C499D2 /* WebViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50B2ED1BD4D75C00C499D2 /* WebViewTestViewController.xib */; };
+		BB5A9F171BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F151BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift */; };
+		BB5A9F181BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F161BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.xib */; };
+		BB5A9F1C1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F1A1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift */; };
+		BB5A9F1D1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F1B1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib */; };
+		BB5A9F221BCF7D9600EE1EC7 /* JRCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F1F1BCF7D9600EE1EC7 /* JRCarouselView.swift */; };
+		BB5A9F231BCF7D9600EE1EC7 /* JRDualLinkageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F211BCF7D9600EE1EC7 /* JRDualLinkageView.swift */; };
+		BB5A9F261BCF967100EE1EC7 /* JRCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A9F241BCF967000EE1EC7 /* JRCollapsibleTableViewCell.swift */; };
+		BB5A9F271BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5A9F251BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib */; };
 		BB693D5E1BC75D0200C2AC8F /* JRNetworkingIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB693D5D1BC75D0200C2AC8F /* JRNetworkingIOManager.swift */; };
 		BB693D601BC75D5900C2AC8F /* JRNetworkingApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB693D5F1BC75D5900C2AC8F /* JRNetworkingApiManager.swift */; };
-		BB8FDF0B1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */; settings = {ASSET_TAGS = (); }; };
-		BB9328481BD720C9005DB417 /* JRReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9328461BD720C9005DB417 /* JRReadingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB9328491BD720C9005DB417 /* JRReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9328471BD720C9005DB417 /* JRReadingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB93284D1BD7237F005DB417 /* ReadingViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93284B1BD7237F005DB417 /* ReadingViewTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BB93284E1BD7237F005DB417 /* ReadingViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB93284C1BD7237F005DB417 /* ReadingViewTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BB9328541BD761D5005DB417 /* JRReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9328531BD761D5005DB417 /* JRReadingView.swift */; settings = {ASSET_TAGS = (); }; };
+		BB8FDF0B1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FDF0A1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift */; };
+		BB9328481BD720C9005DB417 /* JRReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9328461BD720C9005DB417 /* JRReadingViewController.swift */; };
+		BB9328491BD720C9005DB417 /* JRReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9328471BD720C9005DB417 /* JRReadingViewController.xib */; };
+		BB93284D1BD7237F005DB417 /* ReadingViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93284B1BD7237F005DB417 /* ReadingViewTestingViewController.swift */; };
+		BB93284E1BD7237F005DB417 /* ReadingViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB93284C1BD7237F005DB417 /* ReadingViewTestingViewController.xib */; };
+		BB9328541BD761D5005DB417 /* JRReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9328531BD761D5005DB417 /* JRReadingView.swift */; };
 		BB9AB73B1BC6006700531514 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AB72E1BC6006700531514 /* Define.swift */; };
 		BB9AB73C1BC6006700531514 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AB72F1BC6006700531514 /* Extension.swift */; };
 		BB9AB73D1BC6006700531514 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AB7351BC6006700531514 /* Log.swift */; };
@@ -75,14 +82,14 @@
 		BBAF65681BC0C12100CA709A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65661BC0C12100CA709A /* Main.storyboard */; };
 		BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65691BC0C12100CA709A /* Images.xcassets */; };
 		BBAF65791BC0C12100CA709A /* JRNetworkingFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF65781BC0C12100CA709A /* JRNetworkingFrameworkTests.swift */; };
-		BBC8A6371BD5E97C0061814A /* CalendarViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A6351BD5E97C0061814A /* CalendarViewTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BBC8A6381BD5E97C0061814A /* CalendarViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A6361BD5E97C0061814A /* CalendarViewTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BBC8A6401BD60EE90061814A /* PhotoBrowserTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A63E1BD60EE90061814A /* PhotoBrowserTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BBC8A6411BD60EE90061814A /* PhotoBrowserTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A63F1BD60EE90061814A /* PhotoBrowserTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BBC8A6451BD62D960061814A /* GridViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A6431BD62D960061814A /* GridViewTestingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		BBC8A6461BD62D960061814A /* GridViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A6441BD62D960061814A /* GridViewTestingViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		BBD50DAE1BCFAC9600C75736 /* JRRadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD50DAD1BCFAC9600C75736 /* JRRadioButtonGroup.swift */; settings = {ASSET_TAGS = (); }; };
-		BBD50DB01BCFACAC00C75736 /* JRRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD50DAF1BCFACAC00C75736 /* JRRadioButton.swift */; settings = {ASSET_TAGS = (); }; };
+		BBC8A6371BD5E97C0061814A /* CalendarViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A6351BD5E97C0061814A /* CalendarViewTestingViewController.swift */; };
+		BBC8A6381BD5E97C0061814A /* CalendarViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A6361BD5E97C0061814A /* CalendarViewTestingViewController.xib */; };
+		BBC8A6401BD60EE90061814A /* PhotoBrowserTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A63E1BD60EE90061814A /* PhotoBrowserTestingViewController.swift */; };
+		BBC8A6411BD60EE90061814A /* PhotoBrowserTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A63F1BD60EE90061814A /* PhotoBrowserTestingViewController.xib */; };
+		BBC8A6451BD62D960061814A /* GridViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC8A6431BD62D960061814A /* GridViewTestingViewController.swift */; };
+		BBC8A6461BD62D960061814A /* GridViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC8A6441BD62D960061814A /* GridViewTestingViewController.xib */; };
+		BBD50DAE1BCFAC9600C75736 /* JRRadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD50DAD1BCFAC9600C75736 /* JRRadioButtonGroup.swift */; };
+		BBD50DB01BCFACAC00C75736 /* JRRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD50DAF1BCFACAC00C75736 /* JRRadioButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +105,13 @@
 /* Begin PBXFileReference section */
 		043844D5E8C2F221A2212F79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		53CD30C8E7354E6741C1495D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A1B89AE01C040BB700F5891E /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		A1B89AE11C040BB700F5891E /* RatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingViewController.xib; sourceTree = "<group>"; };
+		A1B89AEB1C0430C000F5891E /* JRRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRRatingView.swift; sourceTree = "<group>"; };
+		A1B89AF11C0433D400F5891E /* CardSwitchingTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSwitchingTestingViewController.swift; sourceTree = "<group>"; };
+		A1B89AF21C0433D400F5891E /* CardSwitchingTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSwitchingTestingViewController.xib; sourceTree = "<group>"; };
+		A1B89AF71C0434B800F5891E /* JRCardSwitchingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCardSwitchingView.swift; sourceTree = "<group>"; };
+		A1B89AFA1C044A3200F5891E /* JRCoverFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCoverFlowView.swift; sourceTree = "<group>"; };
 		AC75A6798038262DE2EC16D8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1BA5D01BCB461700FF6C1F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		BB1BA5D31BCB4A0500FF6C1F /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +231,48 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A1B89ADF1C040B9400F5891E /* RatingViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				A1B89AE01C040BB700F5891E /* RatingViewController.swift */,
+				A1B89AE11C040BB700F5891E /* RatingViewController.xib */,
+			);
+			name = RatingViewTest;
+			sourceTree = "<group>";
+		};
+		A1B89AEA1C0430C000F5891E /* JRRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				A1B89AEB1C0430C000F5891E /* JRRatingView.swift */,
+			);
+			path = JRRatingView;
+			sourceTree = "<group>";
+		};
+		A1B89AF01C0433C100F5891E /* CardSwitchingTest */ = {
+			isa = PBXGroup;
+			children = (
+				A1B89AF11C0433D400F5891E /* CardSwitchingTestingViewController.swift */,
+				A1B89AF21C0433D400F5891E /* CardSwitchingTestingViewController.xib */,
+			);
+			name = CardSwitchingTest;
+			sourceTree = "<group>";
+		};
+		A1B89AF61C0434A800F5891E /* JRCardSwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				A1B89AF71C0434B800F5891E /* JRCardSwitchingView.swift */,
+			);
+			path = JRCardSwitchView;
+			sourceTree = "<group>";
+		};
+		A1B89AF91C044A2800F5891E /* JRCoverFlow */ = {
+			isa = PBXGroup;
+			children = (
+				A1B89AFA1C044A3200F5891E /* JRCoverFlowView.swift */,
+			);
+			path = JRCoverFlow;
+			sourceTree = "<group>";
+		};
 		BB1BA5CD1BCB460000FF6C1F /* Guide */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +358,8 @@
 		BB36F55B1BCCD79B008FB9A0 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				A1B89AF01C0433C100F5891E /* CardSwitchingTest */,
+				A1B89ADF1C040B9400F5891E /* RatingViewTest */,
 				BB93284A1BD7236B005DB417 /* ReadingViewTest */,
 				BBC8A6421BD62D860061814A /* GridViewTest */,
 				BBC8A63D1BD60ED60061814A /* PhotoBrowserTest */,
@@ -477,6 +535,9 @@
 		BB9AB7321BC6006700531514 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				A1B89AF91C044A2800F5891E /* JRCoverFlow */,
+				A1B89AF61C0434A800F5891E /* JRCardSwitchView */,
+				A1B89AEA1C0430C000F5891E /* JRRatingView */,
 				BB9328451BD7207E005DB417 /* JRReadingView */,
 				BB50B2BF1BD4D4A300C499D2 /* JRCalendar */,
 				BB50B2C91BD4D4A300C499D2 /* JRGridView */,
@@ -762,6 +823,7 @@
 				BBC8A6461BD62D960061814A /* GridViewTestingViewController.xib in Resources */,
 				BB93284E1BD7237F005DB417 /* ReadingViewTestingViewController.xib in Resources */,
 				BB9328491BD720C9005DB417 /* JRReadingViewController.xib in Resources */,
+				A1B89AE31C040BB700F5891E /* RatingViewController.xib in Resources */,
 				BB50B2DE1BD4D4A300C499D2 /* JRCalendarPickerView.xib in Resources */,
 				BB36F5551BCC9E63008FB9A0 /* SettingViewController.xib in Resources */,
 				BB1BA5D61BCB4A0500FF6C1F /* SignInViewController.xib in Resources */,
@@ -770,6 +832,7 @@
 				BB1BA5E11BCB4A8900FF6C1F /* SignUpViewController.xib in Resources */,
 				BB5A9F271BCF967100EE1EC7 /* JRCollapsibleTableViewCell.xib in Resources */,
 				BB50B2EA1BD4D4A300C499D2 /* JRWebViewController.xib in Resources */,
+				A1B89AF41C0433D400F5891E /* CardSwitchingTestingViewController.xib in Resources */,
 				BB5A9F1D1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib in Resources */,
 				BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */,
 			);
@@ -832,6 +895,7 @@
 				BB50B2E81BD4D4A300C499D2 /* JRPickerView.swift in Sources */,
 				BB1BA5E91BCB4E3100FF6C1F /* TabBarViewController.swift in Sources */,
 				BB693D601BC75D5900C2AC8F /* JRNetworkingApiManager.swift in Sources */,
+				A1B89AEC1C0430C000F5891E /* JRRatingView.swift in Sources */,
 				BB50B2E21BD4D4A300C499D2 /* JRGridView.swift in Sources */,
 				BB36F5691BCCF12E008FB9A0 /* JRDualLinkageViewController.swift in Sources */,
 				BB1BA5D11BCB461700FF6C1F /* RootViewController.swift in Sources */,
@@ -844,20 +908,24 @@
 				BB50B2EE1BD4D75C00C499D2 /* WebViewTestViewController.swift in Sources */,
 				BB5A9F1C1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift in Sources */,
 				BB8FDF0B1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift in Sources */,
+				A1B89AFB1C044A3200F5891E /* JRCoverFlowView.swift in Sources */,
 				BB693D5E1BC75D0200C2AC8F /* JRNetworkingIOManager.swift in Sources */,
 				BB1BA5E41BCB4D4900FF6C1F /* GuideViewController.swift in Sources */,
 				BB9328541BD761D5005DB417 /* JRReadingView.swift in Sources */,
+				A1B89AE21C040BB700F5891E /* RatingViewController.swift in Sources */,
 				BB50B2D91BD4D4A300C499D2 /* JRCalendarCommon.swift in Sources */,
 				BB1BA5E01BCB4A8900FF6C1F /* SignUpViewController.swift in Sources */,
 				BB50B2DB1BD4D4A300C499D2 /* JRCalendarGridView.swift in Sources */,
 				BBAF65631BC0C12100CA709A /* AppDelegate.swift in Sources */,
 				BB5A9F231BCF7D9600EE1EC7 /* JRDualLinkageView.swift in Sources */,
+				A1B89AF31C0433D400F5891E /* CardSwitchingTestingViewController.swift in Sources */,
 				BB93284D1BD7237F005DB417 /* ReadingViewTestingViewController.swift in Sources */,
 				BB50B2E41BD4D4A300C499D2 /* JRPhotoBrowser.swift in Sources */,
 				BBD50DB01BCFACAC00C75736 /* JRRadioButton.swift in Sources */,
 				BB50B2DD1BD4D4A300C499D2 /* JRCalendarModel.swift in Sources */,
 				BB9AB7461BC606E800531514 /* JRNetworkingConstant.swift in Sources */,
 				BB1BA5DC1BCB4A7200FF6C1F /* ResetPasswordViewController.swift in Sources */,
+				A1B89AF81C0434B800F5891E /* JRCardSwitchingView.swift in Sources */,
 				BB36F5541BCC9E63008FB9A0 /* SettingViewController.swift in Sources */,
 				BB50B2B71BD495B500C499D2 /* JRSingleDropdownMenu.swift in Sources */,
 				BB9AB73C1BC6006700531514 /* Extension.swift in Sources */,

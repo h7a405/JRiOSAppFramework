@@ -76,7 +76,41 @@ extension PhotoBrowserTestingViewController {
             self.presentViewController(imageViewPicker, animated: true, completion: nil)
         })
         actionSheet.addAction(alertGalaryAction)
+        let downloadAction = UIAlertAction(title: "预设下载", style: UIAlertActionStyle.Default, handler: {(action: UIAlertAction) in
+            self.doDownLoadImage()
+        })
+        actionSheet.addAction(downloadAction)
         self.presentViewController(actionSheet, animated: true, completion: nil)
+    }
+    
+    func doDownLoadImage() {
+        let urlString: String = "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png"
+        let URL: NSURL? = NSURL(string: urlString)
+        if URL != nil {
+            let downloadTask: NSURLSessionDownloadTask = NSURLSession.sharedSession().downloadTaskWithURL(URL!, completionHandler: {(location: NSURL?, response: NSURLResponse?, error: NSError?) in
+                if error == nil {
+                    Log.VLog("URL is \(location), and response is \(response)")
+                    if location != nil {
+                        let imageData: NSData? = NSData(contentsOfURL: location!)
+                        if imageData != nil {
+                            let downloadedImage: UIImage? = UIImage(data: imageData!)
+                            if downloadedImage != nil {
+                                self.imageView.image = downloadedImage
+                            } else {
+                                Log.VLog("image is downloaded failed.")
+                            }
+                        } else {
+                            Log.VLog("image data is empty.")
+                        }
+                    } else {
+                        Log.VLog("location is empty.")
+                    }
+                } else {
+                    Log.VLog(error)
+                }
+            })
+            downloadTask.resume()
+        }
     }
 }
 //MARK: Extensions - Getter / Setter

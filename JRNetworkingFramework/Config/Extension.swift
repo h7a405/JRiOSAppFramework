@@ -26,6 +26,7 @@ extension String {
         result.destroy()
         return String(format: hash as String)
     }
+    
 }
 extension Character {
     func toInt() -> Int {
@@ -118,6 +119,18 @@ extension UITextField {
     }
     func lengthOfContent() -> Int {
         return self.text!.characters.count
+    }
+    func setPhoneNumberOnly() {
+        self.clearButtonMode = UITextFieldViewMode.WhileEditing
+        self.keyboardType = UIKeyboardType.PhonePad
+    }
+    func setNumberOnly() {
+        self.clearButtonMode = UITextFieldViewMode.WhileEditing
+        self.keyboardType = UIKeyboardType.PhonePad
+    }
+    func setSecured() {
+        self.clearButtonMode = UITextFieldViewMode.WhileEditing
+        self.secureTextEntry = true
     }
 }
 extension UIView {

@@ -28,7 +28,9 @@ class TestingViewController: UIViewController {
         "简单日历",
         "图片浏览",
         "表格视图",
-        "阅读视图"
+        "阅读视图",
+        "投票、评价",
+        "卡片切换"
     ]
     let titleForRows: [[String]] = [
         ["折叠表格视图（有多选）"],
@@ -39,7 +41,9 @@ class TestingViewController: UIViewController {
         ["简单日历"],
         ["浏览图片"],
         ["表格视图"],
-        ["阅读视图"]
+        ["阅读视图"],
+        ["投票评价视图"],
+        ["卡片切换"]
     ]
 //    let viewControllersForRows: [[UIViewController]] = [
 //        [CollapsibleSectionTestingViewController()],
@@ -105,6 +109,10 @@ extension TestingViewController {
             instance = GridViewTestingViewController()
         case 8:
             instance = ReadingViewTestingViewController()
+        case 9:
+            instance = RatingViewController()
+        case 10:
+            instance = CardSwitchingTestingViewController()
         default:
             break
         }
