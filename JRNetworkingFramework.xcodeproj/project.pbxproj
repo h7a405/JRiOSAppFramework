@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0252DC94143E68BFCD6CCF60 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC75A6798038262DE2EC16D8 /* libPods.a */; };
+		65248512217B3D730AA9BF9C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7553493C1F3166B0FDCE08 /* libPods.a */; };
 		A1B89AE21C040BB700F5891E /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AE01C040BB700F5891E /* RatingViewController.swift */; };
 		A1B89AE31C040BB700F5891E /* RatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B89AE11C040BB700F5891E /* RatingViewController.xib */; };
 		A1B89AEC1C0430C000F5891E /* JRRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AEB1C0430C000F5891E /* JRRatingView.swift */; };
@@ -15,6 +15,11 @@
 		A1B89AF41C0433D400F5891E /* CardSwitchingTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B89AF21C0433D400F5891E /* CardSwitchingTestingViewController.xib */; };
 		A1B89AF81C0434B800F5891E /* JRCardSwitchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AF71C0434B800F5891E /* JRCardSwitchingView.swift */; };
 		A1B89AFB1C044A3200F5891E /* JRCoverFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AFA1C044A3200F5891E /* JRCoverFlowView.swift */; };
+		A1B89B081C05AEC500F5891E /* JRAlamofireProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89B071C05AEC500F5891E /* JRAlamofireProtocol.swift */; };
+		A1B89B0C1C05AEDF00F5891E /* JRAlamofireApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89B0B1C05AEDF00F5891E /* JRAlamofireApiManager.swift */; };
+		A1B89B0E1C05AEED00F5891E /* JRAlamofireIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89B0D1C05AEED00F5891E /* JRAlamofireIOManager.swift */; };
+		A1B89B101C05B01200F5891E /* JRAlamofireConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89B0F1C05B01200F5891E /* JRAlamofireConstant.swift */; };
+		A1B89B531C082B6700F5891E /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89B521C082B6700F5891E /* LocationHandler.swift */; };
 		BB1BA5D11BCB461700FF6C1F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5D01BCB461700FF6C1F /* RootViewController.swift */; };
 		BB1BA5D51BCB4A0500FF6C1F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BA5D31BCB4A0500FF6C1F /* SignInViewController.swift */; };
 		BB1BA5D61BCB4A0500FF6C1F /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1BA5D41BCB4A0500FF6C1F /* SignInViewController.xib */; };
@@ -105,6 +110,7 @@
 /* Begin PBXFileReference section */
 		043844D5E8C2F221A2212F79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		53CD30C8E7354E6741C1495D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6C7553493C1F3166B0FDCE08 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B89AE01C040BB700F5891E /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		A1B89AE11C040BB700F5891E /* RatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingViewController.xib; sourceTree = "<group>"; };
 		A1B89AEB1C0430C000F5891E /* JRRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRRatingView.swift; sourceTree = "<group>"; };
@@ -112,7 +118,11 @@
 		A1B89AF21C0433D400F5891E /* CardSwitchingTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSwitchingTestingViewController.xib; sourceTree = "<group>"; };
 		A1B89AF71C0434B800F5891E /* JRCardSwitchingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCardSwitchingView.swift; sourceTree = "<group>"; };
 		A1B89AFA1C044A3200F5891E /* JRCoverFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCoverFlowView.swift; sourceTree = "<group>"; };
-		AC75A6798038262DE2EC16D8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B89B071C05AEC500F5891E /* JRAlamofireProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRAlamofireProtocol.swift; sourceTree = "<group>"; };
+		A1B89B0B1C05AEDF00F5891E /* JRAlamofireApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRAlamofireApiManager.swift; sourceTree = "<group>"; };
+		A1B89B0D1C05AEED00F5891E /* JRAlamofireIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRAlamofireIOManager.swift; sourceTree = "<group>"; };
+		A1B89B0F1C05B01200F5891E /* JRAlamofireConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRAlamofireConstant.swift; sourceTree = "<group>"; };
+		A1B89B521C082B6700F5891E /* LocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
 		BB1BA5D01BCB461700FF6C1F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		BB1BA5D31BCB4A0500FF6C1F /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BB1BA5D41BCB4A0500FF6C1F /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
@@ -200,7 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0252DC94143E68BFCD6CCF60 /* libPods.a in Frameworks */,
+				65248512217B3D730AA9BF9C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +227,7 @@
 		197F66688D268244C6C63694 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC75A6798038262DE2EC16D8 /* libPods.a */,
+				6C7553493C1F3166B0FDCE08 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -271,6 +281,25 @@
 				A1B89AFA1C044A3200F5891E /* JRCoverFlowView.swift */,
 			);
 			path = JRCoverFlow;
+			sourceTree = "<group>";
+		};
+		A1B89B061C05AD9200F5891E /* JRAlamofire */ = {
+			isa = PBXGroup;
+			children = (
+				A1B89B071C05AEC500F5891E /* JRAlamofireProtocol.swift */,
+				A1B89B0B1C05AEDF00F5891E /* JRAlamofireApiManager.swift */,
+				A1B89B0D1C05AEED00F5891E /* JRAlamofireIOManager.swift */,
+				A1B89B0F1C05B01200F5891E /* JRAlamofireConstant.swift */,
+			);
+			name = JRAlamofire;
+			sourceTree = "<group>";
+		};
+		A1B89B511C082B6700F5891E /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				A1B89B521C082B6700F5891E /* LocationHandler.swift */,
+			);
+			path = Handler;
 			sourceTree = "<group>";
 		};
 		BB1BA5CD1BCB460000FF6C1F /* Guide */ = {
@@ -642,8 +671,9 @@
 		BBAF655F1BC0C12100CA709A /* JRNetworkingFramework */ = {
 			isa = PBXGroup;
 			children = (
+				A1B89B511C082B6700F5891E /* Handler */,
+				A1B89B061C05AD9200F5891E /* JRAlamofire */,
 				BB9AB72D1BC6006700531514 /* Config */,
-				BBC087F21BC8A33F003B325E /* Common */,
 				BB9AB7401BC601BD00531514 /* JRNetworking */,
 				BB9AB7321BC6006700531514 /* Library */,
 				BB9AB7341BC6006700531514 /* Tool */,
@@ -681,13 +711,6 @@
 				BBAF65771BC0C12100CA709A /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BBC087F21BC8A33F003B325E /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		BBC8A6341BD5E9620061814A /* CalendarViewTest */ = {
@@ -738,6 +761,7 @@
 				BBAF655A1BC0C12100CA709A /* Frameworks */,
 				BBAF655B1BC0C12100CA709A /* Resources */,
 				1B86FB12CFB136A96DC2DF3A /* Copy Pods Resources */,
+				C5665B9DC84798CE232AB491 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -878,6 +902,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		C5665B9DC84798CE232AB491 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -897,10 +936,13 @@
 				BB693D601BC75D5900C2AC8F /* JRNetworkingApiManager.swift in Sources */,
 				A1B89AEC1C0430C000F5891E /* JRRatingView.swift in Sources */,
 				BB50B2E21BD4D4A300C499D2 /* JRGridView.swift in Sources */,
+				A1B89B0C1C05AEDF00F5891E /* JRAlamofireApiManager.swift in Sources */,
 				BB36F5691BCCF12E008FB9A0 /* JRDualLinkageViewController.swift in Sources */,
 				BB1BA5D11BCB461700FF6C1F /* RootViewController.swift in Sources */,
+				A1B89B081C05AEC500F5891E /* JRAlamofireProtocol.swift in Sources */,
 				BB5A9F261BCF967100EE1EC7 /* JRCollapsibleTableViewCell.swift in Sources */,
 				BB9AB73D1BC6006700531514 /* Log.swift in Sources */,
+				A1B89B101C05B01200F5891E /* JRAlamofireConstant.swift in Sources */,
 				BB9AB7421BC601E500531514 /* JRNetworkingProtocol.swift in Sources */,
 				BB9328481BD720C9005DB417 /* JRReadingViewController.swift in Sources */,
 				BB50B2DC1BD4D4A300C499D2 /* JRCalendarGridViewTile.swift in Sources */,
@@ -922,11 +964,13 @@
 				BB93284D1BD7237F005DB417 /* ReadingViewTestingViewController.swift in Sources */,
 				BB50B2E41BD4D4A300C499D2 /* JRPhotoBrowser.swift in Sources */,
 				BBD50DB01BCFACAC00C75736 /* JRRadioButton.swift in Sources */,
+				A1B89B531C082B6700F5891E /* LocationHandler.swift in Sources */,
 				BB50B2DD1BD4D4A300C499D2 /* JRCalendarModel.swift in Sources */,
 				BB9AB7461BC606E800531514 /* JRNetworkingConstant.swift in Sources */,
 				BB1BA5DC1BCB4A7200FF6C1F /* ResetPasswordViewController.swift in Sources */,
 				A1B89AF81C0434B800F5891E /* JRCardSwitchingView.swift in Sources */,
 				BB36F5541BCC9E63008FB9A0 /* SettingViewController.swift in Sources */,
+				A1B89B0E1C05AEED00F5891E /* JRAlamofireIOManager.swift in Sources */,
 				BB50B2B71BD495B500C499D2 /* JRSingleDropdownMenu.swift in Sources */,
 				BB9AB73C1BC6006700531514 /* Extension.swift in Sources */,
 				BBC8A6371BD5E97C0061814A /* CalendarViewTestingViewController.swift in Sources */,
