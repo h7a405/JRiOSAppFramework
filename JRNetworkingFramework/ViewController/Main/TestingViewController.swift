@@ -30,7 +30,8 @@ class TestingViewController: UIViewController {
         "表格视图",
         "阅读视图",
         "投票、评价",
-        "卡片切换"
+        "卡片切换",
+        "菜单联动（New）"
     ]
     let titleForRows: [[String]] = [
         ["折叠表格视图（有多选）"],
@@ -43,7 +44,8 @@ class TestingViewController: UIViewController {
         ["表格视图"],
         ["阅读视图"],
         ["投票评价视图"],
-        ["卡片切换"]
+        ["卡片切换"],
+        ["新的联动"]
     ]
 //    let viewControllersForRows: [[UIViewController]] = [
 //        [CollapsibleSectionTestingViewController()],
@@ -113,6 +115,8 @@ extension TestingViewController {
             instance = RatingViewController()
         case 10:
             instance = CardSwitchingTestingViewController()
+        case 11:
+            instance = MultiMenuTestingViewController()
         default:
             break
         }

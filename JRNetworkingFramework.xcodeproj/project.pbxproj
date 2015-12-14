@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		65248512217B3D730AA9BF9C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7553493C1F3166B0FDCE08 /* libPods.a */; };
+		A1504BC71C1E8ED400D39D5A /* JZMultiMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1504BC61C1E8ED400D39D5A /* JZMultiMenuView.swift */; };
+		A1504BCB1C1EB82B00D39D5A /* MultiMenuTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1504BC91C1EB82B00D39D5A /* MultiMenuTestingViewController.swift */; };
+		A1504BCC1C1EB82B00D39D5A /* MultiMenuTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1504BCA1C1EB82B00D39D5A /* MultiMenuTestingViewController.xib */; };
 		A1B89AE21C040BB700F5891E /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AE01C040BB700F5891E /* RatingViewController.swift */; };
 		A1B89AE31C040BB700F5891E /* RatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B89AE11C040BB700F5891E /* RatingViewController.xib */; };
 		A1B89AEC1C0430C000F5891E /* JRRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AEB1C0430C000F5891E /* JRRatingView.swift */; };
@@ -111,6 +114,9 @@
 		043844D5E8C2F221A2212F79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		53CD30C8E7354E6741C1495D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6C7553493C1F3166B0FDCE08 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1504BC61C1E8ED400D39D5A /* JZMultiMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZMultiMenuView.swift; sourceTree = "<group>"; };
+		A1504BC91C1EB82B00D39D5A /* MultiMenuTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMenuTestingViewController.swift; sourceTree = "<group>"; };
+		A1504BCA1C1EB82B00D39D5A /* MultiMenuTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiMenuTestingViewController.xib; sourceTree = "<group>"; };
 		A1B89AE01C040BB700F5891E /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		A1B89AE11C040BB700F5891E /* RatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingViewController.xib; sourceTree = "<group>"; };
 		A1B89AEB1C0430C000F5891E /* JRRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRRatingView.swift; sourceTree = "<group>"; };
@@ -239,6 +245,23 @@
 				043844D5E8C2F221A2212F79 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1504BC51C1E8E7A00D39D5A /* JZMultiMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A1504BC61C1E8ED400D39D5A /* JZMultiMenuView.swift */,
+			);
+			path = JZMultiMenu;
+			sourceTree = "<group>";
+		};
+		A1504BC81C1EB80E00D39D5A /* MultiMenuViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				A1504BC91C1EB82B00D39D5A /* MultiMenuTestingViewController.swift */,
+				A1504BCA1C1EB82B00D39D5A /* MultiMenuTestingViewController.xib */,
+			);
+			name = MultiMenuViewTest;
 			sourceTree = "<group>";
 		};
 		A1B89ADF1C040B9400F5891E /* RatingViewTest */ = {
@@ -387,6 +410,7 @@
 		BB36F55B1BCCD79B008FB9A0 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				A1504BC81C1EB80E00D39D5A /* MultiMenuViewTest */,
 				A1B89AF01C0433C100F5891E /* CardSwitchingTest */,
 				A1B89ADF1C040B9400F5891E /* RatingViewTest */,
 				BB93284A1BD7236B005DB417 /* ReadingViewTest */,
@@ -564,6 +588,7 @@
 		BB9AB7321BC6006700531514 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				A1504BC51C1E8E7A00D39D5A /* JZMultiMenu */,
 				A1B89AF91C044A2800F5891E /* JRCoverFlow */,
 				A1B89AF61C0434A800F5891E /* JRCardSwitchView */,
 				A1B89AEA1C0430C000F5891E /* JRRatingView */,
@@ -799,7 +824,7 @@
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = hSevenA405;
+				ORGANIZATIONNAME = WeSwift;
 				TargetAttributes = {
 					BBAF655C1BC0C12100CA709A = {
 						CreatedOnToolsVersion = 6.4;
@@ -858,6 +883,7 @@
 				BB50B2EA1BD4D4A300C499D2 /* JRWebViewController.xib in Resources */,
 				A1B89AF41C0433D400F5891E /* CardSwitchingTestingViewController.xib in Resources */,
 				BB5A9F1D1BCF7CE500EE1EC7 /* CarouselTestingViewController.xib in Resources */,
+				A1504BCC1C1EB82B00D39D5A /* MultiMenuTestingViewController.xib in Resources */,
 				BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -950,6 +976,7 @@
 				BB50B2EE1BD4D75C00C499D2 /* WebViewTestViewController.swift in Sources */,
 				BB5A9F1C1BCF7CE500EE1EC7 /* CarouselTestingViewController.swift in Sources */,
 				BB8FDF0B1BCE2ABC00AC6D0B /* JRCollapsibleTableViewHeader.swift in Sources */,
+				A1504BCB1C1EB82B00D39D5A /* MultiMenuTestingViewController.swift in Sources */,
 				A1B89AFB1C044A3200F5891E /* JRCoverFlowView.swift in Sources */,
 				BB693D5E1BC75D0200C2AC8F /* JRNetworkingIOManager.swift in Sources */,
 				BB1BA5E41BCB4D4900FF6C1F /* GuideViewController.swift in Sources */,
@@ -977,6 +1004,7 @@
 				BB50B2DA1BD4D4A300C499D2 /* JRCalendarDayModel.swift in Sources */,
 				BBD50DAE1BCFAC9600C75736 /* JRRadioButtonGroup.swift in Sources */,
 				BB5A9F171BCF7CAB00EE1EC7 /* CollapsibleSectionTestingViewController.swift in Sources */,
+				A1504BC71C1E8ED400D39D5A /* JZMultiMenuView.swift in Sources */,
 				BB9AB73E1BC6006700531514 /* Math.swift in Sources */,
 				BB5A9F221BCF7D9600EE1EC7 /* JRCarouselView.swift in Sources */,
 				BB50B2E11BD4D4A300C499D2 /* NSDateExtension.swift in Sources */,
