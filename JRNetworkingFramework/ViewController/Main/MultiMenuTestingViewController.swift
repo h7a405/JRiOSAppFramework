@@ -9,6 +9,8 @@
 import UIKit
 
 class MultiMenuTestingViewController: UIViewController {
+    
+    var firstMenuSelectedIndex: [NSIndexPath] = [NSIndexPath(forRow: 0, inSection: 0), NSIndexPath(forRow: 0, inSection: 0), NSIndexPath(forRow: 0, inSection: 0), NSIndexPath(forRow: 0, inSection: 0)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,9 +52,32 @@ extension MultiMenuTestingViewController: JZMultiMenuViewDataSouce {
     func menuView(menuView: UITableView, forLevel level: Int, numberOfRowsInSection section: Int) -> Int {
         if level == 0 {
             return 3
-        } else {
+        } else if level == 1 {
             return 5
+        } else if level == 2 {
+            return 7
+        } else if level == 3 {
+            return 9
+        } else {
+            return 0
         }
+    }
+    func menuView(menuView: UITableView, forLevel level: Int, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cellIdentifier: String = "cell"
+        var cell: UITableViewCell? = menuView.dequeueReusableCellWithIdentifier(cellIdentifier)
+        if cell == nil {
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
+        }
+        if level == 0 {
+            cell!.textLabel?.text = "first-\(indexPath.section)-\(indexPath.row)"
+        } else if level == 1 {
+            cell!.textLabel?.text = "second-\(indexPath.section)-\(indexPath.row)[\(self.firstMenuSelectedIndex[0].section)-\(self.firstMenuSelectedIndex[0].row)]"
+        } else if level == 2 {
+            cell!.textLabel?.text = "third-\(indexPath.section)-\(indexPath.row)[\(self.firstMenuSelectedIndex[0].section)-\(self.firstMenuSelectedIndex[0].row)][\(self.firstMenuSelectedIndex[1].section)-\(self.firstMenuSelectedIndex[1].row)]"
+        } else if level == 3 {
+            cell!.textLabel?.text = "fourth-\(indexPath.section)-\(indexPath.row)[\(self.firstMenuSelectedIndex[0].section)-\(self.firstMenuSelectedIndex[0].row)][\(self.firstMenuSelectedIndex[1].section)-\(self.firstMenuSelectedIndex[1].row)][\(self.firstMenuSelectedIndex[2].section)-\(self.firstMenuSelectedIndex[2].row)]"
+        }
+        return cell!
     }
 }
 extension MultiMenuTestingViewController: JZMultiMenuViewDelegate {
@@ -60,5 +85,6 @@ extension MultiMenuTestingViewController: JZMultiMenuViewDelegate {
         if level > 0 {
             menuView.deselectRowAtIndexPath(indexPath, animated: true)
         }
+        self.firstMenuSelectedIndex[level] = indexPath
     }
 }

@@ -47,6 +47,8 @@ class JZMultiMenuView: UIView {
         get {return self.queue}
     }
     
+    var selectedIndexs: [JZIndexPath] = Array()
+    
     var type: JZMultiMenuViewType = JZMultiMenuViewType.Empty
     var style: JZMultiMenuViewStyle = JZMultiMenuViewStyle.AnyStyle {
         willSet {
@@ -62,6 +64,22 @@ class JZMultiMenuView: UIView {
             if self.dataSource != nil {
                 self.reloadMenu()
             }
+        }
+    }
+    
+    struct JZIndexPath {
+        var level: Int = -1
+        var section: Int = -1
+        var row: Int = -1
+        
+        init(level: Int, section: Int, row: Int) {
+            self.level = level
+            self.section = section
+            self.row = row
+        }
+        
+        func getIndexPath() -> NSIndexPath {
+            return NSIndexPath(forRow: self.row, inSection: self.section)
         }
     }
 
@@ -91,6 +109,17 @@ extension JZMultiMenuView {
         if self.dataSource == nil {
             return
         } else {
+            if self.selectedIndexs.count <= 0 {
+                var numberToGo: Int = 0
+                if self.type == JZMultiMenuViewType.Double {
+                    numberToGo = 2
+                } else if self.type == JZMultiMenuViewType.Multiplbe {
+                    numberToGo = 4
+                }
+                for i in 0..<numberToGo {
+                    self.selectedIndexs.append(JZIndexPath(level: i, section: 0, row: 0))
+                }
+            }
             if self.queue == nil {
                 self.queue = Array()
                 var numberOfViews: Int = 0
@@ -149,11 +178,32 @@ extension JZMultiMenuView {
                 self.queue![3].tableHeaderView = fourthHeaderView
                 self.addSubview(self.queue![3])
             }
+//            self.tableView(firstTableView, didSelectRowAtIndexPath: self.selectedIndexs[0].getIndexPath())
+            firstTableView.selectRowAtIndexPath(self.selectedIndexs[0].getIndexPath(), animated: false, scrollPosition: UITableViewScrollPosition.Top)
         }
     }
     
-    func menuView(menuView: UITableView, deSelectAtRowOfIndexPath indexPath: NSIndexPath, animated: Bool) {
-        menuView.deselectRowAtIndexPath(indexPath, animated: animated)
+    func didGoBackButtonClicked(sender: UIButton) {
+        if sender.tag == 999990 {
+            self.hideNextLevelMenu(2)
+        } else if sender.tag == 999991 {
+            self.hideNextLevelMenu(3)
+        }
+    }
+    
+    private func showNextLevelMenu(index: Int) {
+        if self.queue != nil {
+            UIView.animateWithDuration(0.2, animations: {()
+                self.queue![index].transform = CGAffineTransformTranslate(self.queue![index].transform, -(self.queue![index].frame.width), 0)
+                }, completion: nil)
+        }
+    }
+    private func hideNextLevelMenu(index: Int) {
+        if self.queue != nil {
+            UIView.animateWithDuration(0.2, animations: {()
+                self.queue![index].transform = CGAffineTransformTranslate(self.queue![index].transform, self.queue![index].frame.width, 0)
+                }, completion: nil)
+        }
     }
 }
 //MARK: Extensions - Getter/Setter
@@ -168,27 +218,11 @@ extension JZMultiMenuView {
         }
         return -1
     }
-    func didGoBackButtonClicked(sender: UIButton) {
-        if sender.tag == 999990 {
-            self.hideNextLevelMenu(2)
-        } else if sender.tag == 999991 {
-            self.hideNextLevelMenu(3)
-        }
-    }
-    
-    private func showNextLevelMenu(index: Int) {
-        if self.queue != nil {
-            UIView.animateWithDuration(0.2, animations: {()
-                self.queue![index].transform = CGAffineTransformTranslate(self.queue![index].transform, -(self.queue![index].frame.width), 0)
-            }, completion: nil)
-        }
-    }
-    private func hideNextLevelMenu(index: Int) {
-        if self.queue != nil {
-            UIView.animateWithDuration(0.2, animations: {()
-                self.queue![index].transform = CGAffineTransformTranslate(self.queue![index].transform, self.queue![index].frame.width, 0)
-                }, completion: nil)
-        }
+    private func setCellStyle(cell: UITableViewCell) {
+        cell.textLabel?.font = UIFont.systemFontOfSize(14)
+        cell.backgroundColor = UIColor.clearColor()
+        cell.selectedBackgroundView = UIView(frame: cell.frame)
+        cell.selectedBackgroundView!.backgroundColor = UIColor.whiteColor()
     }
 }
 
@@ -217,37 +251,25 @@ extension JZMultiMenuView: UITableViewDataSource {
         if self.dataSource != nil {
             if self.dataSource!.respondsToSelector("menuView:forLevel:cellForRowAtIndexPath:") {
                 let cellToReturn = self.dataSource!.menuView!(tableView, forLevel: self.getIndexOfTableView(tableView), cellForRowAtIndexPath: indexPath)
-                if self.getIndexOfTableView(tableView) == 0 {
-                    cellToReturn.textLabel?.font = UIFont.systemFontOfSize(14)
-                    cellToReturn.backgroundColor = UIColor.clearColor()
-                    cellToReturn.selectedBackgroundView = UIView(frame: cellToReturn.frame)
-                } else {
+                self.setCellStyle(cellToReturn)
+                if self.getIndexOfTableView(tableView) > 0 {
                     cellToReturn.textLabel?.font = UIFont.systemFontOfSize(13)
                 }
-                cellToReturn.selectedBackgroundView!.backgroundColor = UIColor.whiteColor()
                 return cellToReturn
             } else {
                 let cellToReturn = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
-                if self.getIndexOfTableView(tableView) == 0 {
-                    cellToReturn.textLabel?.font = UIFont.systemFontOfSize(14)
-                    cellToReturn.backgroundColor = UIColor.clearColor()
-                    cellToReturn.selectedBackgroundView = UIView(frame: cellToReturn.frame)
-                } else {
+                self.setCellStyle(cellToReturn)
+                if self.getIndexOfTableView(tableView) > 0 {
                     cellToReturn.textLabel?.font = UIFont.systemFontOfSize(13)
                 }
-                cellToReturn.selectedBackgroundView!.backgroundColor = UIColor.whiteColor()
                 return cellToReturn
             }
         } else {
             let cellToReturn = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
-            if self.getIndexOfTableView(tableView) == 0 {
-                cellToReturn.textLabel?.font = UIFont.systemFontOfSize(14)
-                cellToReturn.backgroundColor = UIColor.clearColor()
-                cellToReturn.selectedBackgroundView = UIView(frame: cellToReturn.frame)
-            } else {
+            self.setCellStyle(cellToReturn)
+            if self.getIndexOfTableView(tableView) > 0 {
                 cellToReturn.textLabel?.font = UIFont.systemFontOfSize(13)
             }
-            cellToReturn.selectedBackgroundView!.backgroundColor = UIColor.whiteColor()
             return cellToReturn
         }
     }
@@ -293,13 +315,36 @@ extension  JZMultiMenuView: UITableViewDelegate {
 //        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         if self.getIndexOfTableView(tableView) == 0 {
             tableView.cellForRowAtIndexPath(indexPath)!.tintColor = UIColor.whiteColor()
+            if self.queue != nil {
+                self.queue![1].reloadData()
+                self.queue![2].reloadData()
+                self.queue![3].reloadData()
+                if self.type == JZMultiMenuViewType.Multiplbe {
+                    if self.queue![3].frame.origin.x < self.frame.width {
+                        self.hideNextLevelMenu(3)
+                    }
+                    if self.queue![2].frame.origin.x < self.frame.width {
+                        self.hideNextLevelMenu(2)
+                    }
+                }
+            }
+            
         } else if self.getIndexOfTableView(tableView) == 1 && self.type == JZMultiMenuViewType.Multiplbe {
             self.showNextLevelMenu(2)
+            if self.queue != nil {
+                self.queue![2].reloadData()
+                self.queue![3].reloadData()
+            }
         } else if self.getIndexOfTableView(tableView) == 2 && self.type == JZMultiMenuViewType.Multiplbe {
             self.showNextLevelMenu(3)
+            if self.queue != nil {
+                self.queue![3].reloadData()
+            }
         } else {
             
         }
+        self.selectedIndexs[self.getIndexOfTableView(tableView)].section = indexPath.section
+        self.selectedIndexs[self.getIndexOfTableView(tableView)].row = indexPath.row
         if self.delegate != nil {
             if self.delegate!.respondsToSelector("menuView:forLevel:didSelectRowAtIndexPath:") {
                 self.delegate!.menuView!(tableView, forLevel: self.getIndexOfTableView(tableView), didSelectRowAtIndexPath: indexPath)
