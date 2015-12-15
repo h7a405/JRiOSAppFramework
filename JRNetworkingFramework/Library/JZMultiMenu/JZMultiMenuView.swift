@@ -12,7 +12,8 @@ import UIKit
 enum JZMultiMenuViewType {
     case Empty  //Initialize a empty view
     case Double //Initialize a view with two table views
-    case Multiplbe  //Initialize a view with more than two table views and up to the total number of four.
+    case Triple
+    case Multiple  //Initialize a view with more than two table views and up to the total number of four.
 }
 
 enum JZMultiMenuViewStyle {
@@ -113,8 +114,10 @@ extension JZMultiMenuView {
                 var numberToGo: Int = 0
                 if self.type == JZMultiMenuViewType.Double {
                     numberToGo = 2
-                } else if self.type == JZMultiMenuViewType.Multiplbe {
+                } else if self.type == JZMultiMenuViewType.Multiple {
                     numberToGo = 4
+                } else if self.type == JZMultiMenuViewType.Triple {
+                    numberToGo = 3
                 }
                 for i in 0..<numberToGo {
                     self.selectedIndexs.append(JZIndexPath(level: i, section: 0, row: 0))
@@ -125,7 +128,9 @@ extension JZMultiMenuView {
                 var numberOfViews: Int = 0
                 if self.type == JZMultiMenuViewType.Double {
                     numberOfViews = 2
-                } else if self.type == JZMultiMenuViewType.Multiplbe {
+                } else if self.type == JZMultiMenuViewType.Triple {
+                    numberOfViews = 3
+                } else if self.type == JZMultiMenuViewType.Multiple {
                     numberOfViews = 4
                 }
                 for _ in 0..<numberOfViews {
@@ -155,7 +160,7 @@ extension JZMultiMenuView {
             secondTableView.frame = CGRect(x: widthToSet, y: 0, width: self.frame.width - widthToSet, height: self.frame.height)
             self.addSubview(secondTableView)
             
-            if self.type == JZMultiMenuViewType.Multiplbe {
+            if self.type == JZMultiMenuViewType.Multiple {
                 let thirdHeaderView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: secondTableView.frame.width, height: 30))
                 let thirdButton: UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
                 thirdButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
@@ -177,6 +182,18 @@ extension JZMultiMenuView {
                 self.queue![3].frame = CGRect(x: self.frame.width, y: 0, width: secondTableView.frame.width, height: secondTableView.frame.height)
                 self.queue![3].tableHeaderView = fourthHeaderView
                 self.addSubview(self.queue![3])
+            }
+            if self.type == JZMultiMenuViewType.Triple {
+                let thirdHeaderView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: secondTableView.frame.width, height: 30))
+                let thirdButton: UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+                thirdButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+                thirdButton.setTitle("<", forState: UIControlState.Normal)
+                thirdButton.addTarget(self, action: "didGoBackButtonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+                thirdButton.tag = 999990
+                thirdHeaderView.addSubview(thirdButton)
+                self.queue![2].frame = CGRect(x: self.frame.width, y: 0, width: secondTableView.frame.width, height: secondTableView.frame.height)
+                self.queue![2].tableHeaderView = thirdHeaderView
+                self.addSubview(self.queue![2])
             }
 //            self.tableView(firstTableView, didSelectRowAtIndexPath: self.selectedIndexs[0].getIndexPath())
             firstTableView.selectRowAtIndexPath(self.selectedIndexs[0].getIndexPath(), animated: false, scrollPosition: UITableViewScrollPosition.Top)
@@ -317,25 +334,37 @@ extension  JZMultiMenuView: UITableViewDelegate {
             tableView.cellForRowAtIndexPath(indexPath)!.tintColor = UIColor.whiteColor()
             if self.queue != nil {
                 self.queue![1].reloadData()
-                self.queue![2].reloadData()
-                self.queue![3].reloadData()
-                if self.type == JZMultiMenuViewType.Multiplbe {
+                if self.type == JZMultiMenuViewType.Multiple {
+                    self.queue![2].reloadData()
+                    self.queue![3].reloadData()
                     if self.queue![3].frame.origin.x < self.frame.width {
                         self.hideNextLevelMenu(3)
                     }
                     if self.queue![2].frame.origin.x < self.frame.width {
                         self.hideNextLevelMenu(2)
                     }
+                } else if self.type == JZMultiMenuViewType.Triple {
+                    self.queue![2].reloadData()
+                    if self.queue![2].frame.origin.x < self.frame.width {
+                        self.hideNextLevelMenu(2)
+                    }
                 }
             }
             
-        } else if self.getIndexOfTableView(tableView) == 1 && self.type == JZMultiMenuViewType.Multiplbe {
+        } else if self.getIndexOfTableView(tableView) == 1 && (self.type == JZMultiMenuViewType.Triple || self.type == JZMultiMenuViewType.Multiple) {
             self.showNextLevelMenu(2)
             if self.queue != nil {
+                
                 self.queue![2].reloadData()
-                self.queue![3].reloadData()
+                
+                if self.type == JZMultiMenuViewType.Multiple {
+                    self.queue![3].reloadData()
+                    if self.queue![3].frame.origin.x < self.frame.width {
+                        self.hideNextLevelMenu(3)
+                    }
+                }
             }
-        } else if self.getIndexOfTableView(tableView) == 2 && self.type == JZMultiMenuViewType.Multiplbe {
+        } else if self.getIndexOfTableView(tableView) == 2 && self.type == JZMultiMenuViewType.Multiple {
             self.showNextLevelMenu(3)
             if self.queue != nil {
                 self.queue![3].reloadData()

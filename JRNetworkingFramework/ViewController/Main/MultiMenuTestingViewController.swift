@@ -23,7 +23,7 @@ class MultiMenuTestingViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let multiMenuView: JZMultiMenuView = JZMultiMenuView(frame: self.view.bounds, type: JZMultiMenuViewType.Multiplbe)
+        let multiMenuView: JZMultiMenuView = JZMultiMenuView(frame: self.view.bounds, type: JZMultiMenuViewType.Multiple)
         multiMenuView.style = JZMultiMenuViewStyle.AnyStyle
         multiMenuView.dataSource = self
         multiMenuView.delegate = self
