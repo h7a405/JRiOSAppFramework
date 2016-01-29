@@ -121,7 +121,7 @@ extension JZQRCodeScanningViewController {
             let xibs = NSBundle.mainBundle().loadNibNamed("JZQRCodeScanningMaskView", owner: nil, options: nil)
             self.scanningArea = xibs[0] as? JZQRCodeScanningMaskView
             if let area = self.scanningArea {
-                
+                area.frame = self.view.bounds
                 self.view.addSubview(area)
                 
                 let interestArea = area.scanningAreaView.frame
