@@ -32,7 +32,8 @@ class TestingViewController: UIViewController {
         "投票、评价",
         "卡片切换",
         "菜单联动（New）",
-        "静态进度条"
+        "静态进度条",
+        "扫描"
     ]
     let titleForRows: [[String]] = [
         ["折叠表格视图（有多选）"],
@@ -47,7 +48,8 @@ class TestingViewController: UIViewController {
         ["投票评价视图"],
         ["卡片切换"],
         ["新的联动"],
-        ["静态进度条"]
+        ["静态进度条"],
+        ["扫描二维码"]
     ]
 //    let viewControllersForRows: [[UIViewController]] = [
 //        [CollapsibleSectionTestingViewController()],
@@ -121,6 +123,8 @@ extension TestingViewController {
             instance = MultiMenuTestingViewController()
         case 12:
             instance = ProgressBarTestingViewController()
+        case 13:
+            instance = QRCodeViewController()
         default:
             break
         }

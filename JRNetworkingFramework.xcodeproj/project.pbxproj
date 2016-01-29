@@ -28,39 +28,6 @@
 		A11441281C5B000200B75FB8 /* JZQRCodeScanningMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440951C5B000200B75FB8 /* JZQRCodeScanningMaskView.xib */; };
 		A11441291C5B000200B75FB8 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440981C5B000200B75FB8 /* GuideViewController.swift */; };
 		A114412A1C5B000200B75FB8 /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440991C5B000200B75FB8 /* GuideViewController.xib */; };
-		A114412B1C5B000200B75FB8 /* HttpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114409A1C5B000200B75FB8 /* HttpViewController.swift */; };
-		A114412C1C5B000200B75FB8 /* HttpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114409B1C5B000200B75FB8 /* HttpViewController.xib */; };
-		A114412D1C5B000200B75FB8 /* CalendarViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114409D1C5B000200B75FB8 /* CalendarViewTestingViewController.swift */; };
-		A114412E1C5B000200B75FB8 /* CalendarViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114409E1C5B000200B75FB8 /* CalendarViewTestingViewController.xib */; };
-		A114412F1C5B000200B75FB8 /* CardSwitchingTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114409F1C5B000200B75FB8 /* CardSwitchingTestingViewController.swift */; };
-		A11441301C5B000200B75FB8 /* CardSwitchingTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440A01C5B000200B75FB8 /* CardSwitchingTestingViewController.xib */; };
-		A11441311C5B000200B75FB8 /* CarouselTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440A11C5B000200B75FB8 /* CarouselTestingViewController.swift */; };
-		A11441321C5B000200B75FB8 /* CarouselTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440A21C5B000200B75FB8 /* CarouselTestingViewController.xib */; };
-		A11441331C5B000200B75FB8 /* CollapsibleSectionTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440A31C5B000200B75FB8 /* CollapsibleSectionTestingViewController.swift */; };
-		A11441341C5B000200B75FB8 /* CollapsibleSectionTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440A41C5B000200B75FB8 /* CollapsibleSectionTestingViewController.xib */; };
-		A11441351C5B000200B75FB8 /* DropdownMenuTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440A51C5B000200B75FB8 /* DropdownMenuTestViewController.swift */; };
-		A11441361C5B000200B75FB8 /* DropdownMenuTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440A61C5B000200B75FB8 /* DropdownMenuTestViewController.xib */; };
-		A11441371C5B000200B75FB8 /* GridViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440A71C5B000200B75FB8 /* GridViewTestingViewController.swift */; };
-		A11441381C5B000200B75FB8 /* GridViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440A81C5B000200B75FB8 /* GridViewTestingViewController.xib */; };
-		A11441391C5B000200B75FB8 /* JRDualLinkageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440A91C5B000200B75FB8 /* JRDualLinkageViewController.swift */; };
-		A114413A1C5B000200B75FB8 /* MultiMenuTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440AA1C5B000200B75FB8 /* MultiMenuTestingViewController.swift */; };
-		A114413B1C5B000200B75FB8 /* MultiMenuTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440AB1C5B000200B75FB8 /* MultiMenuTestingViewController.xib */; };
-		A114413C1C5B000200B75FB8 /* PhotoBrowserTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440AC1C5B000200B75FB8 /* PhotoBrowserTestingViewController.swift */; };
-		A114413D1C5B000200B75FB8 /* PhotoBrowserTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440AD1C5B000200B75FB8 /* PhotoBrowserTestingViewController.xib */; };
-		A114413E1C5B000200B75FB8 /* ProgressBarTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440AE1C5B000200B75FB8 /* ProgressBarTestingViewController.swift */; };
-		A114413F1C5B000200B75FB8 /* ProgressBarTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440AF1C5B000200B75FB8 /* ProgressBarTestingViewController.xib */; };
-		A11441401C5B000200B75FB8 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440B01C5B000200B75FB8 /* RatingViewController.swift */; };
-		A11441411C5B000200B75FB8 /* RatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440B11C5B000200B75FB8 /* RatingViewController.xib */; };
-		A11441421C5B000200B75FB8 /* ReadingViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440B21C5B000200B75FB8 /* ReadingViewTestingViewController.swift */; };
-		A11441431C5B000200B75FB8 /* ReadingViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440B31C5B000200B75FB8 /* ReadingViewTestingViewController.xib */; };
-		A11441441C5B000200B75FB8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440B41C5B000200B75FB8 /* SettingViewController.swift */; };
-		A11441451C5B000200B75FB8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440B51C5B000200B75FB8 /* SettingViewController.xib */; };
-		A11441461C5B000200B75FB8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440B71C5B000200B75FB8 /* TabBarViewController.swift */; };
-		A11441471C5B000200B75FB8 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440B81C5B000200B75FB8 /* TabBarViewController.xib */; };
-		A11441481C5B000200B75FB8 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440B91C5B000200B75FB8 /* TestingViewController.swift */; };
-		A11441491C5B000200B75FB8 /* TestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440BA1C5B000200B75FB8 /* TestingViewController.xib */; };
-		A114414A1C5B000200B75FB8 /* WebViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440BB1C5B000200B75FB8 /* WebViewTestViewController.swift */; };
-		A114414B1C5B000200B75FB8 /* WebViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440BC1C5B000200B75FB8 /* WebViewTestViewController.xib */; };
 		A114414C1C5B000200B75FB8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440BE1C5B000200B75FB8 /* RootViewController.swift */; };
 		A114414D1C5B000200B75FB8 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440C01C5B000200B75FB8 /* ResetPasswordViewController.swift */; };
 		A114414E1C5B000200B75FB8 /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440C11C5B000200B75FB8 /* ResetPasswordViewController.xib */; };
@@ -109,6 +76,41 @@
 		A11441921C5B06BF00B75FB8 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441871C5B06BF00B75FB8 /* NetworkUtil.swift */; };
 		A11441931C5B06BF00B75FB8 /* ProjectUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441891C5B06BF00B75FB8 /* ProjectUtil.swift */; };
 		A11441941C5B06BF00B75FB8 /* SystemUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114418C1C5B06BF00B75FB8 /* SystemUtil.swift */; };
+		A114421A1C5B373200B75FB8 /* HttpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441E91C5B373200B75FB8 /* HttpViewController.swift */; };
+		A114421B1C5B373200B75FB8 /* HttpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11441EA1C5B373200B75FB8 /* HttpViewController.xib */; };
+		A114421C1C5B373200B75FB8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441EC1C5B373200B75FB8 /* SettingViewController.swift */; };
+		A114421D1C5B373200B75FB8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11441ED1C5B373200B75FB8 /* SettingViewController.xib */; };
+		A114421E1C5B373200B75FB8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441EF1C5B373200B75FB8 /* TabBarViewController.swift */; };
+		A114421F1C5B373200B75FB8 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11441F01C5B373200B75FB8 /* TabBarViewController.xib */; };
+		A11442201C5B373200B75FB8 /* CalendarViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441F31C5B373200B75FB8 /* CalendarViewTestingViewController.swift */; };
+		A11442211C5B373200B75FB8 /* CalendarViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11441F41C5B373200B75FB8 /* CalendarViewTestingViewController.xib */; };
+		A11442221C5B373200B75FB8 /* CardSwitchingTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441F61C5B373200B75FB8 /* CardSwitchingTestingViewController.swift */; };
+		A11442231C5B373200B75FB8 /* CardSwitchingTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11441F71C5B373200B75FB8 /* CardSwitchingTestingViewController.xib */; };
+		A11442241C5B373200B75FB8 /* CarouselTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441F91C5B373200B75FB8 /* CarouselTestingViewController.swift */; };
+		A11442251C5B373200B75FB8 /* CarouselTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11441FA1C5B373200B75FB8 /* CarouselTestingViewController.xib */; };
+		A11442261C5B373200B75FB8 /* CollapsibleSectionTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441FC1C5B373200B75FB8 /* CollapsibleSectionTestingViewController.swift */; };
+		A11442271C5B373200B75FB8 /* CollapsibleSectionTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11441FD1C5B373200B75FB8 /* CollapsibleSectionTestingViewController.xib */; };
+		A11442281C5B373200B75FB8 /* DropdownMenuTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441FF1C5B373200B75FB8 /* DropdownMenuTestViewController.swift */; };
+		A11442291C5B373200B75FB8 /* DropdownMenuTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442001C5B373200B75FB8 /* DropdownMenuTestViewController.xib */; };
+		A114422A1C5B373200B75FB8 /* JRDualLinkageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442021C5B373200B75FB8 /* JRDualLinkageViewController.swift */; };
+		A114422B1C5B373200B75FB8 /* GridViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442041C5B373200B75FB8 /* GridViewTestingViewController.swift */; };
+		A114422C1C5B373200B75FB8 /* GridViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442051C5B373200B75FB8 /* GridViewTestingViewController.xib */; };
+		A114422D1C5B373200B75FB8 /* MultiMenuTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442071C5B373200B75FB8 /* MultiMenuTestingViewController.swift */; };
+		A114422E1C5B373200B75FB8 /* MultiMenuTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442081C5B373200B75FB8 /* MultiMenuTestingViewController.xib */; };
+		A114422F1C5B373200B75FB8 /* PhotoBrowserTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114420A1C5B373200B75FB8 /* PhotoBrowserTestingViewController.swift */; };
+		A11442301C5B373200B75FB8 /* PhotoBrowserTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114420B1C5B373200B75FB8 /* PhotoBrowserTestingViewController.xib */; };
+		A11442311C5B373200B75FB8 /* ProgressBarTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114420D1C5B373200B75FB8 /* ProgressBarTestingViewController.swift */; };
+		A11442321C5B373200B75FB8 /* ProgressBarTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114420E1C5B373200B75FB8 /* ProgressBarTestingViewController.xib */; };
+		A11442331C5B373200B75FB8 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442101C5B373200B75FB8 /* RatingViewController.swift */; };
+		A11442341C5B373200B75FB8 /* RatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442111C5B373200B75FB8 /* RatingViewController.xib */; };
+		A11442351C5B373200B75FB8 /* ReadingViewTestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442131C5B373200B75FB8 /* ReadingViewTestingViewController.swift */; };
+		A11442361C5B373200B75FB8 /* ReadingViewTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442141C5B373200B75FB8 /* ReadingViewTestingViewController.xib */; };
+		A11442371C5B373200B75FB8 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442151C5B373200B75FB8 /* TestingViewController.swift */; };
+		A11442381C5B373200B75FB8 /* TestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442161C5B373200B75FB8 /* TestingViewController.xib */; };
+		A11442391C5B373200B75FB8 /* WebViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442181C5B373200B75FB8 /* WebViewTestViewController.swift */; };
+		A114423A1C5B373200B75FB8 /* WebViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442191C5B373200B75FB8 /* WebViewTestViewController.xib */; };
+		A114423E1C5B37A700B75FB8 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114423C1C5B37A700B75FB8 /* QRCodeViewController.swift */; };
+		A114423F1C5B37A700B75FB8 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114423D1C5B37A700B75FB8 /* QRCodeViewController.xib */; };
 		BBAF65631BC0C12100CA709A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF65621BC0C12100CA709A /* AppDelegate.swift */; };
 		BBAF65681BC0C12100CA709A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65661BC0C12100CA709A /* Main.storyboard */; };
 		BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65691BC0C12100CA709A /* Images.xcassets */; };
@@ -152,39 +154,6 @@
 		A11440951C5B000200B75FB8 /* JZQRCodeScanningMaskView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZQRCodeScanningMaskView.xib; sourceTree = "<group>"; };
 		A11440981C5B000200B75FB8 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		A11440991C5B000200B75FB8 /* GuideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideViewController.xib; sourceTree = "<group>"; };
-		A114409A1C5B000200B75FB8 /* HttpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpViewController.swift; sourceTree = "<group>"; };
-		A114409B1C5B000200B75FB8 /* HttpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpViewController.xib; sourceTree = "<group>"; };
-		A114409D1C5B000200B75FB8 /* CalendarViewTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewTestingViewController.swift; sourceTree = "<group>"; };
-		A114409E1C5B000200B75FB8 /* CalendarViewTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewTestingViewController.xib; sourceTree = "<group>"; };
-		A114409F1C5B000200B75FB8 /* CardSwitchingTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSwitchingTestingViewController.swift; sourceTree = "<group>"; };
-		A11440A01C5B000200B75FB8 /* CardSwitchingTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSwitchingTestingViewController.xib; sourceTree = "<group>"; };
-		A11440A11C5B000200B75FB8 /* CarouselTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselTestingViewController.swift; sourceTree = "<group>"; };
-		A11440A21C5B000200B75FB8 /* CarouselTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselTestingViewController.xib; sourceTree = "<group>"; };
-		A11440A31C5B000200B75FB8 /* CollapsibleSectionTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleSectionTestingViewController.swift; sourceTree = "<group>"; };
-		A11440A41C5B000200B75FB8 /* CollapsibleSectionTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollapsibleSectionTestingViewController.xib; sourceTree = "<group>"; };
-		A11440A51C5B000200B75FB8 /* DropdownMenuTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownMenuTestViewController.swift; sourceTree = "<group>"; };
-		A11440A61C5B000200B75FB8 /* DropdownMenuTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropdownMenuTestViewController.xib; sourceTree = "<group>"; };
-		A11440A71C5B000200B75FB8 /* GridViewTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewTestingViewController.swift; sourceTree = "<group>"; };
-		A11440A81C5B000200B75FB8 /* GridViewTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewTestingViewController.xib; sourceTree = "<group>"; };
-		A11440A91C5B000200B75FB8 /* JRDualLinkageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageViewController.swift; sourceTree = "<group>"; };
-		A11440AA1C5B000200B75FB8 /* MultiMenuTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMenuTestingViewController.swift; sourceTree = "<group>"; };
-		A11440AB1C5B000200B75FB8 /* MultiMenuTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiMenuTestingViewController.xib; sourceTree = "<group>"; };
-		A11440AC1C5B000200B75FB8 /* PhotoBrowserTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserTestingViewController.swift; sourceTree = "<group>"; };
-		A11440AD1C5B000200B75FB8 /* PhotoBrowserTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBrowserTestingViewController.xib; sourceTree = "<group>"; };
-		A11440AE1C5B000200B75FB8 /* ProgressBarTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarTestingViewController.swift; sourceTree = "<group>"; };
-		A11440AF1C5B000200B75FB8 /* ProgressBarTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressBarTestingViewController.xib; sourceTree = "<group>"; };
-		A11440B01C5B000200B75FB8 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
-		A11440B11C5B000200B75FB8 /* RatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingViewController.xib; sourceTree = "<group>"; };
-		A11440B21C5B000200B75FB8 /* ReadingViewTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingViewTestingViewController.swift; sourceTree = "<group>"; };
-		A11440B31C5B000200B75FB8 /* ReadingViewTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingViewTestingViewController.xib; sourceTree = "<group>"; };
-		A11440B41C5B000200B75FB8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		A11440B51C5B000200B75FB8 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
-		A11440B71C5B000200B75FB8 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		A11440B81C5B000200B75FB8 /* TabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
-		A11440B91C5B000200B75FB8 /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
-		A11440BA1C5B000200B75FB8 /* TestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestingViewController.xib; sourceTree = "<group>"; };
-		A11440BB1C5B000200B75FB8 /* WebViewTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewTestViewController.swift; sourceTree = "<group>"; };
-		A11440BC1C5B000200B75FB8 /* WebViewTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewTestViewController.xib; sourceTree = "<group>"; };
 		A11440BE1C5B000200B75FB8 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		A11440C01C5B000200B75FB8 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		A11440C11C5B000200B75FB8 /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
@@ -236,6 +205,41 @@
 		A11441871C5B06BF00B75FB8 /* NetworkUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		A11441891C5B06BF00B75FB8 /* ProjectUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectUtil.swift; sourceTree = "<group>"; };
 		A114418C1C5B06BF00B75FB8 /* SystemUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemUtil.swift; sourceTree = "<group>"; };
+		A11441E91C5B373200B75FB8 /* HttpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpViewController.swift; sourceTree = "<group>"; };
+		A11441EA1C5B373200B75FB8 /* HttpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpViewController.xib; sourceTree = "<group>"; };
+		A11441EC1C5B373200B75FB8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A11441ED1C5B373200B75FB8 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		A11441EF1C5B373200B75FB8 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A11441F01C5B373200B75FB8 /* TabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
+		A11441F31C5B373200B75FB8 /* CalendarViewTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewTestingViewController.swift; sourceTree = "<group>"; };
+		A11441F41C5B373200B75FB8 /* CalendarViewTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewTestingViewController.xib; sourceTree = "<group>"; };
+		A11441F61C5B373200B75FB8 /* CardSwitchingTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSwitchingTestingViewController.swift; sourceTree = "<group>"; };
+		A11441F71C5B373200B75FB8 /* CardSwitchingTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardSwitchingTestingViewController.xib; sourceTree = "<group>"; };
+		A11441F91C5B373200B75FB8 /* CarouselTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselTestingViewController.swift; sourceTree = "<group>"; };
+		A11441FA1C5B373200B75FB8 /* CarouselTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselTestingViewController.xib; sourceTree = "<group>"; };
+		A11441FC1C5B373200B75FB8 /* CollapsibleSectionTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleSectionTestingViewController.swift; sourceTree = "<group>"; };
+		A11441FD1C5B373200B75FB8 /* CollapsibleSectionTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollapsibleSectionTestingViewController.xib; sourceTree = "<group>"; };
+		A11441FF1C5B373200B75FB8 /* DropdownMenuTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownMenuTestViewController.swift; sourceTree = "<group>"; };
+		A11442001C5B373200B75FB8 /* DropdownMenuTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropdownMenuTestViewController.xib; sourceTree = "<group>"; };
+		A11442021C5B373200B75FB8 /* JRDualLinkageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageViewController.swift; sourceTree = "<group>"; };
+		A11442041C5B373200B75FB8 /* GridViewTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewTestingViewController.swift; sourceTree = "<group>"; };
+		A11442051C5B373200B75FB8 /* GridViewTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridViewTestingViewController.xib; sourceTree = "<group>"; };
+		A11442071C5B373200B75FB8 /* MultiMenuTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMenuTestingViewController.swift; sourceTree = "<group>"; };
+		A11442081C5B373200B75FB8 /* MultiMenuTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiMenuTestingViewController.xib; sourceTree = "<group>"; };
+		A114420A1C5B373200B75FB8 /* PhotoBrowserTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserTestingViewController.swift; sourceTree = "<group>"; };
+		A114420B1C5B373200B75FB8 /* PhotoBrowserTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBrowserTestingViewController.xib; sourceTree = "<group>"; };
+		A114420D1C5B373200B75FB8 /* ProgressBarTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarTestingViewController.swift; sourceTree = "<group>"; };
+		A114420E1C5B373200B75FB8 /* ProgressBarTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressBarTestingViewController.xib; sourceTree = "<group>"; };
+		A11442101C5B373200B75FB8 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		A11442111C5B373200B75FB8 /* RatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingViewController.xib; sourceTree = "<group>"; };
+		A11442131C5B373200B75FB8 /* ReadingViewTestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingViewTestingViewController.swift; sourceTree = "<group>"; };
+		A11442141C5B373200B75FB8 /* ReadingViewTestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingViewTestingViewController.xib; sourceTree = "<group>"; };
+		A11442151C5B373200B75FB8 /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		A11442161C5B373200B75FB8 /* TestingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestingViewController.xib; sourceTree = "<group>"; };
+		A11442181C5B373200B75FB8 /* WebViewTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewTestViewController.swift; sourceTree = "<group>"; };
+		A11442191C5B373200B75FB8 /* WebViewTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewTestViewController.xib; sourceTree = "<group>"; };
+		A114423C1C5B37A700B75FB8 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		A114423D1C5B37A700B75FB8 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
 		BBAF655D1BC0C12100CA709A /* JRNetworkingFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRNetworkingFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAF65611BC0C12100CA709A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBAF65621BC0C12100CA709A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -447,8 +451,6 @@
 			isa = PBXGroup;
 			children = (
 				A11440971C5B000200B75FB8 /* Guide */,
-				A114409A1C5B000200B75FB8 /* HttpViewController.swift */,
-				A114409B1C5B000200B75FB8 /* HttpViewController.xib */,
 				A114409C1C5B000200B75FB8 /* Main */,
 				A11440BD1C5B000200B75FB8 /* Root */,
 				A11440BF1C5B000200B75FB8 /* UserEntrance */,
@@ -468,47 +470,12 @@
 		A114409C1C5B000200B75FB8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				A114409D1C5B000200B75FB8 /* CalendarViewTestingViewController.swift */,
-				A114409E1C5B000200B75FB8 /* CalendarViewTestingViewController.xib */,
-				A114409F1C5B000200B75FB8 /* CardSwitchingTestingViewController.swift */,
-				A11440A01C5B000200B75FB8 /* CardSwitchingTestingViewController.xib */,
-				A11440A11C5B000200B75FB8 /* CarouselTestingViewController.swift */,
-				A11440A21C5B000200B75FB8 /* CarouselTestingViewController.xib */,
-				A11440A31C5B000200B75FB8 /* CollapsibleSectionTestingViewController.swift */,
-				A11440A41C5B000200B75FB8 /* CollapsibleSectionTestingViewController.xib */,
-				A11440A51C5B000200B75FB8 /* DropdownMenuTestViewController.swift */,
-				A11440A61C5B000200B75FB8 /* DropdownMenuTestViewController.xib */,
-				A11440A71C5B000200B75FB8 /* GridViewTestingViewController.swift */,
-				A11440A81C5B000200B75FB8 /* GridViewTestingViewController.xib */,
-				A11440A91C5B000200B75FB8 /* JRDualLinkageViewController.swift */,
-				A11440AA1C5B000200B75FB8 /* MultiMenuTestingViewController.swift */,
-				A11440AB1C5B000200B75FB8 /* MultiMenuTestingViewController.xib */,
-				A11440AC1C5B000200B75FB8 /* PhotoBrowserTestingViewController.swift */,
-				A11440AD1C5B000200B75FB8 /* PhotoBrowserTestingViewController.xib */,
-				A11440AE1C5B000200B75FB8 /* ProgressBarTestingViewController.swift */,
-				A11440AF1C5B000200B75FB8 /* ProgressBarTestingViewController.xib */,
-				A11440B01C5B000200B75FB8 /* RatingViewController.swift */,
-				A11440B11C5B000200B75FB8 /* RatingViewController.xib */,
-				A11440B21C5B000200B75FB8 /* ReadingViewTestingViewController.swift */,
-				A11440B31C5B000200B75FB8 /* ReadingViewTestingViewController.xib */,
-				A11440B41C5B000200B75FB8 /* SettingViewController.swift */,
-				A11440B51C5B000200B75FB8 /* SettingViewController.xib */,
-				A11440B61C5B000200B75FB8 /* Tab */,
-				A11440B91C5B000200B75FB8 /* TestingViewController.swift */,
-				A11440BA1C5B000200B75FB8 /* TestingViewController.xib */,
-				A11440BB1C5B000200B75FB8 /* WebViewTestViewController.swift */,
-				A11440BC1C5B000200B75FB8 /* WebViewTestViewController.xib */,
+				A11441E81C5B373200B75FB8 /* HTTP */,
+				A11441EB1C5B373200B75FB8 /* Setting */,
+				A11441EE1C5B373200B75FB8 /* Tab */,
+				A11441F11C5B373200B75FB8 /* Testing */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		A11440B61C5B000200B75FB8 /* Tab */ = {
-			isa = PBXGroup;
-			children = (
-				A11440B71C5B000200B75FB8 /* TabBarViewController.swift */,
-				A11440B81C5B000200B75FB8 /* TabBarViewController.xib */,
-			);
-			path = Tab;
 			sourceTree = "<group>";
 		};
 		A11440BD1C5B000200B75FB8 /* Root */ = {
@@ -854,6 +821,181 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A11441E81C5B373200B75FB8 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				A11441E91C5B373200B75FB8 /* HttpViewController.swift */,
+				A11441EA1C5B373200B75FB8 /* HttpViewController.xib */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		A11441EB1C5B373200B75FB8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A11441EC1C5B373200B75FB8 /* SettingViewController.swift */,
+				A11441ED1C5B373200B75FB8 /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		A11441EE1C5B373200B75FB8 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A11441EF1C5B373200B75FB8 /* TabBarViewController.swift */,
+				A11441F01C5B373200B75FB8 /* TabBarViewController.xib */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		A11441F11C5B373200B75FB8 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				A114423B1C5B379900B75FB8 /* QRCodeScanning */,
+				A11441F21C5B373200B75FB8 /* Calendar */,
+				A11441F51C5B373200B75FB8 /* CardSwitching */,
+				A11441F81C5B373200B75FB8 /* Carousel */,
+				A11441FB1C5B373200B75FB8 /* Collapsible */,
+				A11441FE1C5B373200B75FB8 /* DropdownMenu */,
+				A11442011C5B373200B75FB8 /* DualLinkage */,
+				A11442031C5B373200B75FB8 /* Grid */,
+				A11442061C5B373200B75FB8 /* MultiMenu */,
+				A11442091C5B373200B75FB8 /* PhotoBrowser */,
+				A114420C1C5B373200B75FB8 /* ProgressBar */,
+				A114420F1C5B373200B75FB8 /* Rate */,
+				A11442121C5B373200B75FB8 /* Read */,
+				A11442151C5B373200B75FB8 /* TestingViewController.swift */,
+				A11442161C5B373200B75FB8 /* TestingViewController.xib */,
+				A11442171C5B373200B75FB8 /* WebView */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		A11441F21C5B373200B75FB8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A11441F31C5B373200B75FB8 /* CalendarViewTestingViewController.swift */,
+				A11441F41C5B373200B75FB8 /* CalendarViewTestingViewController.xib */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		A11441F51C5B373200B75FB8 /* CardSwitching */ = {
+			isa = PBXGroup;
+			children = (
+				A11441F61C5B373200B75FB8 /* CardSwitchingTestingViewController.swift */,
+				A11441F71C5B373200B75FB8 /* CardSwitchingTestingViewController.xib */,
+			);
+			path = CardSwitching;
+			sourceTree = "<group>";
+		};
+		A11441F81C5B373200B75FB8 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				A11441F91C5B373200B75FB8 /* CarouselTestingViewController.swift */,
+				A11441FA1C5B373200B75FB8 /* CarouselTestingViewController.xib */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		A11441FB1C5B373200B75FB8 /* Collapsible */ = {
+			isa = PBXGroup;
+			children = (
+				A11441FC1C5B373200B75FB8 /* CollapsibleSectionTestingViewController.swift */,
+				A11441FD1C5B373200B75FB8 /* CollapsibleSectionTestingViewController.xib */,
+			);
+			path = Collapsible;
+			sourceTree = "<group>";
+		};
+		A11441FE1C5B373200B75FB8 /* DropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A11441FF1C5B373200B75FB8 /* DropdownMenuTestViewController.swift */,
+				A11442001C5B373200B75FB8 /* DropdownMenuTestViewController.xib */,
+			);
+			path = DropdownMenu;
+			sourceTree = "<group>";
+		};
+		A11442011C5B373200B75FB8 /* DualLinkage */ = {
+			isa = PBXGroup;
+			children = (
+				A11442021C5B373200B75FB8 /* JRDualLinkageViewController.swift */,
+			);
+			path = DualLinkage;
+			sourceTree = "<group>";
+		};
+		A11442031C5B373200B75FB8 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				A11442041C5B373200B75FB8 /* GridViewTestingViewController.swift */,
+				A11442051C5B373200B75FB8 /* GridViewTestingViewController.xib */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		A11442061C5B373200B75FB8 /* MultiMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A11442071C5B373200B75FB8 /* MultiMenuTestingViewController.swift */,
+				A11442081C5B373200B75FB8 /* MultiMenuTestingViewController.xib */,
+			);
+			path = MultiMenu;
+			sourceTree = "<group>";
+		};
+		A11442091C5B373200B75FB8 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				A114420A1C5B373200B75FB8 /* PhotoBrowserTestingViewController.swift */,
+				A114420B1C5B373200B75FB8 /* PhotoBrowserTestingViewController.xib */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		A114420C1C5B373200B75FB8 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				A114420D1C5B373200B75FB8 /* ProgressBarTestingViewController.swift */,
+				A114420E1C5B373200B75FB8 /* ProgressBarTestingViewController.xib */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		A114420F1C5B373200B75FB8 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				A11442101C5B373200B75FB8 /* RatingViewController.swift */,
+				A11442111C5B373200B75FB8 /* RatingViewController.xib */,
+			);
+			path = Rate;
+			sourceTree = "<group>";
+		};
+		A11442121C5B373200B75FB8 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				A11442131C5B373200B75FB8 /* ReadingViewTestingViewController.swift */,
+				A11442141C5B373200B75FB8 /* ReadingViewTestingViewController.xib */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
+		A11442171C5B373200B75FB8 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				A11442181C5B373200B75FB8 /* WebViewTestViewController.swift */,
+				A11442191C5B373200B75FB8 /* WebViewTestViewController.xib */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		A114423B1C5B379900B75FB8 /* QRCodeScanning */ = {
+			isa = PBXGroup;
+			children = (
+				A114423C1C5B37A700B75FB8 /* QRCodeViewController.swift */,
+				A114423D1C5B37A700B75FB8 /* QRCodeViewController.xib */,
+			);
+			path = QRCodeScanning;
+			sourceTree = "<group>";
+		};
 		BBAF65541BC0C12100CA709A = {
 			isa = PBXGroup;
 			children = (
@@ -1002,35 +1144,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11441471C5B000200B75FB8 /* TabBarViewController.xib in Resources */,
-				A11441361C5B000200B75FB8 /* DropdownMenuTestViewController.xib in Resources */,
-				A114414B1C5B000200B75FB8 /* WebViewTestViewController.xib in Resources */,
+				A114422C1C5B373200B75FB8 /* GridViewTestingViewController.xib in Resources */,
+				A11442341C5B373200B75FB8 /* RatingViewController.xib in Resources */,
+				A11442291C5B373200B75FB8 /* DropdownMenuTestViewController.xib in Resources */,
+				A11442321C5B373200B75FB8 /* ProgressBarTestingViewController.xib in Resources */,
 				A11441611C5B000200B75FB8 /* JRCollapsibleTableViewCell.xib in Resources */,
-				A114412E1C5B000200B75FB8 /* CalendarViewTestingViewController.xib in Resources */,
 				BBAF65681BC0C12100CA709A /* Main.storyboard in Resources */,
-				A11441341C5B000200B75FB8 /* CollapsibleSectionTestingViewController.xib in Resources */,
 				A114412A1C5B000200B75FB8 /* GuideViewController.xib in Resources */,
-				A11441411C5B000200B75FB8 /* RatingViewController.xib in Resources */,
-				A11441321C5B000200B75FB8 /* CarouselTestingViewController.xib in Resources */,
+				A11442251C5B373200B75FB8 /* CarouselTestingViewController.xib in Resources */,
 				A114416F1C5B000200B75FB8 /* JRWebViewController.xib in Resources */,
 				A11441261C5B000200B75FB8 /* HttpTableViewCell.xib in Resources */,
-				A11441381C5B000200B75FB8 /* GridViewTestingViewController.xib in Resources */,
-				A114413D1C5B000200B75FB8 /* PhotoBrowserTestingViewController.xib in Resources */,
+				A114423A1C5B373200B75FB8 /* WebViewTestViewController.xib in Resources */,
 				A114416B1C5B000200B75FB8 /* JRReadingViewController.xib in Resources */,
-				A114412C1C5B000200B75FB8 /* HttpViewController.xib in Resources */,
-				A11441301C5B000200B75FB8 /* CardSwitchingTestingViewController.xib in Resources */,
 				A11441731C5B000200B75FB8 /* JZQRCodeScanningViewController.xib in Resources */,
+				A114421D1C5B373200B75FB8 /* SettingViewController.xib in Resources */,
 				A114414E1C5B000200B75FB8 /* ResetPasswordViewController.xib in Resources */,
+				A11442271C5B373200B75FB8 /* CollapsibleSectionTestingViewController.xib in Resources */,
+				A11442361C5B373200B75FB8 /* ReadingViewTestingViewController.xib in Resources */,
+				A114421B1C5B373200B75FB8 /* HttpViewController.xib in Resources */,
 				A11441521C5B000200B75FB8 /* SignUpViewController.xib in Resources */,
 				A114415A1C5B000200B75FB8 /* JRCalendarPickerView.xib in Resources */,
+				A114422E1C5B373200B75FB8 /* MultiMenuTestingViewController.xib in Resources */,
+				A11442211C5B373200B75FB8 /* CalendarViewTestingViewController.xib in Resources */,
+				A11442301C5B373200B75FB8 /* PhotoBrowserTestingViewController.xib in Resources */,
+				A11442381C5B373200B75FB8 /* TestingViewController.xib in Resources */,
+				A114423F1C5B37A700B75FB8 /* QRCodeViewController.xib in Resources */,
 				A11441281C5B000200B75FB8 /* JZQRCodeScanningMaskView.xib in Resources */,
 				A11441501C5B000200B75FB8 /* SignInViewController.xib in Resources */,
-				A11441431C5B000200B75FB8 /* ReadingViewTestingViewController.xib in Resources */,
-				A114413F1C5B000200B75FB8 /* ProgressBarTestingViewController.xib in Resources */,
-				A11441451C5B000200B75FB8 /* SettingViewController.xib in Resources */,
 				A11441201C5B000200B75FB8 /* Localization.strings in Resources */,
-				A114413B1C5B000200B75FB8 /* MultiMenuTestingViewController.xib in Resources */,
-				A11441491C5B000200B75FB8 /* TestingViewController.xib in Resources */,
+				A114421F1C5B373200B75FB8 /* TabBarViewController.xib in Resources */,
+				A11442231C5B373200B75FB8 /* CardSwitchingTestingViewController.xib in Resources */,
 				BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1097,26 +1240,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11441461C5B000200B75FB8 /* TabBarViewController.swift in Sources */,
+				A11442311C5B373200B75FB8 /* ProgressBarTestingViewController.swift in Sources */,
+				A114421C1C5B373200B75FB8 /* SettingViewController.swift in Sources */,
 				A11441691C5B000200B75FB8 /* JRReadingView.swift in Sources */,
+				A11442281C5B373200B75FB8 /* DropdownMenuTestViewController.swift in Sources */,
 				A114415C1C5B000200B75FB8 /* JRMonthPicker.swift in Sources */,
-				A114413E1C5B000200B75FB8 /* ProgressBarTestingViewController.swift in Sources */,
 				BBAF65631BC0C12100CA709A /* AppDelegate.swift in Sources */,
+				A11442391C5B373200B75FB8 /* WebViewTestViewController.swift in Sources */,
 				A114418E1C5B06BF00B75FB8 /* DateUtil.swift in Sources */,
 				A11441211C5B000200B75FB8 /* Localization.swift in Sources */,
 				A11441911C5B06BF00B75FB8 /* MathUtil.swift in Sources */,
-				A114413C1C5B000200B75FB8 /* PhotoBrowserTestingViewController.swift in Sources */,
 				A114416C1C5B000200B75FB8 /* JRSingleDropdownMenu.swift in Sources */,
 				A11441741C5B000200B75FB8 /* JZRadioButton.swift in Sources */,
 				A114411A1C5B000200B75FB8 /* CoreAnimationExtension.swift in Sources */,
+				A114422B1C5B373200B75FB8 /* GridViewTestingViewController.swift in Sources */,
 				A11441541C5B000200B75FB8 /* JZTabMenuBar.m in Sources */,
-				A114414A1C5B000200B75FB8 /* WebViewTestViewController.swift in Sources */,
+				A11442241C5B373200B75FB8 /* CarouselTestingViewController.swift in Sources */,
 				A11441271C5B000200B75FB8 /* JZQRCodeScanningMaskView.swift in Sources */,
 				A11441671C5B000200B75FB8 /* JRPhotoBrowser.swift in Sources */,
 				A11441681C5B000200B75FB8 /* JRRatingView.swift in Sources */,
 				A11441661C5B000200B75FB8 /* JRGridViewTile.swift in Sources */,
 				A11441571C5B000200B75FB8 /* JRCalendarGridView.swift in Sources */,
-				A114412B1C5B000200B75FB8 /* HttpViewController.swift in Sources */,
 				A11441921C5B06BF00B75FB8 /* NetworkUtil.swift in Sources */,
 				A114415D1C5B000200B75FB8 /* NSDateExtension.swift in Sources */,
 				A114416A1C5B000200B75FB8 /* JRReadingViewController.swift in Sources */,
@@ -1126,50 +1270,50 @@
 				A114414C1C5B000200B75FB8 /* RootViewController.swift in Sources */,
 				A11441621C5B000200B75FB8 /* JRCollapsibleTableViewHeader.swift in Sources */,
 				A11441181C5B000200B75FB8 /* Enumerate.swift in Sources */,
-				A11441421C5B000200B75FB8 /* ReadingViewTestingViewController.swift in Sources */,
 				A114416D1C5B000200B75FB8 /* JRPickerView.swift in Sources */,
+				A114422A1C5B373200B75FB8 /* JRDualLinkageViewController.swift in Sources */,
 				A114415E1C5B000200B75FB8 /* JRCardSwitchingView.swift in Sources */,
 				A114411B1C5B000200B75FB8 /* CoreGraphicsExtension.swift in Sources */,
+				A114421E1C5B373200B75FB8 /* TabBarViewController.swift in Sources */,
 				A11441251C5B000200B75FB8 /* HttpTableViewCell.swift in Sources */,
+				A114421A1C5B373200B75FB8 /* HttpViewController.swift in Sources */,
 				A11441171C5B000200B75FB8 /* Constants.swift in Sources */,
 				A114411E1C5B000200B75FB8 /* SwiftExtension.swift in Sources */,
+				A11442331C5B373200B75FB8 /* RatingViewController.swift in Sources */,
 				A11441551C5B000200B75FB8 /* JRCalendarCommon.swift in Sources */,
 				A11441601C5B000200B75FB8 /* JRCollapsibleTableViewCell.swift in Sources */,
-				A11441311C5B000200B75FB8 /* CarouselTestingViewController.swift in Sources */,
-				A11441371C5B000200B75FB8 /* GridViewTestingViewController.swift in Sources */,
+				A11442261C5B373200B75FB8 /* CollapsibleSectionTestingViewController.swift in Sources */,
 				A114415B1C5B000200B75FB8 /* JRCalendarView.swift in Sources */,
 				A114415F1C5B000200B75FB8 /* JRCarouselView.swift in Sources */,
 				A11441901C5B06BF00B75FB8 /* LogEnumeration.swift in Sources */,
-				A114412D1C5B000200B75FB8 /* CalendarViewTestingViewController.swift in Sources */,
 				A11441591C5B000200B75FB8 /* JRCalendarModel.swift in Sources */,
-				A11441481C5B000200B75FB8 /* TestingViewController.swift in Sources */,
 				A11441531C5B000200B75FB8 /* JZProgressBar.m in Sources */,
 				A11441701C5B000200B75FB8 /* JZCoverView.swift in Sources */,
-				A11441391C5B000200B75FB8 /* JRDualLinkageViewController.swift in Sources */,
 				A11441931C5B06BF00B75FB8 /* ProjectUtil.swift in Sources */,
+				A114422F1C5B373200B75FB8 /* PhotoBrowserTestingViewController.swift in Sources */,
 				A11441291C5B000200B75FB8 /* GuideViewController.swift in Sources */,
+				A11442351C5B373200B75FB8 /* ReadingViewTestingViewController.swift in Sources */,
 				A114418F1C5B06BF00B75FB8 /* Log.swift in Sources */,
-				A114413A1C5B000200B75FB8 /* MultiMenuTestingViewController.swift in Sources */,
-				A11441331C5B000200B75FB8 /* CollapsibleSectionTestingViewController.swift in Sources */,
-				A11441351C5B000200B75FB8 /* DropdownMenuTestViewController.swift in Sources */,
+				A114423E1C5B37A700B75FB8 /* QRCodeViewController.swift in Sources */,
 				A11441511C5B000200B75FB8 /* SignUpViewController.swift in Sources */,
 				A11441241C5B000200B75FB8 /* UserModel.swift in Sources */,
 				A114414D1C5B000200B75FB8 /* ResetPasswordViewController.swift in Sources */,
+				A11442201C5B373200B75FB8 /* CalendarViewTestingViewController.swift in Sources */,
 				A11441561C5B000200B75FB8 /* JRCalendarDayModel.swift in Sources */,
-				A114412F1C5B000200B75FB8 /* CardSwitchingTestingViewController.swift in Sources */,
 				A11441641C5B000200B75FB8 /* JRDualLinkageView.swift in Sources */,
 				A114416E1C5B000200B75FB8 /* JRWebViewController.swift in Sources */,
 				A11441941C5B06BF00B75FB8 /* SystemUtil.swift in Sources */,
 				A114414F1C5B000200B75FB8 /* SignInViewController.swift in Sources */,
 				A11441581C5B000200B75FB8 /* JRCalendarGridViewTile.swift in Sources */,
 				A11441191C5B000200B75FB8 /* Protocol.swift in Sources */,
+				A114422D1C5B373200B75FB8 /* MultiMenuTestingViewController.swift in Sources */,
 				A11441711C5B000200B75FB8 /* JZMultiMenuView.swift in Sources */,
+				A11442371C5B373200B75FB8 /* TestingViewController.swift in Sources */,
 				A11441721C5B000200B75FB8 /* JZQRCodeScanningViewController.swift in Sources */,
 				A114411D1C5B000200B75FB8 /* OtherExtension.swift in Sources */,
-				A11441441C5B000200B75FB8 /* SettingViewController.swift in Sources */,
+				A11442221C5B373200B75FB8 /* CardSwitchingTestingViewController.swift in Sources */,
 				A11441231C5B000200B75FB8 /* SystemHelper.swift in Sources */,
 				A114411F1C5B000200B75FB8 /* UIKitExtension.swift in Sources */,
-				A11441401C5B000200B75FB8 /* RatingViewController.swift in Sources */,
 				A114411C1C5B000200B75FB8 /* FoundationExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

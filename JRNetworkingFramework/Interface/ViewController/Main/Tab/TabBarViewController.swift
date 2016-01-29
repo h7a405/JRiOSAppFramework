@@ -24,8 +24,8 @@ class TabBarViewController: UITabBarController {
     func setupViewControllers() {
         let testNavigationController: UINavigationController = UINavigationController(rootViewController: TestingViewController())
         testNavigationController.tabBarItem.title = "控件Demo"
-        let secondNavigationController: UINavigationController = UINavigationController(rootViewController: UIViewController())
-        secondNavigationController.tabBarItem.title = "第二页"
+        let secondNavigationController: UINavigationController = UINavigationController(rootViewController: HttpViewController())
+        secondNavigationController.tabBarItem.title = "HTTP Demo"
         let settingNavigationController: UINavigationController = UINavigationController(rootViewController: SettingViewController())
         settingNavigationController.tabBarItem.title = "设置"
         self.setupTabBarController(testNavigationController, secondNavigationController, settingNavigationController)
