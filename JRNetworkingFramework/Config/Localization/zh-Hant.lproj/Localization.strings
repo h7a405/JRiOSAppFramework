@@ -1,0 +1,78 @@
+/* 
+  Localization.strings
+  JZAppFrameworkDemo
+
+  Created by Jason.Chengzi on 16/01/15.
+  Copyright © 2016年 weSwift. All rights reserved.
+*/
+/*
+ *  国际化文件 - 简体中文
+ */
+//MARK: - 应用启动 - Launch
+
+//MARK: - 用户入口 - Entrance
+"OP_ENTRANCE_LOGIN" = "登錄";  //登陆
+"OP_ENTRANCE_LOGINING" = "登錄中";   //登录中
+"OP_ENTRANCE_FORGET_PASSWORD" = "找回密碼";    //找回密码
+"AL_ENTRANCE_LOGIN_WRONG_USERNAME_OR_PASSWORD" = "用戶名或密碼錯誤";   //账号或密码错误
+"AL_ENTRANCE_LOGIN_FAILED_TO_LOGIN" = "登錄失敗";  //登录失败
+//MARK: - 选项卡 - Tab
+
+
+
+//MARK: - 系统 - System
+"OP_SYSTEM_ENABLED" = "已開啟";  //已开启
+"OP_SYSTEM_DISABLED" = "已關閉"; //已关闭
+"OP_SYSTEM_SUBMIT" = "提交";   //提交
+"OP_SYSTEM_INSERT" = "插入";   //插入
+"OP_SYSTEM_ADD" = "增加";  //增加
+"OP_SYSTEM_NEW" = "新增";  //新增
+"OP_SYSTEM_DELETE" = "刪除";   //删除
+"OP_SYSTEM_CHANGE" = "更改";   //更改
+"OP_SYSTEM_ALTER" = "修改";    //修改
+"OP_SYSTEM_BACK" = "返回"; //返回
+"OP_SYSTEM_CANCEL" = "取消";   //取消
+"OP_SYSTEM_SHOW" = "查看"; //查看
+"OP_SYSTEM_CAMERA" = "拍照";   //拍照
+"OP_SYSTEM_GALARY" = "從照片庫選擇";   //图库
+"AL_SYSTEM_NO_CAMERA" = "相機當前不可用";    //相机不可用
+"AL_SYSTEM_NO_GALARY" = "照片庫當前不可用";    //图库不可用
+"AL_SYSTEM_UNKNOWN_ERROR" = "未知錯誤";    //未知错误
+//MARK: 警告框 - Alert
+"AL_SYSTEM_ALERT_TITLE" = "";  //标题
+"AL_SYSTEM_ALERT_MESSAGE" = "";    //内容
+"AL_SYSTEM_ALERT_CONFIRM" = "確認";    //确认
+"AL_SYSTEM_ALERT_CANCEL" = "取消"; //取消
+"AL_SYSTEM_ALERT_OK" = "好的"; //好的
+"AL_SYSTEM_ALERT_YES" = "是";    //是
+"AL_SYSTEM_ALERT_NO" = "否"; //否
+//MARK: 动作框 - ActionSheet
+//MARK: 指示框 - Indicator
+"AL_SYSTEM_BUILDING_FUNCTION" = "功能未開放";    //功能尚未开发
+"AL_SYSTEM_NEW_ORDER" = "您有新的訂單消息，請注意。";    //新订单提醒
+
+//MARK: - 网络-Network
+//MARK: 失败 - Failed
+"AL_NETWORK_FAILED" = "失敗";  //失败
+"AL_NETWORK_FAILED_TO_LOAD" = "加載失敗";  //加载失败
+"AL_NETWORK_FAILED_CONNECT_TO_SERVER" = "連接到服務器失敗";    //连接服务器失败
+"AL_NETWORK_NO_DATA" = "沒有更多數據"; //没有数据
+"AL_NETWORK_BAD_NETWORK" = "網絡狀態異常"; //网络状态异常
+"AL_NETWORK_FAILED_TO_OPERATE" = "操作失敗";    //修改失败
+"AL_NETWORK_OTHER_DEVICE_SIGNED_IN" = "賬號已在其他設備登陸";  //其他设备登陆
+"AL_NETWORK_FAILED_TO_UPLOAD_PHOTO" = "上傳頭像失敗";  //上传头像失败
+"AL_NETWORK_OUT_DATE" = "用戶信息已過期，請重新登陸"; //用户信息过期
+"AL_NETWORK_INVAILED_PARAMETERS" = "參數錯誤"; //参数错误
+
+//MARK: 成功 - Succeeded
+"AL_NETWORK_SUCCEDDED" = "成功";   //成功
+"AL_NETWORK_SUCCEDDED_TO_LOAD" = "加載成功";    //加载成功
+"AL_NETWORK_SUCCEEDED_TO_OPERATE" = "操作成功";   //修改成功
+"AL_NETWORK_SUCCEEDED_TO_UPLOAD_PHOTO" = "上傳頭像成功";   //上传头像成功
+//MARK: 操作中 - Operating
+"AL_NETWORK_OPERATING_LOADING" = "加載中";   //加载中
+
+//MARK: - 其他 - Other
+//MARK: 单位 - Measurement
+"DP_OTHER_MEASUREMENT_SIGN" = "￥";  //金钱符号
+"DP_OTHER_MEASUREMENT_CNY" = "圓";   //元
