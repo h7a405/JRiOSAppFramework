@@ -24,8 +24,6 @@
 		A11441241C5B000200B75FB8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114408E1C5B000200B75FB8 /* UserModel.swift */; };
 		A11441251C5B000200B75FB8 /* HttpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440911C5B000200B75FB8 /* HttpTableViewCell.swift */; };
 		A11441261C5B000200B75FB8 /* HttpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440921C5B000200B75FB8 /* HttpTableViewCell.xib */; };
-		A11441271C5B000200B75FB8 /* JZQRCodeScanningMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440941C5B000200B75FB8 /* JZQRCodeScanningMaskView.swift */; };
-		A11441281C5B000200B75FB8 /* JZQRCodeScanningMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440951C5B000200B75FB8 /* JZQRCodeScanningMaskView.xib */; };
 		A11441291C5B000200B75FB8 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440981C5B000200B75FB8 /* GuideViewController.swift */; };
 		A114412A1C5B000200B75FB8 /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440991C5B000200B75FB8 /* GuideViewController.xib */; };
 		A114414C1C5B000200B75FB8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440BE1C5B000200B75FB8 /* RootViewController.swift */; };
@@ -35,40 +33,6 @@
 		A11441501C5B000200B75FB8 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440C31C5B000200B75FB8 /* SignInViewController.xib */; };
 		A11441511C5B000200B75FB8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440C41C5B000200B75FB8 /* SignUpViewController.swift */; };
 		A11441521C5B000200B75FB8 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440C51C5B000200B75FB8 /* SignUpViewController.xib */; };
-		A11441531C5B000200B75FB8 /* JZProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A11440CA1C5B000200B75FB8 /* JZProgressBar.m */; };
-		A11441541C5B000200B75FB8 /* JZTabMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A11440CD1C5B000200B75FB8 /* JZTabMenuBar.m */; };
-		A11441551C5B000200B75FB8 /* JRCalendarCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440D11C5B000200B75FB8 /* JRCalendarCommon.swift */; };
-		A11441561C5B000200B75FB8 /* JRCalendarDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440D21C5B000200B75FB8 /* JRCalendarDayModel.swift */; };
-		A11441571C5B000200B75FB8 /* JRCalendarGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440D31C5B000200B75FB8 /* JRCalendarGridView.swift */; };
-		A11441581C5B000200B75FB8 /* JRCalendarGridViewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440D41C5B000200B75FB8 /* JRCalendarGridViewTile.swift */; };
-		A11441591C5B000200B75FB8 /* JRCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440D51C5B000200B75FB8 /* JRCalendarModel.swift */; };
-		A114415A1C5B000200B75FB8 /* JRCalendarPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440D61C5B000200B75FB8 /* JRCalendarPickerView.xib */; };
-		A114415B1C5B000200B75FB8 /* JRCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440D71C5B000200B75FB8 /* JRCalendarView.swift */; };
-		A114415C1C5B000200B75FB8 /* JRMonthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440D81C5B000200B75FB8 /* JRMonthPicker.swift */; };
-		A114415D1C5B000200B75FB8 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440D91C5B000200B75FB8 /* NSDateExtension.swift */; };
-		A114415E1C5B000200B75FB8 /* JRCardSwitchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440DB1C5B000200B75FB8 /* JRCardSwitchingView.swift */; };
-		A114415F1C5B000200B75FB8 /* JRCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440DD1C5B000200B75FB8 /* JRCarouselView.swift */; };
-		A11441601C5B000200B75FB8 /* JRCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440DF1C5B000200B75FB8 /* JRCollapsibleTableViewCell.swift */; };
-		A11441611C5B000200B75FB8 /* JRCollapsibleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440E01C5B000200B75FB8 /* JRCollapsibleTableViewCell.xib */; };
-		A11441621C5B000200B75FB8 /* JRCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440E11C5B000200B75FB8 /* JRCollapsibleTableViewHeader.swift */; };
-		A11441631C5B000200B75FB8 /* JRCoverFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440E31C5B000200B75FB8 /* JRCoverFlowView.swift */; };
-		A11441641C5B000200B75FB8 /* JRDualLinkageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440E51C5B000200B75FB8 /* JRDualLinkageView.swift */; };
-		A11441651C5B000200B75FB8 /* JRGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440E71C5B000200B75FB8 /* JRGridView.swift */; };
-		A11441661C5B000200B75FB8 /* JRGridViewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440E81C5B000200B75FB8 /* JRGridViewTile.swift */; };
-		A11441671C5B000200B75FB8 /* JRPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440EA1C5B000200B75FB8 /* JRPhotoBrowser.swift */; };
-		A11441681C5B000200B75FB8 /* JRRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440ED1C5B000200B75FB8 /* JRRatingView.swift */; };
-		A11441691C5B000200B75FB8 /* JRReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440EF1C5B000200B75FB8 /* JRReadingView.swift */; };
-		A114416A1C5B000200B75FB8 /* JRReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440F01C5B000200B75FB8 /* JRReadingViewController.swift */; };
-		A114416B1C5B000200B75FB8 /* JRReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440F11C5B000200B75FB8 /* JRReadingViewController.xib */; };
-		A114416C1C5B000200B75FB8 /* JRSingleDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440F31C5B000200B75FB8 /* JRSingleDropdownMenu.swift */; };
-		A114416D1C5B000200B75FB8 /* JRPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440F51C5B000200B75FB8 /* JRPickerView.swift */; };
-		A114416E1C5B000200B75FB8 /* JRWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440F71C5B000200B75FB8 /* JRWebViewController.swift */; };
-		A114416F1C5B000200B75FB8 /* JRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440F81C5B000200B75FB8 /* JRWebViewController.xib */; };
-		A11441701C5B000200B75FB8 /* JZCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440FA1C5B000200B75FB8 /* JZCoverView.swift */; };
-		A11441711C5B000200B75FB8 /* JZMultiMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440FC1C5B000200B75FB8 /* JZMultiMenuView.swift */; };
-		A11441721C5B000200B75FB8 /* JZQRCodeScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11440FE1C5B000200B75FB8 /* JZQRCodeScanningViewController.swift */; };
-		A11441731C5B000200B75FB8 /* JZQRCodeScanningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11440FF1C5B000200B75FB8 /* JZQRCodeScanningViewController.xib */; };
-		A11441741C5B000200B75FB8 /* JZRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441011C5B000200B75FB8 /* JZRadioButton.swift */; };
 		A114418E1C5B06BF00B75FB8 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441801C5B06BF00B75FB8 /* DateUtil.swift */; };
 		A114418F1C5B06BF00B75FB8 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441821C5B06BF00B75FB8 /* Log.swift */; };
 		A11441901C5B06BF00B75FB8 /* LogEnumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11441831C5B06BF00B75FB8 /* LogEnumeration.swift */; };
@@ -111,6 +75,42 @@
 		A114423A1C5B373200B75FB8 /* WebViewTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442191C5B373200B75FB8 /* WebViewTestViewController.xib */; };
 		A114423E1C5B37A700B75FB8 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114423C1C5B37A700B75FB8 /* QRCodeViewController.swift */; };
 		A114423F1C5B37A700B75FB8 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114423D1C5B37A700B75FB8 /* QRCodeViewController.xib */; };
+		A11442801C5B3F2F00B75FB8 /* JZProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A11442441C5B3F2F00B75FB8 /* JZProgressBar.m */; };
+		A11442811C5B3F2F00B75FB8 /* JZTabMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A11442471C5B3F2F00B75FB8 /* JZTabMenuBar.m */; };
+		A11442821C5B3F2F00B75FB8 /* JRCalendarCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114424B1C5B3F2F00B75FB8 /* JRCalendarCommon.swift */; };
+		A11442831C5B3F2F00B75FB8 /* JRCalendarDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114424C1C5B3F2F00B75FB8 /* JRCalendarDayModel.swift */; };
+		A11442841C5B3F2F00B75FB8 /* JRCalendarGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114424D1C5B3F2F00B75FB8 /* JRCalendarGridView.swift */; };
+		A11442851C5B3F2F00B75FB8 /* JRCalendarGridViewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114424E1C5B3F2F00B75FB8 /* JRCalendarGridViewTile.swift */; };
+		A11442861C5B3F2F00B75FB8 /* JRCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114424F1C5B3F2F00B75FB8 /* JRCalendarModel.swift */; };
+		A11442871C5B3F2F00B75FB8 /* JRCalendarPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442501C5B3F2F00B75FB8 /* JRCalendarPickerView.xib */; };
+		A11442881C5B3F2F00B75FB8 /* JRCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442511C5B3F2F00B75FB8 /* JRCalendarView.swift */; };
+		A11442891C5B3F2F00B75FB8 /* JRMonthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442521C5B3F2F00B75FB8 /* JRMonthPicker.swift */; };
+		A114428A1C5B3F2F00B75FB8 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442531C5B3F2F00B75FB8 /* NSDateExtension.swift */; };
+		A114428B1C5B3F2F00B75FB8 /* JRCardSwitchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442551C5B3F2F00B75FB8 /* JRCardSwitchingView.swift */; };
+		A114428C1C5B3F2F00B75FB8 /* JRCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442571C5B3F2F00B75FB8 /* JRCarouselView.swift */; };
+		A114428D1C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442591C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.swift */; };
+		A114428E1C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114425A1C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.xib */; };
+		A114428F1C5B3F2F00B75FB8 /* JRCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114425B1C5B3F2F00B75FB8 /* JRCollapsibleTableViewHeader.swift */; };
+		A11442901C5B3F2F00B75FB8 /* JRCoverFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114425D1C5B3F2F00B75FB8 /* JRCoverFlowView.swift */; };
+		A11442911C5B3F2F00B75FB8 /* JRDualLinkageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114425F1C5B3F2F00B75FB8 /* JRDualLinkageView.swift */; };
+		A11442921C5B3F2F00B75FB8 /* JRGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442611C5B3F2F00B75FB8 /* JRGridView.swift */; };
+		A11442931C5B3F2F00B75FB8 /* JRGridViewTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442621C5B3F2F00B75FB8 /* JRGridViewTile.swift */; };
+		A11442941C5B3F2F00B75FB8 /* JRPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442641C5B3F2F00B75FB8 /* JRPhotoBrowser.swift */; };
+		A11442951C5B3F2F00B75FB8 /* JRRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442671C5B3F2F00B75FB8 /* JRRatingView.swift */; };
+		A11442961C5B3F2F00B75FB8 /* JRReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442691C5B3F2F00B75FB8 /* JRReadingView.swift */; };
+		A11442971C5B3F2F00B75FB8 /* JRReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114426A1C5B3F2F00B75FB8 /* JRReadingViewController.swift */; };
+		A11442981C5B3F2F00B75FB8 /* JRReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114426B1C5B3F2F00B75FB8 /* JRReadingViewController.xib */; };
+		A11442991C5B3F2F00B75FB8 /* JRSingleDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114426D1C5B3F2F00B75FB8 /* JRSingleDropdownMenu.swift */; };
+		A114429A1C5B3F2F00B75FB8 /* JRPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114426F1C5B3F2F00B75FB8 /* JRPickerView.swift */; };
+		A114429B1C5B3F2F00B75FB8 /* JRWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442711C5B3F2F00B75FB8 /* JRWebViewController.swift */; };
+		A114429C1C5B3F2F00B75FB8 /* JRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11442721C5B3F2F00B75FB8 /* JRWebViewController.xib */; };
+		A114429D1C5B3F2F00B75FB8 /* JZCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442741C5B3F2F00B75FB8 /* JZCoverView.swift */; };
+		A114429E1C5B3F2F00B75FB8 /* JZMultiMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442761C5B3F2F00B75FB8 /* JZMultiMenuView.swift */; };
+		A114429F1C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442791C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.swift */; };
+		A11442A01C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114427A1C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.xib */; };
+		A11442A11C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114427B1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.swift */; };
+		A11442A21C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114427C1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.xib */; };
+		A11442A31C5B3F2F00B75FB8 /* JZRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114427E1C5B3F2F00B75FB8 /* JZRadioButton.swift */; };
 		BBAF65631BC0C12100CA709A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF65621BC0C12100CA709A /* AppDelegate.swift */; };
 		BBAF65681BC0C12100CA709A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65661BC0C12100CA709A /* Main.storyboard */; };
 		BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65691BC0C12100CA709A /* Images.xcassets */; };
@@ -150,8 +150,6 @@
 		A114408E1C5B000200B75FB8 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		A11440911C5B000200B75FB8 /* HttpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTableViewCell.swift; sourceTree = "<group>"; };
 		A11440921C5B000200B75FB8 /* HttpTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpTableViewCell.xib; sourceTree = "<group>"; };
-		A11440941C5B000200B75FB8 /* JZQRCodeScanningMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZQRCodeScanningMaskView.swift; sourceTree = "<group>"; };
-		A11440951C5B000200B75FB8 /* JZQRCodeScanningMaskView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZQRCodeScanningMaskView.xib; sourceTree = "<group>"; };
 		A11440981C5B000200B75FB8 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		A11440991C5B000200B75FB8 /* GuideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideViewController.xib; sourceTree = "<group>"; };
 		A11440BE1C5B000200B75FB8 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -161,43 +159,6 @@
 		A11440C31C5B000200B75FB8 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		A11440C41C5B000200B75FB8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A11440C51C5B000200B75FB8 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
-		A11440C91C5B000200B75FB8 /* JZProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZProgressBar.h; sourceTree = "<group>"; };
-		A11440CA1C5B000200B75FB8 /* JZProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZProgressBar.m; sourceTree = "<group>"; };
-		A11440CC1C5B000200B75FB8 /* JZTabMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZTabMenuBar.h; sourceTree = "<group>"; };
-		A11440CD1C5B000200B75FB8 /* JZTabMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZTabMenuBar.m; sourceTree = "<group>"; };
-		A11440CE1C5B000200B75FB8 /* LibraryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHeader.h; sourceTree = "<group>"; };
-		A11440D11C5B000200B75FB8 /* JRCalendarCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarCommon.swift; sourceTree = "<group>"; };
-		A11440D21C5B000200B75FB8 /* JRCalendarDayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarDayModel.swift; sourceTree = "<group>"; };
-		A11440D31C5B000200B75FB8 /* JRCalendarGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarGridView.swift; sourceTree = "<group>"; };
-		A11440D41C5B000200B75FB8 /* JRCalendarGridViewTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarGridViewTile.swift; sourceTree = "<group>"; };
-		A11440D51C5B000200B75FB8 /* JRCalendarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarModel.swift; sourceTree = "<group>"; };
-		A11440D61C5B000200B75FB8 /* JRCalendarPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRCalendarPickerView.xib; sourceTree = "<group>"; };
-		A11440D71C5B000200B75FB8 /* JRCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarView.swift; sourceTree = "<group>"; };
-		A11440D81C5B000200B75FB8 /* JRMonthPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRMonthPicker.swift; sourceTree = "<group>"; };
-		A11440D91C5B000200B75FB8 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
-		A11440DB1C5B000200B75FB8 /* JRCardSwitchingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCardSwitchingView.swift; sourceTree = "<group>"; };
-		A11440DD1C5B000200B75FB8 /* JRCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCarouselView.swift; sourceTree = "<group>"; };
-		A11440DF1C5B000200B75FB8 /* JRCollapsibleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCollapsibleTableViewCell.swift; sourceTree = "<group>"; };
-		A11440E01C5B000200B75FB8 /* JRCollapsibleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRCollapsibleTableViewCell.xib; sourceTree = "<group>"; };
-		A11440E11C5B000200B75FB8 /* JRCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
-		A11440E31C5B000200B75FB8 /* JRCoverFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCoverFlowView.swift; sourceTree = "<group>"; };
-		A11440E51C5B000200B75FB8 /* JRDualLinkageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageView.swift; sourceTree = "<group>"; };
-		A11440E71C5B000200B75FB8 /* JRGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRGridView.swift; sourceTree = "<group>"; };
-		A11440E81C5B000200B75FB8 /* JRGridViewTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRGridViewTile.swift; sourceTree = "<group>"; };
-		A11440EA1C5B000200B75FB8 /* JRPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRPhotoBrowser.swift; sourceTree = "<group>"; };
-		A11440ED1C5B000200B75FB8 /* JRRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRRatingView.swift; sourceTree = "<group>"; };
-		A11440EF1C5B000200B75FB8 /* JRReadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRReadingView.swift; sourceTree = "<group>"; };
-		A11440F01C5B000200B75FB8 /* JRReadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRReadingViewController.swift; sourceTree = "<group>"; };
-		A11440F11C5B000200B75FB8 /* JRReadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRReadingViewController.xib; sourceTree = "<group>"; };
-		A11440F31C5B000200B75FB8 /* JRSingleDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRSingleDropdownMenu.swift; sourceTree = "<group>"; };
-		A11440F51C5B000200B75FB8 /* JRPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRPickerView.swift; sourceTree = "<group>"; };
-		A11440F71C5B000200B75FB8 /* JRWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRWebViewController.swift; sourceTree = "<group>"; };
-		A11440F81C5B000200B75FB8 /* JRWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRWebViewController.xib; sourceTree = "<group>"; };
-		A11440FA1C5B000200B75FB8 /* JZCoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZCoverView.swift; sourceTree = "<group>"; };
-		A11440FC1C5B000200B75FB8 /* JZMultiMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZMultiMenuView.swift; sourceTree = "<group>"; };
-		A11440FE1C5B000200B75FB8 /* JZQRCodeScanningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZQRCodeScanningViewController.swift; sourceTree = "<group>"; };
-		A11440FF1C5B000200B75FB8 /* JZQRCodeScanningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZQRCodeScanningViewController.xib; sourceTree = "<group>"; };
-		A11441011C5B000200B75FB8 /* JZRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZRadioButton.swift; sourceTree = "<group>"; };
 		A11441801C5B06BF00B75FB8 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		A11441821C5B06BF00B75FB8 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		A11441831C5B06BF00B75FB8 /* LogEnumeration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEnumeration.swift; sourceTree = "<group>"; };
@@ -240,6 +201,45 @@
 		A11442191C5B373200B75FB8 /* WebViewTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewTestViewController.xib; sourceTree = "<group>"; };
 		A114423C1C5B37A700B75FB8 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		A114423D1C5B37A700B75FB8 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		A11442431C5B3F2F00B75FB8 /* JZProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZProgressBar.h; sourceTree = "<group>"; };
+		A11442441C5B3F2F00B75FB8 /* JZProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZProgressBar.m; sourceTree = "<group>"; };
+		A11442461C5B3F2F00B75FB8 /* JZTabMenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZTabMenuBar.h; sourceTree = "<group>"; };
+		A11442471C5B3F2F00B75FB8 /* JZTabMenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZTabMenuBar.m; sourceTree = "<group>"; };
+		A11442481C5B3F2F00B75FB8 /* LibraryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryHeader.h; sourceTree = "<group>"; };
+		A114424B1C5B3F2F00B75FB8 /* JRCalendarCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarCommon.swift; sourceTree = "<group>"; };
+		A114424C1C5B3F2F00B75FB8 /* JRCalendarDayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarDayModel.swift; sourceTree = "<group>"; };
+		A114424D1C5B3F2F00B75FB8 /* JRCalendarGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarGridView.swift; sourceTree = "<group>"; };
+		A114424E1C5B3F2F00B75FB8 /* JRCalendarGridViewTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarGridViewTile.swift; sourceTree = "<group>"; };
+		A114424F1C5B3F2F00B75FB8 /* JRCalendarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarModel.swift; sourceTree = "<group>"; };
+		A11442501C5B3F2F00B75FB8 /* JRCalendarPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRCalendarPickerView.xib; sourceTree = "<group>"; };
+		A11442511C5B3F2F00B75FB8 /* JRCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCalendarView.swift; sourceTree = "<group>"; };
+		A11442521C5B3F2F00B75FB8 /* JRMonthPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRMonthPicker.swift; sourceTree = "<group>"; };
+		A11442531C5B3F2F00B75FB8 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		A11442551C5B3F2F00B75FB8 /* JRCardSwitchingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCardSwitchingView.swift; sourceTree = "<group>"; };
+		A11442571C5B3F2F00B75FB8 /* JRCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCarouselView.swift; sourceTree = "<group>"; };
+		A11442591C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		A114425A1C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRCollapsibleTableViewCell.xib; sourceTree = "<group>"; };
+		A114425B1C5B3F2F00B75FB8 /* JRCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		A114425D1C5B3F2F00B75FB8 /* JRCoverFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRCoverFlowView.swift; sourceTree = "<group>"; };
+		A114425F1C5B3F2F00B75FB8 /* JRDualLinkageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRDualLinkageView.swift; sourceTree = "<group>"; };
+		A11442611C5B3F2F00B75FB8 /* JRGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRGridView.swift; sourceTree = "<group>"; };
+		A11442621C5B3F2F00B75FB8 /* JRGridViewTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRGridViewTile.swift; sourceTree = "<group>"; };
+		A11442641C5B3F2F00B75FB8 /* JRPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRPhotoBrowser.swift; sourceTree = "<group>"; };
+		A11442671C5B3F2F00B75FB8 /* JRRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRRatingView.swift; sourceTree = "<group>"; };
+		A11442691C5B3F2F00B75FB8 /* JRReadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRReadingView.swift; sourceTree = "<group>"; };
+		A114426A1C5B3F2F00B75FB8 /* JRReadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRReadingViewController.swift; sourceTree = "<group>"; };
+		A114426B1C5B3F2F00B75FB8 /* JRReadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRReadingViewController.xib; sourceTree = "<group>"; };
+		A114426D1C5B3F2F00B75FB8 /* JRSingleDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRSingleDropdownMenu.swift; sourceTree = "<group>"; };
+		A114426F1C5B3F2F00B75FB8 /* JRPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRPickerView.swift; sourceTree = "<group>"; };
+		A11442711C5B3F2F00B75FB8 /* JRWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRWebViewController.swift; sourceTree = "<group>"; };
+		A11442721C5B3F2F00B75FB8 /* JRWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRWebViewController.xib; sourceTree = "<group>"; };
+		A11442741C5B3F2F00B75FB8 /* JZCoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZCoverView.swift; sourceTree = "<group>"; };
+		A11442761C5B3F2F00B75FB8 /* JZMultiMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZMultiMenuView.swift; sourceTree = "<group>"; };
+		A11442791C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZQRCodeScanningMaskView.swift; sourceTree = "<group>"; };
+		A114427A1C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZQRCodeScanningMaskView.xib; sourceTree = "<group>"; };
+		A114427B1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZQRCodeScanningViewController.swift; sourceTree = "<group>"; };
+		A114427C1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZQRCodeScanningViewController.xib; sourceTree = "<group>"; };
+		A114427E1C5B3F2F00B75FB8 /* JZRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZRadioButton.swift; sourceTree = "<group>"; };
 		BBAF655D1BC0C12100CA709A /* JRNetworkingFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRNetworkingFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAF65611BC0C12100CA709A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBAF65621BC0C12100CA709A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -433,18 +433,8 @@
 			children = (
 				A11440911C5B000200B75FB8 /* HttpTableViewCell.swift */,
 				A11440921C5B000200B75FB8 /* HttpTableViewCell.xib */,
-				A11440931C5B000200B75FB8 /* JZQRCodeScanningMaskView */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A11440931C5B000200B75FB8 /* JZQRCodeScanningMaskView */ = {
-			isa = PBXGroup;
-			children = (
-				A11440941C5B000200B75FB8 /* JZQRCodeScanningMaskView.swift */,
-				A11440951C5B000200B75FB8 /* JZQRCodeScanningMaskView.xib */,
-			);
-			path = JZQRCodeScanningMaskView;
 			sourceTree = "<group>";
 		};
 		A11440961C5B000200B75FB8 /* ViewController */ = {
@@ -502,231 +492,10 @@
 		A11440C61C5B000200B75FB8 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				A11440C71C5B000200B75FB8 /* Lib-Objective-C */,
-				A11440CF1C5B000200B75FB8 /* Lib-Swift */,
+				A11442401C5B3F2F00B75FB8 /* Widgets */,
 				A11441031C5B000200B75FB8 /* SDKs */,
-				A11441041C5B000200B75FB8 /* Widgets */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		A11440C71C5B000200B75FB8 /* Lib-Objective-C */ = {
-			isa = PBXGroup;
-			children = (
-				A11440C81C5B000200B75FB8 /* JZProgressBar */,
-				A11440CB1C5B000200B75FB8 /* JZTabMenuBar */,
-				A11440CE1C5B000200B75FB8 /* LibraryHeader.h */,
-			);
-			path = "Lib-Objective-C";
-			sourceTree = "<group>";
-		};
-		A11440C81C5B000200B75FB8 /* JZProgressBar */ = {
-			isa = PBXGroup;
-			children = (
-				A11440C91C5B000200B75FB8 /* JZProgressBar.h */,
-				A11440CA1C5B000200B75FB8 /* JZProgressBar.m */,
-			);
-			path = JZProgressBar;
-			sourceTree = "<group>";
-		};
-		A11440CB1C5B000200B75FB8 /* JZTabMenuBar */ = {
-			isa = PBXGroup;
-			children = (
-				A11440CC1C5B000200B75FB8 /* JZTabMenuBar.h */,
-				A11440CD1C5B000200B75FB8 /* JZTabMenuBar.m */,
-			);
-			path = JZTabMenuBar;
-			sourceTree = "<group>";
-		};
-		A11440CF1C5B000200B75FB8 /* Lib-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				A11440D01C5B000200B75FB8 /* JRCalendar */,
-				A11440DA1C5B000200B75FB8 /* JRCardSwitchView */,
-				A11440DC1C5B000200B75FB8 /* JRCarousel */,
-				A11440DE1C5B000200B75FB8 /* JRCollapsibleSection */,
-				A11440E21C5B000200B75FB8 /* JRCoverFlow */,
-				A11440E41C5B000200B75FB8 /* JRDualLinkage */,
-				A11440E61C5B000200B75FB8 /* JRGridView */,
-				A11440E91C5B000200B75FB8 /* JRPhotoBrowser */,
-				A11440EB1C5B000200B75FB8 /* JRPopWindow */,
-				A11440EC1C5B000200B75FB8 /* JRRatingView */,
-				A11440EE1C5B000200B75FB8 /* JRReading */,
-				A11440F21C5B000200B75FB8 /* JRSingleDropdown */,
-				A11440F41C5B000200B75FB8 /* JRSinglePickerView */,
-				A11440F61C5B000200B75FB8 /* JRWebView */,
-				A11440F91C5B000200B75FB8 /* JZCoverView */,
-				A11440FB1C5B000200B75FB8 /* JZMultiMenu */,
-				A11440FD1C5B000200B75FB8 /* JZQRCode */,
-				A11441001C5B000200B75FB8 /* JZRadioButton */,
-				A11441021C5B000200B75FB8 /* JZShoppingCart */,
-			);
-			path = "Lib-Swift";
-			sourceTree = "<group>";
-		};
-		A11440D01C5B000200B75FB8 /* JRCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				A11440D11C5B000200B75FB8 /* JRCalendarCommon.swift */,
-				A11440D21C5B000200B75FB8 /* JRCalendarDayModel.swift */,
-				A11440D31C5B000200B75FB8 /* JRCalendarGridView.swift */,
-				A11440D41C5B000200B75FB8 /* JRCalendarGridViewTile.swift */,
-				A11440D51C5B000200B75FB8 /* JRCalendarModel.swift */,
-				A11440D61C5B000200B75FB8 /* JRCalendarPickerView.xib */,
-				A11440D71C5B000200B75FB8 /* JRCalendarView.swift */,
-				A11440D81C5B000200B75FB8 /* JRMonthPicker.swift */,
-				A11440D91C5B000200B75FB8 /* NSDateExtension.swift */,
-			);
-			path = JRCalendar;
-			sourceTree = "<group>";
-		};
-		A11440DA1C5B000200B75FB8 /* JRCardSwitchView */ = {
-			isa = PBXGroup;
-			children = (
-				A11440DB1C5B000200B75FB8 /* JRCardSwitchingView.swift */,
-			);
-			path = JRCardSwitchView;
-			sourceTree = "<group>";
-		};
-		A11440DC1C5B000200B75FB8 /* JRCarousel */ = {
-			isa = PBXGroup;
-			children = (
-				A11440DD1C5B000200B75FB8 /* JRCarouselView.swift */,
-			);
-			path = JRCarousel;
-			sourceTree = "<group>";
-		};
-		A11440DE1C5B000200B75FB8 /* JRCollapsibleSection */ = {
-			isa = PBXGroup;
-			children = (
-				A11440DF1C5B000200B75FB8 /* JRCollapsibleTableViewCell.swift */,
-				A11440E01C5B000200B75FB8 /* JRCollapsibleTableViewCell.xib */,
-				A11440E11C5B000200B75FB8 /* JRCollapsibleTableViewHeader.swift */,
-			);
-			path = JRCollapsibleSection;
-			sourceTree = "<group>";
-		};
-		A11440E21C5B000200B75FB8 /* JRCoverFlow */ = {
-			isa = PBXGroup;
-			children = (
-				A11440E31C5B000200B75FB8 /* JRCoverFlowView.swift */,
-			);
-			path = JRCoverFlow;
-			sourceTree = "<group>";
-		};
-		A11440E41C5B000200B75FB8 /* JRDualLinkage */ = {
-			isa = PBXGroup;
-			children = (
-				A11440E51C5B000200B75FB8 /* JRDualLinkageView.swift */,
-			);
-			path = JRDualLinkage;
-			sourceTree = "<group>";
-		};
-		A11440E61C5B000200B75FB8 /* JRGridView */ = {
-			isa = PBXGroup;
-			children = (
-				A11440E71C5B000200B75FB8 /* JRGridView.swift */,
-				A11440E81C5B000200B75FB8 /* JRGridViewTile.swift */,
-			);
-			path = JRGridView;
-			sourceTree = "<group>";
-		};
-		A11440E91C5B000200B75FB8 /* JRPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				A11440EA1C5B000200B75FB8 /* JRPhotoBrowser.swift */,
-			);
-			path = JRPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		A11440EB1C5B000200B75FB8 /* JRPopWindow */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JRPopWindow;
-			sourceTree = "<group>";
-		};
-		A11440EC1C5B000200B75FB8 /* JRRatingView */ = {
-			isa = PBXGroup;
-			children = (
-				A11440ED1C5B000200B75FB8 /* JRRatingView.swift */,
-			);
-			path = JRRatingView;
-			sourceTree = "<group>";
-		};
-		A11440EE1C5B000200B75FB8 /* JRReading */ = {
-			isa = PBXGroup;
-			children = (
-				A11440EF1C5B000200B75FB8 /* JRReadingView.swift */,
-				A11440F01C5B000200B75FB8 /* JRReadingViewController.swift */,
-				A11440F11C5B000200B75FB8 /* JRReadingViewController.xib */,
-			);
-			path = JRReading;
-			sourceTree = "<group>";
-		};
-		A11440F21C5B000200B75FB8 /* JRSingleDropdown */ = {
-			isa = PBXGroup;
-			children = (
-				A11440F31C5B000200B75FB8 /* JRSingleDropdownMenu.swift */,
-			);
-			path = JRSingleDropdown;
-			sourceTree = "<group>";
-		};
-		A11440F41C5B000200B75FB8 /* JRSinglePickerView */ = {
-			isa = PBXGroup;
-			children = (
-				A11440F51C5B000200B75FB8 /* JRPickerView.swift */,
-			);
-			path = JRSinglePickerView;
-			sourceTree = "<group>";
-		};
-		A11440F61C5B000200B75FB8 /* JRWebView */ = {
-			isa = PBXGroup;
-			children = (
-				A11440F71C5B000200B75FB8 /* JRWebViewController.swift */,
-				A11440F81C5B000200B75FB8 /* JRWebViewController.xib */,
-			);
-			path = JRWebView;
-			sourceTree = "<group>";
-		};
-		A11440F91C5B000200B75FB8 /* JZCoverView */ = {
-			isa = PBXGroup;
-			children = (
-				A11440FA1C5B000200B75FB8 /* JZCoverView.swift */,
-			);
-			path = JZCoverView;
-			sourceTree = "<group>";
-		};
-		A11440FB1C5B000200B75FB8 /* JZMultiMenu */ = {
-			isa = PBXGroup;
-			children = (
-				A11440FC1C5B000200B75FB8 /* JZMultiMenuView.swift */,
-			);
-			path = JZMultiMenu;
-			sourceTree = "<group>";
-		};
-		A11440FD1C5B000200B75FB8 /* JZQRCode */ = {
-			isa = PBXGroup;
-			children = (
-				A11440FE1C5B000200B75FB8 /* JZQRCodeScanningViewController.swift */,
-				A11440FF1C5B000200B75FB8 /* JZQRCodeScanningViewController.xib */,
-			);
-			path = JZQRCode;
-			sourceTree = "<group>";
-		};
-		A11441001C5B000200B75FB8 /* JZRadioButton */ = {
-			isa = PBXGroup;
-			children = (
-				A11441011C5B000200B75FB8 /* JZRadioButton.swift */,
-			);
-			path = JZRadioButton;
-			sourceTree = "<group>";
-		};
-		A11441021C5B000200B75FB8 /* JZShoppingCart */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JZShoppingCart;
 			sourceTree = "<group>";
 		};
 		A11441031C5B000200B75FB8 /* SDKs */ = {
@@ -734,13 +503,6 @@
 			children = (
 			);
 			path = SDKs;
-			sourceTree = "<group>";
-		};
-		A11441041C5B000200B75FB8 /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Widgets;
 			sourceTree = "<group>";
 		};
 		A114417E1C5B06BF00B75FB8 /* Util */ = {
@@ -996,6 +758,244 @@
 			path = QRCodeScanning;
 			sourceTree = "<group>";
 		};
+		A11442401C5B3F2F00B75FB8 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				A11442411C5B3F2F00B75FB8 /* Objective-C */,
+				A11442491C5B3F2F00B75FB8 /* Swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		A11442411C5B3F2F00B75FB8 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				A11442421C5B3F2F00B75FB8 /* JZProgressBar */,
+				A11442451C5B3F2F00B75FB8 /* JZTabMenuBar */,
+				A11442481C5B3F2F00B75FB8 /* LibraryHeader.h */,
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		A11442421C5B3F2F00B75FB8 /* JZProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				A11442431C5B3F2F00B75FB8 /* JZProgressBar.h */,
+				A11442441C5B3F2F00B75FB8 /* JZProgressBar.m */,
+			);
+			path = JZProgressBar;
+			sourceTree = "<group>";
+		};
+		A11442451C5B3F2F00B75FB8 /* JZTabMenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				A11442461C5B3F2F00B75FB8 /* JZTabMenuBar.h */,
+				A11442471C5B3F2F00B75FB8 /* JZTabMenuBar.m */,
+			);
+			path = JZTabMenuBar;
+			sourceTree = "<group>";
+		};
+		A11442491C5B3F2F00B75FB8 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A114424A1C5B3F2F00B75FB8 /* JRCalendar */,
+				A11442541C5B3F2F00B75FB8 /* JRCardSwitchView */,
+				A11442561C5B3F2F00B75FB8 /* JRCarousel */,
+				A11442581C5B3F2F00B75FB8 /* JRCollapsibleSection */,
+				A114425C1C5B3F2F00B75FB8 /* JRCoverFlow */,
+				A114425E1C5B3F2F00B75FB8 /* JRDualLinkage */,
+				A11442601C5B3F2F00B75FB8 /* JRGridView */,
+				A11442631C5B3F2F00B75FB8 /* JRPhotoBrowser */,
+				A11442651C5B3F2F00B75FB8 /* JRPopWindow */,
+				A11442661C5B3F2F00B75FB8 /* JRRatingView */,
+				A11442681C5B3F2F00B75FB8 /* JRReading */,
+				A114426C1C5B3F2F00B75FB8 /* JRSingleDropdown */,
+				A114426E1C5B3F2F00B75FB8 /* JRSinglePickerView */,
+				A11442701C5B3F2F00B75FB8 /* JRWebView */,
+				A11442731C5B3F2F00B75FB8 /* JZCoverView */,
+				A11442751C5B3F2F00B75FB8 /* JZMultiMenu */,
+				A11442771C5B3F2F00B75FB8 /* JZQRCode */,
+				A114427D1C5B3F2F00B75FB8 /* JZRadioButton */,
+				A114427F1C5B3F2F00B75FB8 /* JZShoppingCart */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		A114424A1C5B3F2F00B75FB8 /* JRCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				A114424B1C5B3F2F00B75FB8 /* JRCalendarCommon.swift */,
+				A114424C1C5B3F2F00B75FB8 /* JRCalendarDayModel.swift */,
+				A114424D1C5B3F2F00B75FB8 /* JRCalendarGridView.swift */,
+				A114424E1C5B3F2F00B75FB8 /* JRCalendarGridViewTile.swift */,
+				A114424F1C5B3F2F00B75FB8 /* JRCalendarModel.swift */,
+				A11442501C5B3F2F00B75FB8 /* JRCalendarPickerView.xib */,
+				A11442511C5B3F2F00B75FB8 /* JRCalendarView.swift */,
+				A11442521C5B3F2F00B75FB8 /* JRMonthPicker.swift */,
+				A11442531C5B3F2F00B75FB8 /* NSDateExtension.swift */,
+			);
+			path = JRCalendar;
+			sourceTree = "<group>";
+		};
+		A11442541C5B3F2F00B75FB8 /* JRCardSwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				A11442551C5B3F2F00B75FB8 /* JRCardSwitchingView.swift */,
+			);
+			path = JRCardSwitchView;
+			sourceTree = "<group>";
+		};
+		A11442561C5B3F2F00B75FB8 /* JRCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				A11442571C5B3F2F00B75FB8 /* JRCarouselView.swift */,
+			);
+			path = JRCarousel;
+			sourceTree = "<group>";
+		};
+		A11442581C5B3F2F00B75FB8 /* JRCollapsibleSection */ = {
+			isa = PBXGroup;
+			children = (
+				A11442591C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.swift */,
+				A114425A1C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.xib */,
+				A114425B1C5B3F2F00B75FB8 /* JRCollapsibleTableViewHeader.swift */,
+			);
+			path = JRCollapsibleSection;
+			sourceTree = "<group>";
+		};
+		A114425C1C5B3F2F00B75FB8 /* JRCoverFlow */ = {
+			isa = PBXGroup;
+			children = (
+				A114425D1C5B3F2F00B75FB8 /* JRCoverFlowView.swift */,
+			);
+			path = JRCoverFlow;
+			sourceTree = "<group>";
+		};
+		A114425E1C5B3F2F00B75FB8 /* JRDualLinkage */ = {
+			isa = PBXGroup;
+			children = (
+				A114425F1C5B3F2F00B75FB8 /* JRDualLinkageView.swift */,
+			);
+			path = JRDualLinkage;
+			sourceTree = "<group>";
+		};
+		A11442601C5B3F2F00B75FB8 /* JRGridView */ = {
+			isa = PBXGroup;
+			children = (
+				A11442611C5B3F2F00B75FB8 /* JRGridView.swift */,
+				A11442621C5B3F2F00B75FB8 /* JRGridViewTile.swift */,
+			);
+			path = JRGridView;
+			sourceTree = "<group>";
+		};
+		A11442631C5B3F2F00B75FB8 /* JRPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				A11442641C5B3F2F00B75FB8 /* JRPhotoBrowser.swift */,
+			);
+			path = JRPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		A11442651C5B3F2F00B75FB8 /* JRPopWindow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JRPopWindow;
+			sourceTree = "<group>";
+		};
+		A11442661C5B3F2F00B75FB8 /* JRRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				A11442671C5B3F2F00B75FB8 /* JRRatingView.swift */,
+			);
+			path = JRRatingView;
+			sourceTree = "<group>";
+		};
+		A11442681C5B3F2F00B75FB8 /* JRReading */ = {
+			isa = PBXGroup;
+			children = (
+				A11442691C5B3F2F00B75FB8 /* JRReadingView.swift */,
+				A114426A1C5B3F2F00B75FB8 /* JRReadingViewController.swift */,
+				A114426B1C5B3F2F00B75FB8 /* JRReadingViewController.xib */,
+			);
+			path = JRReading;
+			sourceTree = "<group>";
+		};
+		A114426C1C5B3F2F00B75FB8 /* JRSingleDropdown */ = {
+			isa = PBXGroup;
+			children = (
+				A114426D1C5B3F2F00B75FB8 /* JRSingleDropdownMenu.swift */,
+			);
+			path = JRSingleDropdown;
+			sourceTree = "<group>";
+		};
+		A114426E1C5B3F2F00B75FB8 /* JRSinglePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A114426F1C5B3F2F00B75FB8 /* JRPickerView.swift */,
+			);
+			path = JRSinglePickerView;
+			sourceTree = "<group>";
+		};
+		A11442701C5B3F2F00B75FB8 /* JRWebView */ = {
+			isa = PBXGroup;
+			children = (
+				A11442711C5B3F2F00B75FB8 /* JRWebViewController.swift */,
+				A11442721C5B3F2F00B75FB8 /* JRWebViewController.xib */,
+			);
+			path = JRWebView;
+			sourceTree = "<group>";
+		};
+		A11442731C5B3F2F00B75FB8 /* JZCoverView */ = {
+			isa = PBXGroup;
+			children = (
+				A11442741C5B3F2F00B75FB8 /* JZCoverView.swift */,
+			);
+			path = JZCoverView;
+			sourceTree = "<group>";
+		};
+		A11442751C5B3F2F00B75FB8 /* JZMultiMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A11442761C5B3F2F00B75FB8 /* JZMultiMenuView.swift */,
+			);
+			path = JZMultiMenu;
+			sourceTree = "<group>";
+		};
+		A11442771C5B3F2F00B75FB8 /* JZQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				A11442781C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView */,
+				A114427B1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.swift */,
+				A114427C1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.xib */,
+			);
+			path = JZQRCode;
+			sourceTree = "<group>";
+		};
+		A11442781C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView */ = {
+			isa = PBXGroup;
+			children = (
+				A11442791C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.swift */,
+				A114427A1C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.xib */,
+			);
+			path = JZQRCodeScanningMaskView;
+			sourceTree = "<group>";
+		};
+		A114427D1C5B3F2F00B75FB8 /* JZRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				A114427E1C5B3F2F00B75FB8 /* JZRadioButton.swift */,
+			);
+			path = JZRadioButton;
+			sourceTree = "<group>";
+		};
+		A114427F1C5B3F2F00B75FB8 /* JZShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JZShoppingCart;
+			sourceTree = "<group>";
+		};
 		BBAF65541BC0C12100CA709A = {
 			isa = PBXGroup;
 			children = (
@@ -1147,29 +1147,29 @@
 				A114422C1C5B373200B75FB8 /* GridViewTestingViewController.xib in Resources */,
 				A11442341C5B373200B75FB8 /* RatingViewController.xib in Resources */,
 				A11442291C5B373200B75FB8 /* DropdownMenuTestViewController.xib in Resources */,
+				A114428E1C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.xib in Resources */,
 				A11442321C5B373200B75FB8 /* ProgressBarTestingViewController.xib in Resources */,
-				A11441611C5B000200B75FB8 /* JRCollapsibleTableViewCell.xib in Resources */,
 				BBAF65681BC0C12100CA709A /* Main.storyboard in Resources */,
 				A114412A1C5B000200B75FB8 /* GuideViewController.xib in Resources */,
+				A11442A21C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.xib in Resources */,
+				A11442A01C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.xib in Resources */,
 				A11442251C5B373200B75FB8 /* CarouselTestingViewController.xib in Resources */,
-				A114416F1C5B000200B75FB8 /* JRWebViewController.xib in Resources */,
 				A11441261C5B000200B75FB8 /* HttpTableViewCell.xib in Resources */,
 				A114423A1C5B373200B75FB8 /* WebViewTestViewController.xib in Resources */,
-				A114416B1C5B000200B75FB8 /* JRReadingViewController.xib in Resources */,
-				A11441731C5B000200B75FB8 /* JZQRCodeScanningViewController.xib in Resources */,
+				A114429C1C5B3F2F00B75FB8 /* JRWebViewController.xib in Resources */,
 				A114421D1C5B373200B75FB8 /* SettingViewController.xib in Resources */,
 				A114414E1C5B000200B75FB8 /* ResetPasswordViewController.xib in Resources */,
 				A11442271C5B373200B75FB8 /* CollapsibleSectionTestingViewController.xib in Resources */,
+				A11442981C5B3F2F00B75FB8 /* JRReadingViewController.xib in Resources */,
 				A11442361C5B373200B75FB8 /* ReadingViewTestingViewController.xib in Resources */,
 				A114421B1C5B373200B75FB8 /* HttpViewController.xib in Resources */,
 				A11441521C5B000200B75FB8 /* SignUpViewController.xib in Resources */,
-				A114415A1C5B000200B75FB8 /* JRCalendarPickerView.xib in Resources */,
 				A114422E1C5B373200B75FB8 /* MultiMenuTestingViewController.xib in Resources */,
+				A11442871C5B3F2F00B75FB8 /* JRCalendarPickerView.xib in Resources */,
 				A11442211C5B373200B75FB8 /* CalendarViewTestingViewController.xib in Resources */,
 				A11442301C5B373200B75FB8 /* PhotoBrowserTestingViewController.xib in Resources */,
 				A11442381C5B373200B75FB8 /* TestingViewController.xib in Resources */,
 				A114423F1C5B37A700B75FB8 /* QRCodeViewController.xib in Resources */,
-				A11441281C5B000200B75FB8 /* JZQRCodeScanningMaskView.xib in Resources */,
 				A11441501C5B000200B75FB8 /* SignInViewController.xib in Resources */,
 				A11441201C5B000200B75FB8 /* Localization.strings in Resources */,
 				A114421F1C5B373200B75FB8 /* TabBarViewController.xib in Resources */,
@@ -1241,78 +1241,78 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11442311C5B373200B75FB8 /* ProgressBarTestingViewController.swift in Sources */,
+				A11442971C5B3F2F00B75FB8 /* JRReadingViewController.swift in Sources */,
 				A114421C1C5B373200B75FB8 /* SettingViewController.swift in Sources */,
-				A11441691C5B000200B75FB8 /* JRReadingView.swift in Sources */,
 				A11442281C5B373200B75FB8 /* DropdownMenuTestViewController.swift in Sources */,
-				A114415C1C5B000200B75FB8 /* JRMonthPicker.swift in Sources */,
 				BBAF65631BC0C12100CA709A /* AppDelegate.swift in Sources */,
+				A11442991C5B3F2F00B75FB8 /* JRSingleDropdownMenu.swift in Sources */,
 				A11442391C5B373200B75FB8 /* WebViewTestViewController.swift in Sources */,
 				A114418E1C5B06BF00B75FB8 /* DateUtil.swift in Sources */,
+				A11442901C5B3F2F00B75FB8 /* JRCoverFlowView.swift in Sources */,
+				A11442801C5B3F2F00B75FB8 /* JZProgressBar.m in Sources */,
+				A11442861C5B3F2F00B75FB8 /* JRCalendarModel.swift in Sources */,
+				A114429F1C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.swift in Sources */,
 				A11441211C5B000200B75FB8 /* Localization.swift in Sources */,
 				A11441911C5B06BF00B75FB8 /* MathUtil.swift in Sources */,
-				A114416C1C5B000200B75FB8 /* JRSingleDropdownMenu.swift in Sources */,
-				A11441741C5B000200B75FB8 /* JZRadioButton.swift in Sources */,
 				A114411A1C5B000200B75FB8 /* CoreAnimationExtension.swift in Sources */,
+				A11442911C5B3F2F00B75FB8 /* JRDualLinkageView.swift in Sources */,
 				A114422B1C5B373200B75FB8 /* GridViewTestingViewController.swift in Sources */,
-				A11441541C5B000200B75FB8 /* JZTabMenuBar.m in Sources */,
 				A11442241C5B373200B75FB8 /* CarouselTestingViewController.swift in Sources */,
-				A11441271C5B000200B75FB8 /* JZQRCodeScanningMaskView.swift in Sources */,
-				A11441671C5B000200B75FB8 /* JRPhotoBrowser.swift in Sources */,
-				A11441681C5B000200B75FB8 /* JRRatingView.swift in Sources */,
-				A11441661C5B000200B75FB8 /* JRGridViewTile.swift in Sources */,
-				A11441571C5B000200B75FB8 /* JRCalendarGridView.swift in Sources */,
 				A11441921C5B06BF00B75FB8 /* NetworkUtil.swift in Sources */,
-				A114415D1C5B000200B75FB8 /* NSDateExtension.swift in Sources */,
-				A114416A1C5B000200B75FB8 /* JRReadingViewController.swift in Sources */,
-				A11441651C5B000200B75FB8 /* JRGridView.swift in Sources */,
-				A11441631C5B000200B75FB8 /* JRCoverFlowView.swift in Sources */,
+				A114429D1C5B3F2F00B75FB8 /* JZCoverView.swift in Sources */,
 				A11441221C5B000200B75FB8 /* LocationHandler.swift in Sources */,
 				A114414C1C5B000200B75FB8 /* RootViewController.swift in Sources */,
-				A11441621C5B000200B75FB8 /* JRCollapsibleTableViewHeader.swift in Sources */,
+				A11442891C5B3F2F00B75FB8 /* JRMonthPicker.swift in Sources */,
 				A11441181C5B000200B75FB8 /* Enumerate.swift in Sources */,
-				A114416D1C5B000200B75FB8 /* JRPickerView.swift in Sources */,
 				A114422A1C5B373200B75FB8 /* JRDualLinkageViewController.swift in Sources */,
-				A114415E1C5B000200B75FB8 /* JRCardSwitchingView.swift in Sources */,
 				A114411B1C5B000200B75FB8 /* CoreGraphicsExtension.swift in Sources */,
 				A114421E1C5B373200B75FB8 /* TabBarViewController.swift in Sources */,
+				A11442811C5B3F2F00B75FB8 /* JZTabMenuBar.m in Sources */,
+				A11442931C5B3F2F00B75FB8 /* JRGridViewTile.swift in Sources */,
+				A11442841C5B3F2F00B75FB8 /* JRCalendarGridView.swift in Sources */,
 				A11441251C5B000200B75FB8 /* HttpTableViewCell.swift in Sources */,
+				A114429A1C5B3F2F00B75FB8 /* JRPickerView.swift in Sources */,
 				A114421A1C5B373200B75FB8 /* HttpViewController.swift in Sources */,
 				A11441171C5B000200B75FB8 /* Constants.swift in Sources */,
+				A11442921C5B3F2F00B75FB8 /* JRGridView.swift in Sources */,
 				A114411E1C5B000200B75FB8 /* SwiftExtension.swift in Sources */,
 				A11442331C5B373200B75FB8 /* RatingViewController.swift in Sources */,
-				A11441551C5B000200B75FB8 /* JRCalendarCommon.swift in Sources */,
-				A11441601C5B000200B75FB8 /* JRCollapsibleTableViewCell.swift in Sources */,
+				A11442A11C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.swift in Sources */,
 				A11442261C5B373200B75FB8 /* CollapsibleSectionTestingViewController.swift in Sources */,
-				A114415B1C5B000200B75FB8 /* JRCalendarView.swift in Sources */,
-				A114415F1C5B000200B75FB8 /* JRCarouselView.swift in Sources */,
+				A114428C1C5B3F2F00B75FB8 /* JRCarouselView.swift in Sources */,
+				A114428D1C5B3F2F00B75FB8 /* JRCollapsibleTableViewCell.swift in Sources */,
+				A114429E1C5B3F2F00B75FB8 /* JZMultiMenuView.swift in Sources */,
+				A11442A31C5B3F2F00B75FB8 /* JZRadioButton.swift in Sources */,
+				A11442951C5B3F2F00B75FB8 /* JRRatingView.swift in Sources */,
+				A114429B1C5B3F2F00B75FB8 /* JRWebViewController.swift in Sources */,
 				A11441901C5B06BF00B75FB8 /* LogEnumeration.swift in Sources */,
-				A11441591C5B000200B75FB8 /* JRCalendarModel.swift in Sources */,
-				A11441531C5B000200B75FB8 /* JZProgressBar.m in Sources */,
-				A11441701C5B000200B75FB8 /* JZCoverView.swift in Sources */,
 				A11441931C5B06BF00B75FB8 /* ProjectUtil.swift in Sources */,
 				A114422F1C5B373200B75FB8 /* PhotoBrowserTestingViewController.swift in Sources */,
+				A114428F1C5B3F2F00B75FB8 /* JRCollapsibleTableViewHeader.swift in Sources */,
 				A11441291C5B000200B75FB8 /* GuideViewController.swift in Sources */,
 				A11442351C5B373200B75FB8 /* ReadingViewTestingViewController.swift in Sources */,
 				A114418F1C5B06BF00B75FB8 /* Log.swift in Sources */,
+				A11442821C5B3F2F00B75FB8 /* JRCalendarCommon.swift in Sources */,
 				A114423E1C5B37A700B75FB8 /* QRCodeViewController.swift in Sources */,
+				A11442881C5B3F2F00B75FB8 /* JRCalendarView.swift in Sources */,
 				A11441511C5B000200B75FB8 /* SignUpViewController.swift in Sources */,
 				A11441241C5B000200B75FB8 /* UserModel.swift in Sources */,
 				A114414D1C5B000200B75FB8 /* ResetPasswordViewController.swift in Sources */,
+				A114428A1C5B3F2F00B75FB8 /* NSDateExtension.swift in Sources */,
 				A11442201C5B373200B75FB8 /* CalendarViewTestingViewController.swift in Sources */,
-				A11441561C5B000200B75FB8 /* JRCalendarDayModel.swift in Sources */,
-				A11441641C5B000200B75FB8 /* JRDualLinkageView.swift in Sources */,
-				A114416E1C5B000200B75FB8 /* JRWebViewController.swift in Sources */,
 				A11441941C5B06BF00B75FB8 /* SystemUtil.swift in Sources */,
 				A114414F1C5B000200B75FB8 /* SignInViewController.swift in Sources */,
-				A11441581C5B000200B75FB8 /* JRCalendarGridViewTile.swift in Sources */,
+				A114428B1C5B3F2F00B75FB8 /* JRCardSwitchingView.swift in Sources */,
 				A11441191C5B000200B75FB8 /* Protocol.swift in Sources */,
 				A114422D1C5B373200B75FB8 /* MultiMenuTestingViewController.swift in Sources */,
-				A11441711C5B000200B75FB8 /* JZMultiMenuView.swift in Sources */,
 				A11442371C5B373200B75FB8 /* TestingViewController.swift in Sources */,
-				A11441721C5B000200B75FB8 /* JZQRCodeScanningViewController.swift in Sources */,
+				A11442961C5B3F2F00B75FB8 /* JRReadingView.swift in Sources */,
 				A114411D1C5B000200B75FB8 /* OtherExtension.swift in Sources */,
+				A11442941C5B3F2F00B75FB8 /* JRPhotoBrowser.swift in Sources */,
+				A11442851C5B3F2F00B75FB8 /* JRCalendarGridViewTile.swift in Sources */,
 				A11442221C5B373200B75FB8 /* CardSwitchingTestingViewController.swift in Sources */,
 				A11441231C5B000200B75FB8 /* SystemHelper.swift in Sources */,
+				A11442831C5B3F2F00B75FB8 /* JRCalendarDayModel.swift in Sources */,
 				A114411F1C5B000200B75FB8 /* UIKitExtension.swift in Sources */,
 				A114411C1C5B000200B75FB8 /* FoundationExtension.swift in Sources */,
 			);

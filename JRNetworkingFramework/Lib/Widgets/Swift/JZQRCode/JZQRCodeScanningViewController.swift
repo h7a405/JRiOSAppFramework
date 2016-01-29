@@ -31,10 +31,7 @@ class JZQRCodeScanningViewController: UIViewController {
     var previewLayer: AVCaptureVideoPreviewLayer?
     //MARK: UIView子类 - UIView/UIControl/UIViewController
     
-    lazy var scanningArea: JZQRCodeScanningMaskView = {
-         let xibs = NSBundle.mainBundle().loadNibNamed("JZQRCodeScanningMaskView", owner: nil, options: nil)
-        return xibs[0] as? JZQRCodeScanningMaskView ?? JZQRCodeScanningMaskView()
-    }()
+    var scanningArea: JZQRCodeScanningMaskView?
     //MARK: Foundation - NS/CG/CA
     
     //MARK: 计算变量
@@ -120,10 +117,16 @@ extension JZQRCodeScanningViewController {
             一般扫码的UI中都有一个maskView，所以应特别注意表示识别范围的属性rectOfInterest:
             它的四个值的范围都是0-1，表示比例，x对应的恰恰是距离左上角的垂直距离，y对应的是距离左上角的水平距离。
             */
-            captureDeviceOutput.rectOfInterest = self.scanningArea.scanningAreaView.frame
             
-            //开始扫描
-            self.captureSession?.startRunning()
+            let xibs = NSBundle.mainBundle().loadNibNamed("JZQRCodeScanningMaskView", owner: nil, options: nil)
+            self.scanningArea = xibs[0] as? JZQRCodeScanningMaskView
+            if let area = self.scanningArea {
+                let interestArea = area.scanningAreaView.frame
+                captureDeviceOutput.rectOfInterest = CGRect(x: interestArea.origin.x / self.view.viewX, y: interestArea.origin.y / self.view.viewY, width: interestArea.size.width / self.view.viewWidth, height: interestArea.size.height / self.view.viewHeight)
+            
+                //开始扫描
+                self.captureSession?.startRunning()
+            }
         } catch {
             return
         }
