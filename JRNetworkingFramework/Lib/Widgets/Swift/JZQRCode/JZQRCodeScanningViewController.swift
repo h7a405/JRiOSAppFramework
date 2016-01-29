@@ -121,6 +121,9 @@ extension JZQRCodeScanningViewController {
             let xibs = NSBundle.mainBundle().loadNibNamed("JZQRCodeScanningMaskView", owner: nil, options: nil)
             self.scanningArea = xibs[0] as? JZQRCodeScanningMaskView
             if let area = self.scanningArea {
+                
+                self.view.addSubview(area)
+                
                 let interestArea = area.scanningAreaView.frame
                 captureDeviceOutput.rectOfInterest = CGRect(x: interestArea.origin.x / self.view.viewX, y: interestArea.origin.y / self.view.viewY, width: interestArea.size.width / self.view.viewWidth, height: interestArea.size.height / self.view.viewHeight)
             
@@ -157,6 +160,7 @@ extension JZQRCodeScanningViewController : AVCaptureMetadataOutputObjectsDelegat
                 Log.VLog(metadataObject.stringValue)
             }
         }
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }
 //MARK: 设置 - Setter
