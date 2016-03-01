@@ -111,6 +111,10 @@
 		A11442A11C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114427B1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.swift */; };
 		A11442A21C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A114427C1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.xib */; };
 		A11442A31C5B3F2F00B75FB8 /* JZRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114427E1C5B3F2F00B75FB8 /* JZRadioButton.swift */; };
+		A11442A61C5B45BB00B75FB8 /* JZProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11442A51C5B45BB00B75FB8 /* JZProgressHUD.swift */; };
+		A15D84CE1C801F410001AE94 /* JZToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D84CD1C801F410001AE94 /* JZToast.swift */; };
+		A1C5250B1C76A4A800971E82 /* JZBLECentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C525081C76A4A800971E82 /* JZBLECentralManager.swift */; };
+		A1C5250C1C76A4A800971E82 /* JZBLEPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C5250A1C76A4A800971E82 /* JZBLEPeripheralManager.swift */; };
 		BBAF65631BC0C12100CA709A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF65621BC0C12100CA709A /* AppDelegate.swift */; };
 		BBAF65681BC0C12100CA709A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65661BC0C12100CA709A /* Main.storyboard */; };
 		BBAF656A1BC0C12100CA709A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAF65691BC0C12100CA709A /* Images.xcassets */; };
@@ -240,6 +244,10 @@
 		A114427B1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZQRCodeScanningViewController.swift; sourceTree = "<group>"; };
 		A114427C1C5B3F2F00B75FB8 /* JZQRCodeScanningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZQRCodeScanningViewController.xib; sourceTree = "<group>"; };
 		A114427E1C5B3F2F00B75FB8 /* JZRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZRadioButton.swift; sourceTree = "<group>"; };
+		A11442A51C5B45BB00B75FB8 /* JZProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZProgressHUD.swift; sourceTree = "<group>"; };
+		A15D84CD1C801F410001AE94 /* JZToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZToast.swift; sourceTree = "<group>"; };
+		A1C525081C76A4A800971E82 /* JZBLECentralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZBLECentralManager.swift; sourceTree = "<group>"; };
+		A1C5250A1C76A4A800971E82 /* JZBLEPeripheralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZBLEPeripheralManager.swift; sourceTree = "<group>"; };
 		BBAF655D1BC0C12100CA709A /* JRNetworkingFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRNetworkingFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAF65611BC0C12100CA709A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBAF65621BC0C12100CA709A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -501,6 +509,8 @@
 		A11441031C5B000200B75FB8 /* SDKs */ = {
 			isa = PBXGroup;
 			children = (
+				A1C525041C76A4A800971E82 /* Objective-C */,
+				A1C525051C76A4A800971E82 /* Swift */,
 			);
 			path = SDKs;
 			sourceTree = "<group>";
@@ -798,6 +808,8 @@
 		A11442491C5B3F2F00B75FB8 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				A15D84CC1C801F280001AE94 /* JZToast */,
+				A11442A41C5B45AD00B75FB8 /* JZProgressHUD */,
 				A114424A1C5B3F2F00B75FB8 /* JRCalendar */,
 				A11442541C5B3F2F00B75FB8 /* JRCardSwitchView */,
 				A11442561C5B3F2F00B75FB8 /* JRCarousel */,
@@ -996,6 +1008,62 @@
 			path = JZShoppingCart;
 			sourceTree = "<group>";
 		};
+		A11442A41C5B45AD00B75FB8 /* JZProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A11442A51C5B45BB00B75FB8 /* JZProgressHUD.swift */,
+			);
+			path = JZProgressHUD;
+			sourceTree = "<group>";
+		};
+		A15D84CC1C801F280001AE94 /* JZToast */ = {
+			isa = PBXGroup;
+			children = (
+				A15D84CD1C801F410001AE94 /* JZToast.swift */,
+			);
+			path = JZToast;
+			sourceTree = "<group>";
+		};
+		A1C525041C76A4A800971E82 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		A1C525051C76A4A800971E82 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A1C525061C76A4A800971E82 /* JZBluetooth */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		A1C525061C76A4A800971E82 /* JZBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				A1C525071C76A4A800971E82 /* JZBLECentral */,
+				A1C525091C76A4A800971E82 /* JZBLEPeripheral */,
+			);
+			path = JZBluetooth;
+			sourceTree = "<group>";
+		};
+		A1C525071C76A4A800971E82 /* JZBLECentral */ = {
+			isa = PBXGroup;
+			children = (
+				A1C525081C76A4A800971E82 /* JZBLECentralManager.swift */,
+			);
+			path = JZBLECentral;
+			sourceTree = "<group>";
+		};
+		A1C525091C76A4A800971E82 /* JZBLEPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				A1C5250A1C76A4A800971E82 /* JZBLEPeripheralManager.swift */,
+			);
+			path = JZBLEPeripheral;
+			sourceTree = "<group>";
+		};
 		BBAF65541BC0C12100CA709A = {
 			isa = PBXGroup;
 			children = (
@@ -1111,6 +1179,7 @@
 				TargetAttributes = {
 					BBAF655C1BC0C12100CA709A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7DPLKB52LK;
 					};
 					BBAF65711BC0C12100CA709A = {
 						CreatedOnToolsVersion = 6.4;
@@ -1254,6 +1323,7 @@
 				A114429F1C5B3F2F00B75FB8 /* JZQRCodeScanningMaskView.swift in Sources */,
 				A11441211C5B000200B75FB8 /* Localization.swift in Sources */,
 				A11441911C5B06BF00B75FB8 /* MathUtil.swift in Sources */,
+				A1C5250B1C76A4A800971E82 /* JZBLECentralManager.swift in Sources */,
 				A114411A1C5B000200B75FB8 /* CoreAnimationExtension.swift in Sources */,
 				A11442911C5B3F2F00B75FB8 /* JRDualLinkageView.swift in Sources */,
 				A114422B1C5B373200B75FB8 /* GridViewTestingViewController.swift in Sources */,
@@ -1302,6 +1372,7 @@
 				A11442201C5B373200B75FB8 /* CalendarViewTestingViewController.swift in Sources */,
 				A11441941C5B06BF00B75FB8 /* SystemUtil.swift in Sources */,
 				A114414F1C5B000200B75FB8 /* SignInViewController.swift in Sources */,
+				A15D84CE1C801F410001AE94 /* JZToast.swift in Sources */,
 				A114428B1C5B3F2F00B75FB8 /* JRCardSwitchingView.swift in Sources */,
 				A11441191C5B000200B75FB8 /* Protocol.swift in Sources */,
 				A114422D1C5B373200B75FB8 /* MultiMenuTestingViewController.swift in Sources */,
@@ -1310,8 +1381,10 @@
 				A114411D1C5B000200B75FB8 /* OtherExtension.swift in Sources */,
 				A11442941C5B3F2F00B75FB8 /* JRPhotoBrowser.swift in Sources */,
 				A11442851C5B3F2F00B75FB8 /* JRCalendarGridViewTile.swift in Sources */,
+				A1C5250C1C76A4A800971E82 /* JZBLEPeripheralManager.swift in Sources */,
 				A11442221C5B373200B75FB8 /* CardSwitchingTestingViewController.swift in Sources */,
 				A11441231C5B000200B75FB8 /* SystemHelper.swift in Sources */,
+				A11442A61C5B45BB00B75FB8 /* JZProgressHUD.swift in Sources */,
 				A11442831C5B3F2F00B75FB8 /* JRCalendarDayModel.swift in Sources */,
 				A114411F1C5B000200B75FB8 /* UIKitExtension.swift in Sources */,
 				A114411C1C5B000200B75FB8 /* FoundationExtension.swift in Sources */,
@@ -1446,6 +1519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JRNetworkingFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1462,6 +1536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JRNetworkingFramework/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

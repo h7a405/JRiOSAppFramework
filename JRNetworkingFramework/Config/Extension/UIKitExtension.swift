@@ -213,6 +213,30 @@ extension UIViewController {
 //MARK: UITabBarController
 //MARK: UITableViewContoller
 //MARK: UINavigationController
+extension UINavigationController {
+    func pushViewControllerCustomedAnimated(viewController: UIViewController) {
+        let transition: CATransition = CATransition()
+        transition.duration = 0.4
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionMoveIn
+        transition.subtype = kCATransitionFromLeft
+        transition.delegate = self
+        self.view.layer.addAnimation(transition, forKey: nil)
+        self.navigationBar.hidden = false
+        self.pushViewController(viewController, animated: false)
+    }
+    func popViewControllerCustomedAnimated() {
+        let transition: CATransition = CATransition()
+        transition.duration = 0.4
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionReveal
+        transition.subtype = kCATransitionFromBottom
+        transition.delegate = self
+        self.view.layer.addAnimation(transition, forKey: nil)
+        self.navigationBar.hidden = false
+        self.popViewControllerAnimated(false)
+    }
+}
 //MARK: UIImagePickerController
 //MARK: UIVideoEditorController
 //MARK: - UIScreen

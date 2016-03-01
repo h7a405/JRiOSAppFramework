@@ -68,6 +68,8 @@ class TestingViewController: UIViewController {
     //MARK: Methods - Override
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "通知", style: .Done, target: self, action: "didRightBarButtonClicked:")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -130,7 +132,26 @@ extension TestingViewController {
         }
         instance.hidesBottomBarWhenPushed = true
         instance.navigationItem.title = self.titleForRows[indexPath.section][indexPath.row]
-        self.navigationController!.pushViewController(instance, animated: true)
+//        self.navigationController!.pushViewController(instance, animated: true)
+        self.navigationController?.pushViewControllerCustomedAnimated(instance)
+    }
+    
+    func didRightBarButtonClicked(sender : AnyObject) {
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Success with NO mask", style: UIAlertActionStyle.Default, handler: { (action : UIAlertAction) -> Void in
+            JZToast.showSuccessWithStatus(action.title ?? "", andMaskType: JZToastMaskType.None)
+        }))
+        alertController.addAction(UIAlertAction(title: "Failure with CLEAR mask", style: UIAlertActionStyle.Default, handler: { (action : UIAlertAction) -> Void in
+            JZToast.showFailureWithStatus(action.title ?? "", andMaskType: JZToastMaskType.Clear)
+        }))
+        alertController.addAction(UIAlertAction(title: "Information with BLACK mask", style: UIAlertActionStyle.Default, handler: { (action : UIAlertAction) -> Void in
+            JZToast.showInformationWithStatus(action.title ?? "", andMaskType: JZToastMaskType.Black)
+        }))
+        alertController.addAction(UIAlertAction(title: "Notification ONLY", style: UIAlertActionStyle.Destructive, handler: { (action : UIAlertAction) -> Void in
+            JZToast.showWithStatus((action.title ?? "") + " with super long status appending at the back of the action title.")
+        }))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }
 //MARK: Extensions - Getter / Setter
